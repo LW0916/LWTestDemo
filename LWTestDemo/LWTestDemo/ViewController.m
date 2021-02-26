@@ -88,6 +88,31 @@
 
 - (void)loadView{
     [super loadView];
+    /*
+     1、指定收索路径名称NSSearchPathDirectory
+     常用的有：NSDocumentDirectory、NSLibraryDirectory、NSCachesDirectory
+     2、限定文件检索范围​NSSearchPathDomainMask
+     NSUserDomainMask = 1,       // 用户主目录  user's home directory --- place to install user's personal items (~)
+     NSLocalDomainMask = 2,      // 当前机器  local to the current machine --- place to install items available to everyone on this machine (/Library)
+     NSNetworkDomainMask = 4,    // 网络中可见的主机  publically available location in the local area network --- place to install items available on the network (/Network)
+     NSSystemDomainMask = 8,     // 系统目录,不可修改 provided by Apple, unmodifiable (/System)
+     NSAllDomainsMask = 0x0ffff  // 所有 all domains: all of the above and future items
+     3、是否显示完整路径
+     YES为展开后完整路径，NO为 ~/文件目录(例~/Documents)
+     
+     iOS开发是在沙盒中开发的，对一些部分的文件的读写进行了限制， 只能在几个目录下读写文件：
+     （1）Documents：应用中用户数据可以放在这里，iTunes备份和恢复的时候会包括此目录
+     （2） tmp：存放临时文件，iTunes不会备份和恢复此目录，此目录下文件可能会在应用退出后删除
+     （3） Library/Caches：存放缓存文件，iTunes不会备份此目录，此目录下文件不会在应用退出删除
+     */
+    NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    NSString *cachesPath = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).firstObject;
+    NSString *libraryPath = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES).firstObject;
+
+    NSLog(@"path===>%@",path);
+    NSLog(@"cachesPath===>%@",cachesPath);
+    NSLog(@"libraryPath===>%@",libraryPath);
+
     NSLog(@"loadView 方法在 UIViewController 对象的 view 被访问且为空的时候调用。这是它与 awakeFromNib 方法的一个区别。在重写 loadView 方法的时候，不要调用父类的方法。self.view 是在 loadView 方法中创建并建立联系的，不要调用 [super loadView]，要将自定义的 view 赋值给 self.view。如果该控制器没有 xib 文件，重写了 loadView 但没有做任何事情(也就是 self.view为空)，在 viewDidLoad 中还使用了 self.view(self.view 为空时会调用 loadView)，这样会造成死循环。");
 }
 - (void)viewDidLoad {

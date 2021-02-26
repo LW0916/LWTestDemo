@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		650488B125E8F293006BD70A /* 面试题.md in Resources */ = {isa = PBXBuildFile; fileRef = 650488B025E8F293006BD70A /* 面试题.md */; };
+		650488B825E8F3A8006BD70A /* LWKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650488B725E8F3A8006BD70A /* LWKVOViewController.m */; };
 		652EE26225A40BA70056A917 /* LWNatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 652EE26125A40BA70056A917 /* LWNatureViewController.m */; };
 		652EE28025A447F90056A917 /* LWStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 652EE27F25A447F90056A917 /* LWStudent.m */; };
 		658DE0812590339D00BD71C3 /* LWCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 658DE0802590339D00BD71C3 /* LWCategoryViewController.m */; };
@@ -58,6 +60,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		650488B025E8F293006BD70A /* 面试题.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "面试题.md"; sourceTree = SOURCE_ROOT; };
+		650488B625E8F3A8006BD70A /* LWKVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWKVOViewController.h; sourceTree = "<group>"; };
+		650488B725E8F3A8006BD70A /* LWKVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWKVOViewController.m; sourceTree = "<group>"; };
 		652EE26025A40BA70056A917 /* LWNatureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWNatureViewController.h; sourceTree = "<group>"; };
 		652EE26125A40BA70056A917 /* LWNatureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWNatureViewController.m; sourceTree = "<group>"; };
 		652EE26925A40C470056A917 /* main-arm64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "main-arm64.cpp"; sourceTree = "<group>"; };
@@ -138,6 +143,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		650488B525E8F381006BD70A /* KVO */ = {
+			isa = PBXGroup;
+			children = (
+				650488B625E8F3A8006BD70A /* LWKVOViewController.h */,
+				650488B725E8F3A8006BD70A /* LWKVOViewController.m */,
+			);
+			path = KVO;
+			sourceTree = "<group>";
+		};
 		652EE25F25A40B6F0056A917 /* OC对象本质 */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +233,7 @@
 		659015C12584EE8600BDF3AF /* LWTestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				650488B025E8F293006BD70A /* 面试题.md */,
 				659015C22584EE8600BDF3AF /* AppDelegate.h */,
 				659015C32584EE8600BDF3AF /* AppDelegate.m */,
 				659015C82584EE8600BDF3AF /* ViewController.h */,
@@ -228,6 +243,7 @@
 				6590164C2584FFC100BDF3AF /* LWLifeCycleViewController.h */,
 				6590164D2584FFC100BDF3AF /* LWLifeCycleViewController.m */,
 				659016182584F05400BDF3AF /* LWSettingLog.h */,
+				650488B525E8F381006BD70A /* KVO */,
 				652EE25F25A40B6F0056A917 /* OC对象本质 */,
 				658DE07E2590336700BD71C3 /* Category */,
 				65ABFA8C258846D600A15BEB /* GCD */,
@@ -373,6 +389,7 @@
 			files = (
 				659015CF2584EE8700BDF3AF /* Assets.xcassets in Resources */,
 				659016382584F46100BDF3AF /* LaunchScreen.storyboard in Resources */,
+				650488B125E8F293006BD70A /* 面试题.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +426,7 @@
 				658E62D52585DC8F00E1771D /* Teacher.m in Sources */,
 				658DE0812590339D00BD71C3 /* LWCategoryViewController.m in Sources */,
 				659015CA2584EE8600BDF3AF /* ViewController.m in Sources */,
+				650488B825E8F3A8006BD70A /* LWKVOViewController.m in Sources */,
 				658DE0962590349D00BD71C3 /* LWPerson+Test.m in Sources */,
 				658E62D62585DC8F00E1771D /* Person+test.m in Sources */,
 				659015C42584EE8600BDF3AF /* AppDelegate.m in Sources */,
