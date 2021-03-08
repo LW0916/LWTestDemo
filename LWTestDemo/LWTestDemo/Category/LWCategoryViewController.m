@@ -50,8 +50,26 @@
     [p run];
     [p test];
     int age = p.age;
+    NSLog(@"age==>%d",age);
+
+    p.height = 120;
+    p.weight = 20;
+    LWPerson *p2 = [[LWPerson alloc]init];
+    p2.height = 100;
+    p2.weight = 10;
+    NSLog(@"height==>%d  =%d",p.height,p2.height);
+    NSLog(@"weight==>%d  =%d",p.weight,p2.weight);
+
+    p.name = @"p1";
+    p2.name = @"p2";
+    NSLog(@"p1name==>%@  p2=%@",p.name,p2.name);
+
     // Do any additional setup after loading the view.
 }
 
-
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    LWPerson *p = [[LWPerson alloc]init];
+    NSLog(@"height==>%d",p.height);
+     
+}
 @end

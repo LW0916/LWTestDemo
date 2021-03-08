@@ -48,6 +48,7 @@
 		65C2519725EDCB7100BD1649 /* LWKVCPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C2519625EDCB7100BD1649 /* LWKVCPerson.m */; };
 		65C2519D25EDCB8900BD1649 /* LWKVCDog.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C2519C25EDCB8900BD1649 /* LWKVCDog.m */; };
 		65C251AF25EDEA8600BD1649 /* kvc.png in Resources */ = {isa = PBXBuildFile; fileRef = 65C251AE25EDEA8600BD1649 /* kvc.png */; };
+		65FC7C3225F5FD9800A3BC12 /* LWBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FC7C3125F5FD9800A3BC12 /* LWBlockViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +139,9 @@
 		65C2519B25EDCB8900BD1649 /* LWKVCDog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWKVCDog.h; sourceTree = "<group>"; };
 		65C2519C25EDCB8900BD1649 /* LWKVCDog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWKVCDog.m; sourceTree = "<group>"; };
 		65C251AE25EDEA8600BD1649 /* kvc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kvc.png; sourceTree = "<group>"; };
+		65C251B325EE115000BD1649 /* LWPerson+Test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "LWPerson+Test.cpp"; sourceTree = "<group>"; };
+		65FC7C3025F5FD9800A3BC12 /* LWBlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWBlockViewController.h; sourceTree = "<group>"; };
+		65FC7C3125F5FD9800A3BC12 /* LWBlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWBlockViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +215,7 @@
 				658DE08F2590348C00BD71C3 /* LWPerson.m */,
 				658DE0942590349D00BD71C3 /* LWPerson+Test.h */,
 				658DE0952590349D00BD71C3 /* LWPerson+Test.m */,
+				65C251B325EE115000BD1649 /* LWPerson+Test.cpp */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -281,6 +286,7 @@
 				6590164C2584FFC100BDF3AF /* LWLifeCycleViewController.h */,
 				6590164D2584FFC100BDF3AF /* LWLifeCycleViewController.m */,
 				659016182584F05400BDF3AF /* LWSettingLog.h */,
+				65FC7C2F25F5FD1400A3BC12 /* Block */,
 				65C2518E25EDCB3E00BD1649 /* KVC */,
 				650488B525E8F381006BD70A /* KVO */,
 				652EE25F25A40B6F0056A917 /* OC对象本质 */,
@@ -335,6 +341,15 @@
 				65C2519C25EDCB8900BD1649 /* LWKVCDog.m */,
 			);
 			path = KVC;
+			sourceTree = "<group>";
+		};
+		65FC7C2F25F5FD1400A3BC12 /* Block */ = {
+			isa = PBXGroup;
+			children = (
+				65FC7C3025F5FD9800A3BC12 /* LWBlockViewController.h */,
+				65FC7C3125F5FD9800A3BC12 /* LWBlockViewController.m */,
+			);
+			path = Block;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -473,6 +488,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				658E62D02585DC8F00E1771D /* LWLoadInitializeViewController.m in Sources */,
+				65FC7C3225F5FD9800A3BC12 /* LWBlockViewController.m in Sources */,
 				658E62EF2586272600E1771D /* NSArray+LW.m in Sources */,
 				658DE08A2590342A00BD71C3 /* NSString+Test.m in Sources */,
 				658E62FE2586322B00E1771D /* LWUncaughtExceptionHandler.m in Sources */,
