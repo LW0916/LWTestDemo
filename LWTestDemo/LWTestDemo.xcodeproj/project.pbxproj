@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		650027F325F71EC20060097E /* block.png in Resources */ = {isa = PBXBuildFile; fileRef = 650027F225F71EC20060097E /* block.png */; };
+		650027F925F71F580060097E /* LWBlockType.m in Sources */ = {isa = PBXBuildFile; fileRef = 650027F825F71F580060097E /* LWBlockType.m */; };
+		6500280625F724E10060097E /* block_type.png in Resources */ = {isa = PBXBuildFile; fileRef = 6500280525F724E10060097E /* block_type.png */; };
 		650488B125E8F293006BD70A /* 面试题.md in Resources */ = {isa = PBXBuildFile; fileRef = 650488B025E8F293006BD70A /* 面试题.md */; };
 		650488B825E8F3A8006BD70A /* LWKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650488B725E8F3A8006BD70A /* LWKVOViewController.m */; };
 		650488C125E8F4D1006BD70A /* LWKOVPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 650488C025E8F4D1006BD70A /* LWKOVPerson.m */; };
@@ -69,6 +72,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		650027F225F71EC20060097E /* block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block.png; sourceTree = "<group>"; };
+		650027F725F71F580060097E /* LWBlockType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWBlockType.h; sourceTree = "<group>"; };
+		650027F825F71F580060097E /* LWBlockType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWBlockType.m; sourceTree = "<group>"; };
+		650027FD25F723490060097E /* LWBlockType.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LWBlockType.cpp; sourceTree = "<group>"; };
+		6500280525F724E10060097E /* block_type.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block_type.png; sourceTree = "<group>"; };
 		650488B025E8F293006BD70A /* 面试题.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "面试题.md"; sourceTree = SOURCE_ROOT; };
 		650488B625E8F3A8006BD70A /* LWKVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWKVOViewController.h; sourceTree = "<group>"; };
 		650488B725E8F3A8006BD70A /* LWKVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWKVOViewController.m; sourceTree = "<group>"; };
@@ -142,6 +150,7 @@
 		65C251B325EE115000BD1649 /* LWPerson+Test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "LWPerson+Test.cpp"; sourceTree = "<group>"; };
 		65FC7C3025F5FD9800A3BC12 /* LWBlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWBlockViewController.h; sourceTree = "<group>"; };
 		65FC7C3125F5FD9800A3BC12 /* LWBlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWBlockViewController.m; sourceTree = "<group>"; };
+		65FC7C3625F6003F00A3BC12 /* LWBlockViewController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LWBlockViewController.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +194,8 @@
 		651CF90725ECCC0E0004467C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				6500280525F724E10060097E /* block_type.png */,
+				650027F225F71EC20060097E /* block.png */,
 				65C251AE25EDEA8600BD1649 /* kvc.png */,
 				651CF91A25ECCD340004467C /* kvo.png */,
 				651CF90D25ECCC7F0004467C /* isa指向.png */,
@@ -348,6 +359,10 @@
 			children = (
 				65FC7C3025F5FD9800A3BC12 /* LWBlockViewController.h */,
 				65FC7C3125F5FD9800A3BC12 /* LWBlockViewController.m */,
+				650027F725F71F580060097E /* LWBlockType.h */,
+				650027F825F71F580060097E /* LWBlockType.m */,
+				650027FD25F723490060097E /* LWBlockType.cpp */,
+				65FC7C3625F6003F00A3BC12 /* LWBlockViewController.cpp */,
 			);
 			path = Block;
 			sourceTree = "<group>";
@@ -456,11 +471,13 @@
 			files = (
 				651CF91B25ECCD340004467C /* kvo.png in Resources */,
 				659015CF2584EE8700BDF3AF /* Assets.xcassets in Resources */,
+				6500280625F724E10060097E /* block_type.png in Resources */,
 				65C251AF25EDEA8600BD1649 /* kvc.png in Resources */,
 				651CF90925ECCC490004467C /* objc_class结构体实现.png in Resources */,
 				659016382584F46100BDF3AF /* LaunchScreen.storyboard in Resources */,
 				650488B125E8F293006BD70A /* 面试题.md in Resources */,
 				651CF90E25ECCC7F0004467C /* isa指向.png in Resources */,
+				650027F325F71EC20060097E /* block.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +520,7 @@
 				650488B825E8F3A8006BD70A /* LWKVOViewController.m in Sources */,
 				658DE0962590349D00BD71C3 /* LWPerson+Test.m in Sources */,
 				658E62D62585DC8F00E1771D /* Person+test.m in Sources */,
+				650027F925F71F580060097E /* LWBlockType.m in Sources */,
 				659015C42584EE8600BDF3AF /* AppDelegate.m in Sources */,
 				65C2519D25EDCB8900BD1649 /* LWKVCDog.m in Sources */,
 				659016462584FF9D00BDF3AF /* LWLifeCycleView.m in Sources */,
