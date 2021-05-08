@@ -106,11 +106,11 @@ struct __AtAutoreleasePool {
 };
 
 #define __OFFSETOFIVAR__(TYPE, MEMBER) ((long long) &((TYPE *)0)->MEMBER)
-static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_2fc0ab_mi_0 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"this is block --%d",18};
-static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_2fc0ab_mi_1 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"this is block ",14};
-static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_2fc0ab_mi_2 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"this is block --%d ==%d",23};
-static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_2fc0ab_mi_3 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"this is block --%d",18};
-static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_2fc0ab_mi_4 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"this is block --age=%d  height=%d  weight=%d",44};
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_e48887_mi_0 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"this is block --%d",18};
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_e48887_mi_1 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"this is block ",14};
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_e48887_mi_2 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"this is block --%d ==%d",23};
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_e48887_mi_3 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"this is block --%d",18};
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_e48887_mi_4 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"this is block --age=%d  height=%d  weight=%d gTest=%d",53};
 
 
 
@@ -2591,6 +2591,10 @@ __uint64_t clock_gettime_nsec_np(clockid_t __clock_id);
 __attribute__((availability(macosx,introduced=10.12))) __attribute__((availability(ios,unavailable)))
 __attribute__((availability(tvos,unavailable))) __attribute__((availability(watchos,unavailable)))
 int clock_settime(clockid_t __clock_id, const struct timespec *__tp);
+__attribute__((availability(macosx,introduced=10.15))) __attribute__((availability(ios,introduced=13.0))) __attribute__((availability(tvos,introduced=13.0))) __attribute__((availability(watchos,introduced=6.0)))
+int timespec_get(struct timespec *ts, int base);
+
+
 }
 
 
@@ -6283,6 +6287,10 @@ extern
 const CFStringRef kCFURLUbiquitousItemUploadingErrorKey __attribute__((availability(macos,introduced=10.9))) __attribute__((availability(ios,introduced=7.0))) __attribute__((availability(watchos,introduced=2.0))) __attribute__((availability(tvos,introduced=9.0)));
 
 
+extern
+const CFStringRef kCFURLUbiquitousItemIsExcludedFromSyncKey __attribute__((availability(macos,introduced=11.3))) __attribute__((availability(ios,introduced=14.5))) __attribute__((availability(watchos,introduced=7.4))) __attribute__((availability(tvos,introduced=14.5)));
+
+
 
 
 extern
@@ -6488,6 +6496,8 @@ enum mach_port_guard_exception_codes {
  kGUARD_EXC_SEND_INVALID_RIGHT = 1u << 18,
  kGUARD_EXC_RCV_INVALID_NAME = 1u << 19,
  kGUARD_EXC_RCV_GUARDED_DESC = 1u << 20,
+ kGUARD_EXC_MOD_REFS_NON_FATAL = 1u << 21,
+ kGUARD_EXC_IMMOVABLE_NON_FATAL = 1u << 22,
 };
 
 
@@ -13357,6 +13367,7 @@ extern "C" NSProgressFileOperationKind const NSProgressFileOperationKindDownload
 extern "C" NSProgressFileOperationKind const NSProgressFileOperationKindDecompressingAfterDownloading __attribute__((availability(macos,introduced=10.9))) __attribute__((availability(ios,introduced=7.0))) __attribute__((availability(watchos,introduced=2.0))) __attribute__((availability(tvos,introduced=9.0)));
 extern "C" NSProgressFileOperationKind const NSProgressFileOperationKindReceiving __attribute__((availability(macos,introduced=10.9))) __attribute__((availability(ios,introduced=7.0))) __attribute__((availability(watchos,introduced=2.0))) __attribute__((availability(tvos,introduced=9.0)));
 extern "C" NSProgressFileOperationKind const NSProgressFileOperationKindCopying __attribute__((availability(macos,introduced=10.9))) __attribute__((availability(ios,introduced=7.0))) __attribute__((availability(watchos,introduced=2.0))) __attribute__((availability(tvos,introduced=9.0)));
+extern "C" NSProgressFileOperationKind const NSProgressFileOperationKindUploading __attribute__((availability(macos,introduced=10.10))) __attribute__((availability(ios,introduced=8.0))) __attribute__((availability(watchos,introduced=2.0))) __attribute__((availability(tvos,introduced=9.0)));
 
 
 
@@ -17878,6 +17889,9 @@ typedef NSString *NSErrorUserInfoKey;
 extern "C" NSErrorUserInfoKey const NSUnderlyingErrorKey;
 
 
+extern "C" NSErrorUserInfoKey const NSMultipleUnderlyingErrorsKey __attribute__((availability(macos,introduced=11.3))) __attribute__((availability(ios,introduced=14.5))) __attribute__((availability(watchos,introduced=7.4))) __attribute__((availability(tvos,introduced=14.5)));
+
+
 extern "C" NSErrorUserInfoKey const NSLocalizedDescriptionKey;
 extern "C" NSErrorUserInfoKey const NSLocalizedFailureReasonErrorKey;
 extern "C" NSErrorUserInfoKey const NSLocalizedRecoverySuggestionErrorKey;
@@ -17942,6 +17956,10 @@ struct NSError_IMPL {
 
 
 // @property (nullable, readonly, copy) NSString *helpAnchor;
+
+
+
+// @property (readonly, copy) NSArray<NSError *> *underlyingErrors __attribute__((availability(macos,introduced=11.3))) __attribute__((availability(ios,introduced=14.5))) __attribute__((availability(watchos,introduced=7.4))) __attribute__((availability(tvos,introduced=14.5)));
 // + (void)setUserInfoValueProviderForDomain:(NSErrorDomain)errorDomain provider:(id _Nullable (^ _Nullable)(NSError *err, NSErrorUserInfoKey userInfoKey))provider __attribute__((availability(macos,introduced=10.11))) __attribute__((availability(ios,introduced=9.0))) __attribute__((availability(watchos,introduced=2.0))) __attribute__((availability(tvos,introduced=9.0)));
 // + (id _Nullable (^ _Nullable)(NSError *err, NSErrorUserInfoKey userInfoKey))userInfoValueProviderForDomain:(NSErrorDomain)errorDomain __attribute__((availability(macos,introduced=10.11))) __attribute__((availability(ios,introduced=9.0))) __attribute__((availability(watchos,introduced=2.0))) __attribute__((availability(tvos,introduced=9.0)));
 
@@ -18800,6 +18818,8 @@ extern "C" NSURLResourceKey const NSURLUbiquitousItemDownloadingErrorKey __attri
 extern "C" NSURLResourceKey const NSURLUbiquitousItemUploadingErrorKey __attribute__((availability(macos,introduced=10.9))) __attribute__((availability(ios,introduced=7.0))) __attribute__((availability(watchos,introduced=2.0))) __attribute__((availability(tvos,introduced=9.0)));
 extern "C" NSURLResourceKey const NSURLUbiquitousItemDownloadRequestedKey __attribute__((availability(macos,introduced=10.10))) __attribute__((availability(ios,introduced=8.0))) __attribute__((availability(watchos,introduced=2.0))) __attribute__((availability(tvos,introduced=9.0)));
 extern "C" NSURLResourceKey const NSURLUbiquitousItemContainerDisplayNameKey __attribute__((availability(macos,introduced=10.10))) __attribute__((availability(ios,introduced=8.0))) __attribute__((availability(watchos,introduced=2.0))) __attribute__((availability(tvos,introduced=9.0)));
+extern "C" NSURLResourceKey const NSURLUbiquitousItemIsExcludedFromSyncKey __attribute__((availability(macos,introduced=11.3))) __attribute__((availability(ios,introduced=14.5))) __attribute__((availability(watchos,introduced=7.4))) __attribute__((availability(tvos,introduced=14.5)));
+
 
 extern "C" NSURLResourceKey const NSURLUbiquitousItemIsSharedKey __attribute__((availability(macosx,introduced=10.12))) __attribute__((availability(ios,introduced=10.0))) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
 extern "C" NSURLResourceKey const NSURLUbiquitousSharedItemCurrentUserRoleKey __attribute__((availability(macosx,introduced=10.12))) __attribute__((availability(ios,introduced=10.0))) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
@@ -26061,6 +26081,9 @@ sec_protocol_options_get_default_max_tls_protocol_version(void);
 __attribute__((availability(macos,introduced=10.15))) __attribute__((availability(ios,introduced=13.0))) __attribute__((availability(watchos,introduced=6.0))) __attribute__((availability(tvos,introduced=13.0)))
 tls_protocol_version_t
 sec_protocol_options_get_default_max_dtls_protocol_version(void);
+__attribute__((availability(macos,unavailable))) __attribute__((availability(ios,unavailable))) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+bool
+sec_protocol_options_get_enable_encrypted_client_hello(sec_protocol_options_t options);
 __attribute__((availability(macos,introduced=10.14))) __attribute__((availability(ios,introduced=12.0))) __attribute__((availability(watchos,introduced=5.0))) __attribute__((availability(tvos,introduced=12.0)))
 void
 sec_protocol_options_add_tls_application_protocol(sec_protocol_options_t options, const char *application_protocol);
@@ -26108,6 +26131,9 @@ sec_protocol_options_set_peer_authentication_required(sec_protocol_options_t opt
 __attribute__((availability(macos,unavailable))) __attribute__((availability(ios,unavailable))) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
 void
 sec_protocol_options_set_peer_authentication_optional(sec_protocol_options_t options, bool peer_authentication_optional);
+__attribute__((availability(macos,unavailable))) __attribute__((availability(ios,unavailable))) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)))
+void
+sec_protocol_options_set_enable_encrypted_client_hello(sec_protocol_options_t options, bool enable_encrypted_client_hello);
 typedef void (*sec_protocol_key_update_complete_t)(void);
 typedef void (*sec_protocol_key_update_t)(sec_protocol_metadata_t metadata, sec_protocol_key_update_complete_t complete);
 typedef void (*sec_protocol_challenge_complete_t)(sec_identity_t _Nullable identity);
@@ -28029,6 +28055,14 @@ struct NSURLRequest_IMPL {
 
 // @property (readonly) BOOL allowsConstrainedNetworkAccess __attribute__((availability(macos,introduced=10.15))) __attribute__((availability(ios,introduced=13.0))) __attribute__((availability(watchos,introduced=6.0))) __attribute__((availability(tvos,introduced=13.0)));
 
+
+
+
+
+
+
+// @property (readonly) BOOL assumesHTTP3Capable __attribute__((availability(macos,introduced=11.3))) __attribute__((availability(ios,introduced=14.5))) __attribute__((availability(watchos,introduced=7.4))) __attribute__((availability(tvos,introduced=14.5)));
+
 /* @end */
 
 __attribute__((availability(macos,introduced=10.2))) __attribute__((availability(ios,introduced=2.0))) __attribute__((availability(watchos,introduced=2.0))) __attribute__((availability(tvos,introduced=9.0)))
@@ -28086,6 +28120,14 @@ struct NSMutableURLRequest_IMPL {
 
 
 // @property BOOL allowsConstrainedNetworkAccess __attribute__((availability(macos,introduced=10.15))) __attribute__((availability(ios,introduced=13.0))) __attribute__((availability(watchos,introduced=6.0))) __attribute__((availability(tvos,introduced=13.0)));
+
+
+
+
+
+
+
+// @property BOOL assumesHTTP3Capable __attribute__((availability(macos,introduced=11.3))) __attribute__((availability(ios,introduced=14.5))) __attribute__((availability(watchos,introduced=7.4))) __attribute__((availability(tvos,introduced=14.5)));
 
 /* @end */
 
@@ -33052,6 +33094,7 @@ struct NSURLSessionTask_IMPL {
 // - (void)suspend;
 // - (void)resume;
 // @property float priority __attribute__((availability(macos,introduced=10.10))) __attribute__((availability(ios,introduced=8.0))) __attribute__((availability(watchos,introduced=2.0))) __attribute__((availability(tvos,introduced=9.0)));
+// @property BOOL prefersIncrementalDelivery __attribute__((availability(macos,introduced=11.3))) __attribute__((availability(ios,introduced=14.5))) __attribute__((availability(watchos,introduced=7.4))) __attribute__((availability(tvos,introduced=14.5)));
 
 
 // - (instancetype)init __attribute__((availability(macos,introduced=10.9,deprecated=10.15,message="Not supported"))) __attribute__((availability(ios,introduced=7.0,deprecated=13.0,message="Not supported"))) __attribute__((availability(watchos,introduced=2.0,deprecated=6.0,message="Not supported"))) __attribute__((availability(tvos,introduced=9.0,deprecated=13.0,message="Not supported")));
@@ -41980,6 +42023,12 @@ typedef uint32_t CGImagePropertyTGACompression; enum {
     kCGImageTGACompressionRLE,
 };
 extern "C" __attribute__((visibility("default"))) const CFStringRef kCGImagePropertyPNGCompressionFilter __attribute__((availability(macos,introduced=10.11))) __attribute__((availability(ios,introduced=9.0)));
+extern "C" __attribute__((visibility("default"))) const CFStringRef kCGImagePropertyPNGTransparency __attribute__((availability(macos,introduced=10.13))) __attribute__((availability(ios,introduced=11.0)));
+
+
+
+
+
 extern "C" __attribute__((visibility("default"))) const CFStringRef kCGImageAuxiliaryDataTypeDepth __attribute__((availability(macos,introduced=10.13))) __attribute__((availability(ios,introduced=11.0)));
 extern "C" __attribute__((visibility("default"))) const CFStringRef kCGImageAuxiliaryDataTypeDisparity __attribute__((availability(macos,introduced=10.13))) __attribute__((availability(ios,introduced=11.0)));
 extern "C" __attribute__((visibility("default"))) const CFStringRef kCGImageAuxiliaryDataTypePortraitEffectsMatte __attribute__((availability(macos,introduced=10.14))) __attribute__((availability(ios,introduced=12.0)));
@@ -56205,6 +56254,7 @@ extern "C" __attribute__((visibility ("default"))) UIApplicationLaunchOptionsKey
 extern "C" __attribute__((visibility ("default"))) UIApplicationLaunchOptionsKey const UIApplicationLaunchOptionsBluetoothCentralsKey __attribute__((swift_name("bluetoothCentrals"))) __attribute__((availability(ios,introduced=7.0)));
 extern "C" __attribute__((visibility ("default"))) UIApplicationLaunchOptionsKey const UIApplicationLaunchOptionsBluetoothPeripheralsKey __attribute__((swift_name("bluetoothPeripherals"))) __attribute__((availability(ios,introduced=7.0)));
 extern "C" __attribute__((visibility ("default"))) UIApplicationLaunchOptionsKey const UIApplicationLaunchOptionsShortcutItemKey __attribute__((swift_name("shortcutItem"))) __attribute__((availability(ios,introduced=9.0))) __attribute__((availability(tvos,unavailable)));
+extern "C" __attribute__((visibility ("default"))) UIApplicationLaunchOptionsKey const UIApplicationLaunchOptionsEventAttributionKey __attribute__((swift_name("eventAttribution"))) __attribute__((availability(ios,introduced=14.5))) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
 
 
 extern "C" __attribute__((visibility ("default"))) UIApplicationLaunchOptionsKey const UIApplicationLaunchOptionsUserActivityDictionaryKey __attribute__((swift_name("userActivityDictionary"))) __attribute__((availability(ios,introduced=8.0)));
@@ -56217,6 +56267,7 @@ extern "C" __attribute__((visibility ("default"))) NSString *const UIApplication
 extern "C" __attribute__((visibility ("default"))) UIApplicationOpenURLOptionsKey const UIApplicationOpenURLOptionsSourceApplicationKey __attribute__((swift_name("sourceApplication"))) __attribute__((availability(ios,introduced=9.0)));
 extern "C" __attribute__((visibility ("default"))) UIApplicationOpenURLOptionsKey const UIApplicationOpenURLOptionsAnnotationKey __attribute__((swift_name("annotation"))) __attribute__((availability(ios,introduced=9.0)));
 extern "C" __attribute__((visibility ("default"))) UIApplicationOpenURLOptionsKey const UIApplicationOpenURLOptionsOpenInPlaceKey __attribute__((swift_name("openInPlace"))) __attribute__((availability(ios,introduced=9.0)));
+extern "C" __attribute__((visibility ("default"))) UIApplicationOpenURLOptionsKey const UIApplicationOpenURLOptionsEventAttributionKey __attribute__((swift_name("eventAttribution"))) __attribute__((availability(ios,introduced=14.5))) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
 
 
 extern "C" __attribute__((visibility ("default"))) NSNotificationName const UIApplicationUserDidTakeScreenshotNotification __attribute__((availability(ios,introduced=7.0)));
@@ -56229,6 +56280,9 @@ extern "C" __attribute__((visibility ("default"))) UIApplicationExtensionPointId
 
 
 extern "C" __attribute__((visibility ("default"))) UIApplicationOpenExternalURLOptionsKey const UIApplicationOpenURLOptionUniversalLinksOnly __attribute__((availability(ios,introduced=10.0)));
+
+
+extern "C" __attribute__((visibility ("default"))) UIApplicationOpenExternalURLOptionsKey const UIApplicationOpenExternalURLOptionsEventAttributionKey __attribute__((swift_name("eventAttribution"))) __attribute__((availability(ios,introduced=14.5))) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
 #pragma clang assume_nonnull end
 #pragma clang assume_nonnull begin
 
@@ -58612,11 +58666,11 @@ struct UICollectionViewFocusUpdateContext_IMPL {
 // - (void)collectionView:(UICollectionView *)collectionView moveItemAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath*)destinationIndexPath __attribute__((availability(ios,introduced=9.0)));
 
 
-// - (nullable NSArray<NSString *> *)indexTitlesForCollectionView:(UICollectionView *)collectionView __attribute__((availability(tvos,introduced=10.2)));
+// - (nullable NSArray<NSString *> *)indexTitlesForCollectionView:(UICollectionView *)collectionView __attribute__((availability(ios,introduced=14.0))) __attribute__((availability(tvos,introduced=10.2)));
 
 
 
-// - (NSIndexPath *)collectionView:(UICollectionView *)collectionView indexPathForIndexTitle:(NSString *)title atIndex:(NSInteger)index __attribute__((availability(tvos,introduced=10.2)));
+// - (NSIndexPath *)collectionView:(UICollectionView *)collectionView indexPathForIndexTitle:(NSString *)title atIndex:(NSInteger)index __attribute__((availability(ios,introduced=14.0))) __attribute__((availability(tvos,introduced=10.2)));
 
 /* @end */
 
@@ -59360,6 +59414,39 @@ struct UICollectionViewController_IMPL {
 
 #pragma clang assume_nonnull begin
 
+typedef NSInteger UICollectionUpdateAction; enum {
+    UICollectionUpdateActionInsert,
+    UICollectionUpdateActionDelete,
+    UICollectionUpdateActionReload,
+    UICollectionUpdateActionMove,
+    UICollectionUpdateActionNone
+};
+
+extern "C" __attribute__((visibility ("default"))) __attribute__((availability(ios,introduced=6.0))) 
+#ifndef _REWRITER_typedef_UICollectionViewUpdateItem
+#define _REWRITER_typedef_UICollectionViewUpdateItem
+typedef struct objc_object UICollectionViewUpdateItem;
+typedef struct {} _objc_exc_UICollectionViewUpdateItem;
+#endif
+
+struct UICollectionViewUpdateItem_IMPL {
+	struct NSObject_IMPL NSObject_IVARS;
+};
+
+
+// @property (nonatomic, readonly, nullable) NSIndexPath *indexPathBeforeUpdate;
+// @property (nonatomic, readonly, nullable) NSIndexPath *indexPathAfterUpdate;
+// @property (nonatomic, readonly) UICollectionUpdateAction updateAction;
+
+/* @end */
+
+#pragma clang assume_nonnull end
+
+
+
+
+#pragma clang assume_nonnull begin
+
 extern "C" __attribute__((visibility ("default"))) NSString *const UICollectionElementKindSectionHeader __attribute__((availability(ios,introduced=6.0)));
 extern "C" __attribute__((visibility ("default"))) NSString *const UICollectionElementKindSectionFooter __attribute__((availability(ios,introduced=6.0)));
 
@@ -59425,33 +59512,6 @@ struct UICollectionViewLayoutAttributes_IMPL {
 // + (instancetype)layoutAttributesForCellWithIndexPath:(NSIndexPath *)indexPath;
 // + (instancetype)layoutAttributesForSupplementaryViewOfKind:(NSString *)elementKind withIndexPath:(NSIndexPath *)indexPath;
 // + (instancetype)layoutAttributesForDecorationViewOfKind:(NSString *)decorationViewKind withIndexPath:(NSIndexPath *)indexPath;
-
-/* @end */
-
-
-typedef NSInteger UICollectionUpdateAction; enum {
-    UICollectionUpdateActionInsert,
-    UICollectionUpdateActionDelete,
-    UICollectionUpdateActionReload,
-    UICollectionUpdateActionMove,
-    UICollectionUpdateActionNone
-};
-
-extern "C" __attribute__((visibility ("default"))) __attribute__((availability(ios,introduced=6.0))) 
-#ifndef _REWRITER_typedef_UICollectionViewUpdateItem
-#define _REWRITER_typedef_UICollectionViewUpdateItem
-typedef struct objc_object UICollectionViewUpdateItem;
-typedef struct {} _objc_exc_UICollectionViewUpdateItem;
-#endif
-
-struct UICollectionViewUpdateItem_IMPL {
-	struct NSObject_IMPL NSObject_IVARS;
-};
-
-
-// @property (nonatomic, readonly, nullable) NSIndexPath *indexPathBeforeUpdate;
-// @property (nonatomic, readonly, nullable) NSIndexPath *indexPathAfterUpdate;
-// @property (nonatomic, readonly) UICollectionUpdateAction updateAction;
 
 /* @end */
 
@@ -60260,6 +60320,7 @@ __attribute__((availability(ios,introduced=13.0))) __attribute__((availability(t
 /* @end */
 
 #pragma clang assume_nonnull end
+
 #pragma clang assume_nonnull begin
 
 // @class UIView;
@@ -62345,6 +62406,12 @@ typedef struct objc_object UISwipeActionsConfiguration;
 typedef struct {} _objc_exc_UISwipeActionsConfiguration;
 #endif
 
+#ifndef _REWRITER_typedef_UIListSeparatorConfiguration
+#define _REWRITER_typedef_UIListSeparatorConfiguration
+typedef struct objc_object UIListSeparatorConfiguration;
+typedef struct {} _objc_exc_UIListSeparatorConfiguration;
+#endif
+
 
 #pragma clang assume_nonnull begin
 
@@ -62357,18 +62424,27 @@ typedef NSInteger UICollectionLayoutListAppearance; enum {
 } __attribute__((availability(ios,introduced=14.0))) __attribute__((availability(tvos,introduced=14.0))) __attribute__((availability(watchos,introduced=7.0)));
 
 typedef NSInteger UICollectionLayoutListHeaderMode; enum {
+
     UICollectionLayoutListHeaderModeNone,
+
+
     UICollectionLayoutListHeaderModeSupplementary,
+
+
     UICollectionLayoutListHeaderModeFirstItemInSection,
 } __attribute__((availability(ios,introduced=14.0))) __attribute__((availability(tvos,introduced=14.0))) __attribute__((availability(watchos,introduced=7.0)));
 
 typedef NSInteger UICollectionLayoutListFooterMode; enum {
+
     UICollectionLayoutListFooterModeNone,
+
+
     UICollectionLayoutListFooterModeSupplementary,
 } __attribute__((availability(ios,introduced=14.0))) __attribute__((availability(tvos,introduced=14.0))) __attribute__((availability(watchos,introduced=7.0)));
 
 
 typedef UISwipeActionsConfiguration *_Nullable (*UICollectionLayoutListSwipeActionsConfigurationProvider)(NSIndexPath *indexPath) __attribute__((availability(ios,introduced=14.0))) __attribute__((availability(watchos,introduced=7.0))) __attribute__((availability(tvos,unavailable)));
+typedef UIListSeparatorConfiguration *_Nonnull (*UICollectionLayoutListItemSeparatorHandler)(NSIndexPath *_Nonnull indexPath, UIListSeparatorConfiguration *_Nonnull sectionSeparatorConfiguration) __attribute__((availability(ios,introduced=14.5))) __attribute__((availability(watchos,introduced=7.4))) __attribute__((availability(tvos,unavailable)));
 
 
 
@@ -62397,7 +62473,16 @@ struct UICollectionLayoutListConfiguration_IMPL {
 // @property (nonatomic, readonly) UICollectionLayoutListAppearance appearance;
 
 
+
 // @property (nonatomic) BOOL showsSeparators __attribute__((availability(tvos,unavailable)));
+
+
+// @property (nonatomic, copy) UIListSeparatorConfiguration *separatorConfiguration __attribute__((availability(ios,introduced=14.5))) __attribute__((availability(watchos,introduced=7.4))) __attribute__((availability(tvos,unavailable)));
+
+
+
+
+// @property (nonatomic, copy, nullable) UICollectionLayoutListItemSeparatorHandler itemSeparatorHandler __attribute__((availability(ios,introduced=14.5))) __attribute__((availability(watchos,introduced=7.4))) __attribute__((availability(tvos,unavailable)));
 
 
 
@@ -62439,6 +62524,62 @@ struct UICollectionLayoutListConfiguration_IMPL {
 
 
 // + (instancetype)layoutWithListConfiguration:(UICollectionLayoutListConfiguration *)configuration __attribute__((availability(ios,introduced=14.0))) __attribute__((availability(tvos,introduced=14.0))) __attribute__((availability(watchos,introduced=7.0)));
+
+/* @end */
+
+#pragma clang assume_nonnull end
+#pragma clang assume_nonnull begin
+
+typedef NSInteger UIListSeparatorVisibility; enum {
+
+    UIListSeparatorVisibilityAutomatic,
+    UIListSeparatorVisibilityVisible,
+    UIListSeparatorVisibilityHidden
+};
+
+
+
+extern "C" __attribute__((visibility ("default"))) const NSDirectionalEdgeInsets UIListSeparatorAutomaticInsets __attribute__((availability(ios,introduced=14.5))) __attribute__((availability(watchos,introduced=7.4))) __attribute__((availability(tvos,unavailable)));
+
+
+
+extern "C" __attribute__((visibility ("default"))) __attribute__((availability(ios,introduced=14.5))) __attribute__((availability(watchos,introduced=7.4))) __attribute__((availability(tvos,unavailable)))
+
+#ifndef _REWRITER_typedef_UIListSeparatorConfiguration
+#define _REWRITER_typedef_UIListSeparatorConfiguration
+typedef struct objc_object UIListSeparatorConfiguration;
+typedef struct {} _objc_exc_UIListSeparatorConfiguration;
+#endif
+
+struct UIListSeparatorConfiguration_IMPL {
+	struct NSObject_IMPL NSObject_IVARS;
+};
+
+
+// - (instancetype)init __attribute__((unavailable));
+// + (instancetype)new __attribute__((unavailable));
+
+
+
+// - (instancetype)initWithListAppearance:(UICollectionLayoutListAppearance)listAppearance __attribute__((objc_designated_initializer));
+
+
+// @property (nonatomic) UIListSeparatorVisibility topSeparatorVisibility;
+
+
+// @property (nonatomic) UIListSeparatorVisibility bottomSeparatorVisibility;
+
+
+// @property (nonatomic) NSDirectionalEdgeInsets topSeparatorInsets;
+
+
+// @property (nonatomic) NSDirectionalEdgeInsets bottomSeparatorInsets;
+
+
+// @property (nonatomic, strong) UIColor *color;
+
+
+// @property (nonatomic, strong) UIColor *multipleSelectionColor;
 
 /* @end */
 
@@ -63605,7 +63746,7 @@ struct UIDocumentPickerViewController_IMPL {
 // - (instancetype)initWithURL:(NSURL *)url inMode:(UIDocumentPickerMode)mode __attribute__((objc_designated_initializer)) __attribute__((availability(ios,introduced=8.0,deprecated=14.0,replacement="use initForExportingURLs:asCopy: or initForExportingURLs: instead"))) __attribute__((availability(tvos,unavailable)));
 
 
-// - (instancetype)initWithURLs:(NSArray <NSURL *> *)urls inMode:(UIDocumentPickerMode)mode __attribute__((objc_designated_initializer)) __attribute__((availability(ios,introduced=11.0,deprecated=14.0,replacement="use initForExportinitForExportingURLsingURLs:asCopy: or initForExportingURLs: instead"))) __attribute__((availability(tvos,unavailable)));
+// - (instancetype)initWithURLs:(NSArray <NSURL *> *)urls inMode:(UIDocumentPickerMode)mode __attribute__((objc_designated_initializer)) __attribute__((availability(ios,introduced=11.0,deprecated=14.0,replacement="use initForExportingURLs:asCopy: or initForExportingURLs: instead"))) __attribute__((availability(tvos,unavailable)));
 
 
 
@@ -67477,6 +67618,16 @@ typedef struct {} _objc_exc_UIPrintFormatter;
 #endif
 
 
+__attribute__((availability(ios,introduced=14.5))) typedef NSInteger UIPrintRenderingQuality; enum {
+
+
+    UIPrintRenderingQualityBest,
+
+
+
+    UIPrintRenderingQualityResponsive
+};
+
 extern "C" __attribute__((visibility ("default"))) __attribute__((availability(ios,introduced=4.2))) __attribute__((availability(tvos,unavailable))) 
 #ifndef _REWRITER_typedef_UIPrintPageRenderer
 #define _REWRITER_typedef_UIPrintPageRenderer
@@ -67500,6 +67651,14 @@ struct UIPrintPageRenderer_IMPL {
 // @property(nullable,atomic,copy) NSArray<UIPrintFormatter *> *printFormatters;
 // - (nullable NSArray<UIPrintFormatter *> *)printFormattersForPageAtIndex:(NSInteger)pageIndex;
 // - (void)addPrintFormatter:(UIPrintFormatter *)formatter startingAtPageAtIndex:(NSInteger)pageIndex;
+
+
+
+
+
+
+
+// - (UIPrintRenderingQuality)currentRenderingQualityForRequestedRenderingQuality:(UIPrintRenderingQuality)requestedRenderingQuality __attribute__((swift_name("currentRenderingQuality(forRequested:)"))) __attribute__((availability(ios,introduced=14.5)));
 
 // - (void)prepareForDrawingPages:(NSRange)range;
 
@@ -67538,6 +67697,56 @@ struct UIPrintPaper_IMPL {
 
 // @interface UIPrintPaper(Deprecated_Nonfunctional)
 // - (CGRect)printRect __attribute__((availability(tvos,unavailable))) ;
+/* @end */
+
+#pragma clang assume_nonnull end
+#pragma clang assume_nonnull begin
+
+// @class UIPrintInfo;
+#ifndef _REWRITER_typedef_UIPrintInfo
+#define _REWRITER_typedef_UIPrintInfo
+typedef struct objc_object UIPrintInfo;
+typedef struct {} _objc_exc_UIPrintInfo;
+#endif
+
+
+extern "C" __attribute__((visibility ("default"))) __attribute__((availability(ios,introduced=14.5))) __attribute__((availability(tvos,unavailable)))
+
+#ifndef _REWRITER_typedef_UIPrinterDestination
+#define _REWRITER_typedef_UIPrinterDestination
+typedef struct objc_object UIPrinterDestination;
+typedef struct {} _objc_exc_UIPrinterDestination;
+#endif
+
+struct UIPrinterDestination_IMPL {
+	struct NSObject_IMPL NSObject_IVARS;
+};
+
+
+// -(instancetype)initWithURL:(NSURL *)url;
+
+// @property (readwrite, copy) NSURL *URL;
+// @property (readwrite, copy, nullable) NSString *displayName;
+// @property (readwrite, copy, nullable) NSData *txtRecord;
+
+/* @end */
+
+
+extern "C" __attribute__((visibility ("default"))) __attribute__((availability(ios,introduced=14.5))) __attribute__((availability(tvos,unavailable)))
+
+#ifndef _REWRITER_typedef_UIPrintServiceExtension
+#define _REWRITER_typedef_UIPrintServiceExtension
+typedef struct objc_object UIPrintServiceExtension;
+typedef struct {} _objc_exc_UIPrintServiceExtension;
+#endif
+
+struct UIPrintServiceExtension_IMPL {
+	struct NSObject_IMPL NSObject_IVARS;
+};
+
+
+// -(NSArray<UIPrinterDestination *> *)printerDestinationsForPrintInfo:(UIPrintInfo *)printInfo;
+
 /* @end */
 
 #pragma clang assume_nonnull end
@@ -69069,6 +69278,13 @@ typedef NSInteger UISplitViewControllerSplitBehavior; enum {
 } __attribute__((availability(ios,introduced=14.0)));
 
 
+typedef NSInteger UISplitViewControllerDisplayModeButtonVisibility; enum {
+    UISplitViewControllerDisplayModeButtonVisibilityAutomatic,
+    UISplitViewControllerDisplayModeButtonVisibilityNever,
+    UISplitViewControllerDisplayModeButtonVisibilityAlways
+} __attribute__((availability(ios,introduced=14.5)));
+
+
 extern "C" __attribute__((visibility ("default"))) CGFloat const UISplitViewControllerAutomaticDimension __attribute__((availability(ios,introduced=8.0)));
 
 extern "C" __attribute__((visibility ("default"))) __attribute__((availability(ios,introduced=3.2))) 
@@ -69116,7 +69332,16 @@ struct UISplitViewController_IMPL {
 // @property (nonatomic, readonly) UISplitViewControllerDisplayMode displayMode __attribute__((availability(ios,introduced=8.0)));
 
 
+
 // @property (nonatomic, readonly) UIBarButtonItem *displayModeButtonItem __attribute__((availability(ios,introduced=8.0)));
+
+
+
+
+
+
+// @property(nonatomic) UISplitViewControllerDisplayModeButtonVisibility displayModeButtonVisibility __attribute__((availability(ios,introduced=14.5)));
+
 
 
 // @property(nonatomic, assign) CGFloat preferredPrimaryColumnWidthFraction __attribute__((availability(ios,introduced=8.0)));
@@ -73664,6 +73889,12 @@ typedef struct objc_object CKShareMetadata;
 typedef struct {} _objc_exc_CKShareMetadata;
 #endif
 
+#ifndef _REWRITER_typedef_UIEventAttribution
+#define _REWRITER_typedef_UIEventAttribution
+typedef struct objc_object UIEventAttribution;
+typedef struct {} _objc_exc_UIEventAttribution;
+#endif
+
 
 #pragma clang assume_nonnull begin
 
@@ -73736,6 +73967,9 @@ struct UISceneOpenURLOptions_IMPL {
 
 
 // @property (nonatomic, readonly) BOOL openInPlace;
+
+
+// @property (nullable, nonatomic, readonly) UIEventAttribution *eventAttribution __attribute__((availability(ios,introduced=14.5))) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
 /* @end */
 
 
@@ -73754,6 +73988,8 @@ struct UISceneOpenExternalURLOptions_IMPL {
 
 
 // @property (nonatomic, readwrite) BOOL universalLinksOnly;
+
+// @property (nullable, nonatomic, copy) UIEventAttribution *eventAttribution __attribute__((availability(ios,introduced=14.5))) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
 /* @end */
 
 
@@ -73765,7 +74001,7 @@ typedef NSInteger UISceneCollectionJoinBehavior; enum {
     UISceneCollectionJoinBehaviorPreferred,
     UISceneCollectionJoinBehaviorDisallowed,
     UISceneCollectionJoinBehaviorPreferredWithoutActivating,
-} __attribute__((availability(macCatalyst,introduced=10.14))) __attribute__((availability(ios,unavailable))) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
+} __attribute__((availability(macCatalyst,introduced=14.0))) __attribute__((availability(ios,unavailable))) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
 
 extern "C" __attribute__((visibility ("default"))) __attribute__((availability(ios,introduced=13.0))) 
 #ifndef _REWRITER_typedef_UISceneActivationRequestOptions
@@ -73782,7 +74018,7 @@ struct UISceneActivationRequestOptions_IMPL {
 // @property (nullable, nonatomic, readwrite, strong) UIScene *requestingScene;
 
 
-// @property (nonatomic, readwrite) UISceneCollectionJoinBehavior collectionJoinBehavior __attribute__((availability(macCatalyst,introduced=10.14))) __attribute__((availability(ios,unavailable))) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
+// @property (nonatomic, readwrite) UISceneCollectionJoinBehavior collectionJoinBehavior __attribute__((availability(macCatalyst,introduced=14.0))) __attribute__((availability(ios,unavailable))) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable)));
 /* @end */
 
 
@@ -74838,6 +75074,76 @@ struct UIColorPickerViewController_IMPL {
 /* @end */
 
 #pragma clang assume_nonnull end
+#pragma clang assume_nonnull begin
+
+extern "C" __attribute__((visibility ("default"))) __attribute__((availability(ios,introduced=14.5))) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable))) 
+#ifndef _REWRITER_typedef_UIEventAttribution
+#define _REWRITER_typedef_UIEventAttribution
+typedef struct objc_object UIEventAttribution;
+typedef struct {} _objc_exc_UIEventAttribution;
+#endif
+
+struct UIEventAttribution_IMPL {
+	struct NSObject_IMPL NSObject_IVARS;
+};
+
+
+
+
+
+// @property (nonatomic, assign, readonly) uint8_t sourceIdentifier;
+
+
+
+
+// @property (nonatomic, copy, readonly) NSURL *destinationURL;
+
+
+
+
+
+// @property (nonatomic, nullable, copy, readonly) NSURL *reportEndpoint;
+
+
+
+
+// @property (nonatomic, copy, readonly) NSString *sourceDescription;
+
+
+
+
+// @property (nonatomic, copy, readonly) NSString *purchaser;
+#if 0
+- (instancetype)initWithSourceIdentifier:(uint8_t)sourceIdentifier
+                          destinationURL:(NSURL *)destinationURL
+                       sourceDescription:(NSString *)sourceDescription
+                               purchaser:(NSString *)purchaser;
+#endif
+
+
+// - (instancetype)init __attribute__((unavailable));
+// + (instancetype)new __attribute__((unavailable));
+
+/* @end */
+
+#pragma clang assume_nonnull end
+#pragma clang assume_nonnull begin
+
+extern "C" __attribute__((visibility ("default"))) __attribute__((availability(ios,introduced=14.5))) __attribute__((availability(watchos,unavailable))) __attribute__((availability(tvos,unavailable))) 
+#ifndef _REWRITER_typedef_UIEventAttributionView
+#define _REWRITER_typedef_UIEventAttributionView
+typedef struct objc_object UIEventAttributionView;
+typedef struct {} _objc_exc_UIEventAttributionView;
+#endif
+
+struct UIEventAttributionView_IMPL {
+	struct UIView_IMPL UIView_IVARS;
+};
+
+
+/* @end */
+
+#pragma clang assume_nonnull end
 
 
 #pragma clang assume_nonnull begin
@@ -75433,6 +75739,27 @@ struct LWBlockViewController_IMPL {
 /* @end */
 
 #pragma clang assume_nonnull end
+#pragma clang assume_nonnull begin
+
+
+#ifndef _REWRITER_typedef_LWBlockType
+#define _REWRITER_typedef_LWBlockType
+typedef struct objc_object LWBlockType;
+typedef struct {} _objc_exc_LWBlockType;
+#endif
+
+struct LWBlockType_IMPL {
+	struct NSObject_IMPL NSObject_IVARS;
+};
+
+
+// - (void)testType;
+
+/* @end */
+
+#pragma clang assume_nonnull end
+
+int gTest;
 
 /** interface LWBlockViewController (){
 
@@ -75459,7 +75786,7 @@ struct __LWBlockViewController__viewDidLoad_block_impl_0 {
 static void __LWBlockViewController__viewDidLoad_block_func_0(struct __LWBlockViewController__viewDidLoad_block_impl_0 *__cself, int a, int b) {
   int age = __cself->age; // bound by copy
 
-        NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_2fc0ab_mi_0,age);
+        NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_e48887_mi_0,age);
     }
 
 static struct __LWBlockViewController__viewDidLoad_block_desc_0 {
@@ -75476,6 +75803,9 @@ static void _I_LWBlockViewController_viewDidLoad(LWBlockViewController * self, S
     ((void (*)(id, SEL))(void *)objc_msgSend)((id)self, sel_registerName("test2"));
     ((void (*)(id, SEL))(void *)objc_msgSend)((id)self, sel_registerName("test3"));
     ((void (*)(id, SEL))(void *)objc_msgSend)((id)self, sel_registerName("test4"));
+
+    LWBlockType *blockType = ((LWBlockType *(*)(id, SEL))(void *)objc_msgSend)((id)((LWBlockType *(*)(id, SEL))(void *)objc_msgSend)((id)objc_getClass("LWBlockType"), sel_registerName("alloc")), sel_registerName("init"));
+    ((void (*)(id, SEL))(void *)objc_msgSend)((id)blockType, sel_registerName("testType"));
 }
 
 
@@ -75491,7 +75821,7 @@ struct __LWBlockViewController__test_block_impl_0 {
 };
 static void __LWBlockViewController__test_block_func_0(struct __LWBlockViewController__test_block_impl_0 *__cself) {
 
-        NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_2fc0ab_mi_1);
+        NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_e48887_mi_1);
     }
 
 static struct __LWBlockViewController__test_block_desc_0 {
@@ -75517,7 +75847,7 @@ struct __LWBlockViewController__test2_block_impl_0 {
 };
 static void __LWBlockViewController__test2_block_func_0(struct __LWBlockViewController__test2_block_impl_0 *__cself, int a, int b) {
 
-        NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_2fc0ab_mi_2,a,b);
+        NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_e48887_mi_2,a,b);
     }
 
 static struct __LWBlockViewController__test2_block_desc_0 {
@@ -75552,7 +75882,7 @@ static void __LWBlockViewController__test3_block_func_0(struct __LWBlockViewCont
   int age = __cself->age; // bound by copy
 
 
-        NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_2fc0ab_mi_3,age);
+        NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_e48887_mi_3,age);
     }
 
 static struct __LWBlockViewController__test3_block_desc_0 {
@@ -75587,7 +75917,7 @@ static void __LWBlockViewController__test4_block_func_0(struct __LWBlockViewCont
   LWBlockViewController *self = __cself->self; // bound by copy
 
 
-        NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_2fc0ab_mi_4,age,(*height),(*(int *)((char *)self + OBJC_IVAR_$_LWBlockViewController$_weight)));
+        NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_e48887_mi_4,age,(*height),(*(int *)((char *)self + OBJC_IVAR_$_LWBlockViewController$_weight)),gTest);
     }
 static void __LWBlockViewController__test4_block_copy_0(struct __LWBlockViewController__test4_block_impl_0*dst, struct __LWBlockViewController__test4_block_impl_0*src) {_Block_object_assign((void*)&dst->self, (void*)src->self, 3/*BLOCK_FIELD_IS_OBJECT*/);}
 
@@ -75604,10 +75934,12 @@ static void _I_LWBlockViewController_test4(LWBlockViewController * self, SEL _cm
     int age = 10;
     static int height = 100;
     (*(int *)((char *)self + OBJC_IVAR_$_LWBlockViewController$_weight)) = 20;
+    gTest = 50;
     void (*block)(int,int) = ((void (*)(int, int))&__LWBlockViewController__test4_block_impl_0((void *)__LWBlockViewController__test4_block_func_0, &__LWBlockViewController__test4_block_desc_0_DATA, age, &height, self, 570425344));
     (*(int *)((char *)self + OBJC_IVAR_$_LWBlockViewController$_weight)) = 30;
     age = 20;
     height = 200;
+    gTest = 500;
     ((void (*)(__block_impl *, int, int))((__block_impl *)block)->FuncPtr)((__block_impl *)block, 30, 320);
 
 }
