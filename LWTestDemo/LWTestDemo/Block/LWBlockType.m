@@ -6,6 +6,7 @@
 //
 
 #import "LWBlockType.h"
+int gAge;
 
 typedef void(^LWBlock)(void);
 
@@ -26,6 +27,11 @@ LWBlock myblock(void){
         3、堆 （动态分配内存的 alloc malloc 特点：需要程序员申请 释放内存）
         4、栈 （局部变量 特点：系统自己申请 释放内存）
      */
+    int name;
+    NSLog(@"数据段 gAge %p",&gAge);
+    NSLog(@"栈 name %p",&name);
+    NSLog(@"堆 obj %p",[[NSObject alloc]init]);
+    NSLog(@"数据段 class %p",[LWBlockType class]);
     /*
         __NSGlobalBlock__ :  没有访问auto变量  __NSGlobalBlock__调用了copy 还是__NSGlobalBlock__
         __NSStackBlock__  ： 访问了auto变量
@@ -33,8 +39,10 @@ LWBlock myblock(void){
      ARC环境下，编辑器会根据情况自动将栈上的block复制到堆上，比如以下情况：
         1、block作为函数返回的时候。
         2、将block被强指针指向时 __strong。
+        3、block作为Cocoa API中方法名含有usingBlock方法参数时。
+        4、block作为GCD的方法参数。
      */
-    LWBlock block = myblock();
+    LWBlock block = myblock();//1、block作为函数返回的时候。
     NSLog(@"%@",[block class]);//__NSMallocBlock__
     NSLog(@"%@",[[block class] superclass]);//NSBlock
     NSLog(@"%@",[[[block class] superclass] superclass]);//NSBlock
@@ -52,7 +60,7 @@ LWBlock myblock(void){
     int age = 10;
     void (^block2)(void) = ^(){
         NSLog(@"this is block==>%d ",age);
-    };
+    };// 2、将block被强指针指向时 __strong。
     NSLog(@"%@",[block2 class]);//__NSMallocBlock__
     NSLog(@"%@",[[block2 class] superclass]);//NSBlock
     NSLog(@"%@",[[[block2 class] superclass] superclass]);//NSObject
@@ -70,7 +78,11 @@ LWBlock myblock(void){
     NSLog(@"%@",[[[[ ^(){
         NSLog(@"this is block==>%d ",age);
     } class] superclass] superclass] superclass]);//(null)
-
+    
+    NSArray *array = @[];
+    [array enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            
+    }];//3、block作为Cocoa API中方法名含有usingBlock方法参数时
 }
 
 @end

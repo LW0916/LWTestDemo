@@ -52,6 +52,7 @@
 		65C2519D25EDCB8900BD1649 /* LWKVCDog.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C2519C25EDCB8900BD1649 /* LWKVCDog.m */; };
 		65C251AF25EDEA8600BD1649 /* kvc.png in Resources */ = {isa = PBXBuildFile; fileRef = 65C251AE25EDEA8600BD1649 /* kvc.png */; };
 		65D08D4526461D8F0037F6F5 /* block_本质.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D08D4426461D8F0037F6F5 /* block_本质.png */; };
+		65D08D48264691DB0037F6F5 /* LWBlockPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D08D47264691DB0037F6F5 /* LWBlockPerson.m */; };
 		65FC7C3225F5FD9800A3BC12 /* LWBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FC7C3125F5FD9800A3BC12 /* LWBlockViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -150,6 +151,8 @@
 		65C251AE25EDEA8600BD1649 /* kvc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kvc.png; sourceTree = "<group>"; };
 		65C251B325EE115000BD1649 /* LWPerson+Test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "LWPerson+Test.cpp"; sourceTree = "<group>"; };
 		65D08D4426461D8F0037F6F5 /* block_本质.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "block_本质.png"; sourceTree = "<group>"; };
+		65D08D46264691DB0037F6F5 /* LWBlockPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWBlockPerson.h; sourceTree = "<group>"; };
+		65D08D47264691DB0037F6F5 /* LWBlockPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWBlockPerson.m; sourceTree = "<group>"; };
 		65FC7C3025F5FD9800A3BC12 /* LWBlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWBlockViewController.h; sourceTree = "<group>"; };
 		65FC7C3125F5FD9800A3BC12 /* LWBlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWBlockViewController.m; sourceTree = "<group>"; };
 		65FC7C3625F6003F00A3BC12 /* LWBlockViewController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LWBlockViewController.cpp; sourceTree = "<group>"; };
@@ -364,6 +367,8 @@
 				65FC7C3125F5FD9800A3BC12 /* LWBlockViewController.m */,
 				650027F725F71F580060097E /* LWBlockType.h */,
 				650027F825F71F580060097E /* LWBlockType.m */,
+				65D08D46264691DB0037F6F5 /* LWBlockPerson.h */,
+				65D08D47264691DB0037F6F5 /* LWBlockPerson.m */,
 				650027FD25F723490060097E /* LWBlockType.cpp */,
 				65FC7C3625F6003F00A3BC12 /* LWBlockViewController.cpp */,
 			);
@@ -532,6 +537,7 @@
 				65ABFA8F258846F400A15BEB /* LWGCDViewController.m in Sources */,
 				658E62F525862A1E00E1771D /* LWCrashViewController.m in Sources */,
 				6590164E2584FFC100BDF3AF /* LWLifeCycleViewController.m in Sources */,
+				65D08D48264691DB0037F6F5 /* LWBlockPerson.m in Sources */,
 				659015D52584EE8700BDF3AF /* main.m in Sources */,
 				658E62D32585DC8F00E1771D /* Student.m in Sources */,
 				658E62D42585DC8F00E1771D /* Person.m in Sources */,

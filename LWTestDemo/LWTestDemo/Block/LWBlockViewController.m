@@ -7,9 +7,10 @@
 
 #import "LWBlockViewController.h"
 #import "LWBlockType.h"
+#import "LWBlockPerson.h"
 
 int gTest; //全局变量
-
+typedef void(^LWBlock)(void);
 @interface LWBlockViewController (){
     
     int _weight;//成员变量 通过self访问
@@ -60,6 +61,9 @@ int gTest; //全局变量
     
     LWBlockType *blockType = [[LWBlockType alloc]init];
     [blockType testType];
+    
+    [self testBlockPerson1];
+    [self testBlockPerson2];
 }
 
 - (void)test{
@@ -261,6 +265,119 @@ int gTest; //全局变量
     gTest = 500;
     block(30,320);
     
+}
+
+
+- (void)testBlockPerson1{
+    /*
+     struct __LWBlockViewController__testBlockPerson_block_impl_0 {
+       struct __block_impl impl;
+       struct __LWBlockViewController__testBlockPerson_block_desc_0* Desc;
+       LWBlockPerson *person;
+       __LWBlockViewController__testBlockPerson_block_impl_0(void *fp, struct __LWBlockViewController__testBlockPerson_block_desc_0 *desc, LWBlockPerson *_person, int flags=0) : person(_person) {
+         impl.isa = &_NSConcreteStackBlock;
+         impl.Flags = flags;
+         impl.FuncPtr = fp;
+         Desc = desc;
+       }
+     };
+     static void __LWBlockViewController__testBlockPerson_block_func_0(struct __LWBlockViewController__testBlockPerson_block_impl_0 *__cself) {
+       LWBlockPerson *person = __cself->person; // bound by copy
+
+                 NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_55e4dc_mi_5,((int (*)(id, SEL))(void *)objc_msgSend)((id)person, sel_registerName("age")));
+             }
+     static void __LWBlockViewController__testBlockPerson_block_copy_0(struct __LWBlockViewController__testBlockPerson_block_impl_0*dst, struct __LWBlockViewController__testBlockPerson_block_impl_0*src) {_Block_object_assign((void*)&dst->person, (void*)src->person, 3BLOCK_FIELD_IS_OBJECT);}
+
+     static void __LWBlockViewController__testBlockPerson_block_dispose_0(struct __LWBlockViewController__testBlockPerson_block_impl_0*src) {_Block_object_dispose((void*)src->person, 3BLOCK_FIELD_IS_OBJECT);}
+
+     static struct __LWBlockViewController__testBlockPerson_block_desc_0 {
+       size_t reserved;
+       size_t Block_size;
+       void (*copy)(struct __LWBlockViewController__testBlockPerson_block_impl_0*, struct __LWBlockViewController__testBlockPerson_block_impl_0*);
+       void (*dispose)(struct __LWBlockViewController__testBlockPerson_block_impl_0*);
+     } __LWBlockViewController__testBlockPerson_block_desc_0_DATA = { 0, sizeof(struct __LWBlockViewController__testBlockPerson_block_impl_0), __LWBlockViewController__testBlockPerson_block_copy_0, __LWBlockViewController__testBlockPerson_block_dispose_0};
+
+     static void _I_LWBlockViewController_testBlockPerson(LWBlockViewController * self, SEL _cmd) {
+         LWBlock block;
+         {
+             LWBlockPerson *person = ((LWBlockPerson *(*)(id, SEL))(void *)objc_msgSend)((id)((LWBlockPerson *(*)(id, SEL))(void *)objc_msgSend)((id)objc_getClass("LWBlockPerson"), sel_registerName("alloc")), sel_registerName("init"));
+             ((void (*)(id, SEL, int))(void *)objc_msgSend)((id)person, sel_registerName("setAge:"), 10);
+             block = ((void (*)())&__LWBlockViewController__testBlockPerson_block_impl_0((void *)__LWBlockViewController__testBlockPerson_block_func_0, &__LWBlockViewController__testBlockPerson_block_desc_0_DATA, person, 570425344));
+         }
+         NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_55e4dc_mi_6);
+         ((void (*)(__block_impl *))((__block_impl *)block)->FuncPtr)((__block_impl *)block);
+         NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_55e4dc_mi_7,((Class (*)(id, SEL))(void *)objc_msgSend)((id)block, sel_registerName("class")));
+     }
+     */
+    LWBlock block;
+    {
+        LWBlockPerson *person = [[LWBlockPerson alloc]init];
+        person.age = 10;
+        //栈空间不会持有外部对象person 堆空间会持有外部对象person
+        block = ^{
+            NSLog(@"-------------%d",person.age);
+        };
+    }
+    NSLog(@"-----------");
+    block();
+    NSLog(@"LWBlockPerson====%@",[block class]);//LWBlockPerson====__NSMallocBlock__
+}
+
+- (void)testBlockPerson2{
+  /*
+   struct __LWBlockViewController__testBlockPerson2_block_impl_0 {
+     struct __block_impl impl;
+     struct __LWBlockViewController__testBlockPerson2_block_desc_0* Desc;
+     LWBlockPerson *__weak weakPerson;
+     __LWBlockViewController__testBlockPerson2_block_impl_0(void *fp, struct __LWBlockViewController__testBlockPerson2_block_desc_0 *desc, LWBlockPerson *__weak _weakPerson, int flags=0) : weakPerson(_weakPerson) {
+       impl.isa = &_NSConcreteStackBlock;
+       impl.Flags = flags;
+       impl.FuncPtr = fp;
+       Desc = desc;
+     }
+   };
+   static void __LWBlockViewController__testBlockPerson2_block_func_0(struct __LWBlockViewController__testBlockPerson2_block_impl_0 *__cself) {
+     LWBlockPerson *__weak weakPerson = __cself->weakPerson; // bound by copy
+
+               NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_1f0a8c_mi_8,((int (*)(id, SEL))(void *)objc_msgSend)((id)weakPerson, sel_registerName("age")));
+           }
+   static void __LWBlockViewController__testBlockPerson2_block_copy_0(struct __LWBlockViewController__testBlockPerson2_block_impl_0*dst, struct __LWBlockViewController__testBlockPerson2_block_impl_0*src) {_Block_object_assign((void*)&dst->weakPerson, (void*)src->weakPerson, 3/*BLOCK_FIELD_IS_OBJECT/);}
+
+   static void __LWBlockViewController__testBlockPerson2_block_dispose_0(struct __LWBlockViewController__testBlockPerson2_block_impl_0*src) {_Block_object_dispose((void*)src->weakPerson, 3/*BLOCK_FIELD_IS_OBJECT/);}
+
+   static struct __LWBlockViewController__testBlockPerson2_block_desc_0 {
+     size_t reserved;
+     size_t Block_size;
+     void (*copy)(struct __LWBlockViewController__testBlockPerson2_block_impl_0*, struct __LWBlockViewController__testBlockPerson2_block_impl_0*);
+     void (*dispose)(struct __LWBlockViewController__testBlockPerson2_block_impl_0*);
+   } __LWBlockViewController__testBlockPerson2_block_desc_0_DATA = { 0, sizeof(struct __LWBlockViewController__testBlockPerson2_block_impl_0), __LWBlockViewController__testBlockPerson2_block_copy_0, __LWBlockViewController__testBlockPerson2_block_dispose_0};
+
+   static void _I_LWBlockViewController_testBlockPerson2(LWBlockViewController * self, SEL _cmd) {
+
+       LWBlock block;
+       {
+           LWBlockPerson *person = ((LWBlockPerson *(*)(id, SEL))(void *)objc_msgSend)((id)((LWBlockPerson *(*)(id, SEL))(void *)objc_msgSend)((id)objc_getClass("LWBlockPerson"), sel_registerName("alloc")), sel_registerName("init"));
+           ((void (*)(id, SEL, int))(void *)objc_msgSend)((id)person, sel_registerName("setAge:"), 10);
+           __attribute__((objc_ownership(weak))) LWBlockPerson *weakPerson = person;
+           block = ((void (*)())&__LWBlockViewController__testBlockPerson2_block_impl_0((void *)__LWBlockViewController__testBlockPerson2_block_func_0, &__LWBlockViewController__testBlockPerson2_block_desc_0_DATA, weakPerson, 570425344));
+       }
+       NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_1f0a8c_mi_9);
+       ((void (*)(__block_impl *))((__block_impl *)block)->FuncPtr)((__block_impl *)block);
+       NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_1f0a8c_mi_10,((Class (*)(id, SEL))(void *)objc_msgSend)((id)block, sel_registerName("class")));
+   }
+   **/
+    LWBlock block;
+    {
+        LWBlockPerson *person = [[LWBlockPerson alloc]init];
+        person.age = 10;
+        __weak LWBlockPerson *weakPerson = person;
+        block = ^{
+            NSLog(@"-------------2%d",weakPerson.age);
+        };
+    }
+    NSLog(@"-----------2");
+    block();
+    NSLog(@"LWBlockPerson====%@",[block class]);//LWBlockPerson====__NSMallocBlock__
 }
 
 @end
