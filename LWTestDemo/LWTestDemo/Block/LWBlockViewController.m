@@ -62,23 +62,39 @@
 
 - (void)test{
     /*
+     //block
      struct __LWBlockViewController__test_block_impl_0 {
-     struct __block_impl impl;
-     struct __LWBlockViewController__test_block_desc_0* Desc;
-     __LWBlockViewController__test_block_impl_0(void *fp, struct __LWBlockViewController__test_block_desc_0 *desc, int flags=0) {
-       impl.isa = &_NSConcreteStackBlock;
-       impl.Flags = flags;
-       impl.FuncPtr = fp;
-       Desc = desc;
-     }
-    };
+         struct __block_impl impl;
+        
+         struct __LWBlockViewController__test_block_desc_0* Desc;
+        //构造函数
+         __LWBlockViewController__test_block_impl_0(void *fp, struct __LWBlockViewController__test_block_desc_0 *desc, int flags=0) {
+           impl.isa = &_NSConcreteStackBlock;
+           impl.Flags = flags;
+           impl.FuncPtr = fp;
+           Desc = desc;
+         }
+     };
      */
     /*
-     void _I_LWBlockViewController_test(LWBlockViewController * self, SEL _cmd) {
-         void (*block)(void) = ((void (*)())&__LWBlockViewController__test_block_impl_0((void *)__LWBlockViewController__test_block_func_0, &__LWBlockViewController__test_block_desc_0_DATA));
-         ((void (*)(__block_impl *))((__block_impl *)block)->FuncPtr)((__block_impl *)block);
-     }
+         //封装了block执行逻辑函数
+         static void __LWBlockViewController__test_block_func_0(struct __LWBlockViewController__test_block_impl_0 *__cself) {
 
+                 NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_2fc0ab_mi_1);
+             }
+         //计算block占用的内存空间
+         static struct __LWBlockViewController__test_block_desc_0 {
+           size_t reserved;
+           size_t Block_size;
+         } __LWBlockViewController__test_block_desc_0_DATA = { 0, sizeof(struct __LWBlockViewController__test_block_impl_0)};
+     */
+    /*
+         //定义block变量
+         void _I_LWBlockViewController_test(LWBlockViewController * self, SEL _cmd) {
+             void (*block)(void) = ((void (*)())&__LWBlockViewController__test_block_impl_0((void *)__LWBlockViewController__test_block_func_0, &__LWBlockViewController__test_block_desc_0_DATA));
+         // 执行block内部代码
+        ((void (*)(__block_impl *))((__block_impl *)block)->FuncPtr)((__block_impl *)block);
+         }
      */
     void (^block)(void) = ^(){
         NSLog(@"this is block ");
@@ -184,7 +200,7 @@
     _weight = 20;
     void (^block)(int,int) = ^(int a,int b){
         //age的值捕获进来（capture）
-        NSLog(@"this is block --age=%d  height=%d  weight=%d",age,height,self->_weight);//打印10
+        NSLog(@"this is block --age=%d  height=%d  weight=%d",age,height,self->_weight);//this is block --age=10  height=200  weight=30
     };
     _weight = 30;
     age = 20;

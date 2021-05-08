@@ -51,6 +51,7 @@
 		65C2519725EDCB7100BD1649 /* LWKVCPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C2519625EDCB7100BD1649 /* LWKVCPerson.m */; };
 		65C2519D25EDCB8900BD1649 /* LWKVCDog.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C2519C25EDCB8900BD1649 /* LWKVCDog.m */; };
 		65C251AF25EDEA8600BD1649 /* kvc.png in Resources */ = {isa = PBXBuildFile; fileRef = 65C251AE25EDEA8600BD1649 /* kvc.png */; };
+		65D08D4526461D8F0037F6F5 /* block_本质.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D08D4426461D8F0037F6F5 /* block_本质.png */; };
 		65FC7C3225F5FD9800A3BC12 /* LWBlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FC7C3125F5FD9800A3BC12 /* LWBlockViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -148,6 +149,7 @@
 		65C2519C25EDCB8900BD1649 /* LWKVCDog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWKVCDog.m; sourceTree = "<group>"; };
 		65C251AE25EDEA8600BD1649 /* kvc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kvc.png; sourceTree = "<group>"; };
 		65C251B325EE115000BD1649 /* LWPerson+Test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "LWPerson+Test.cpp"; sourceTree = "<group>"; };
+		65D08D4426461D8F0037F6F5 /* block_本质.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "block_本质.png"; sourceTree = "<group>"; };
 		65FC7C3025F5FD9800A3BC12 /* LWBlockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWBlockViewController.h; sourceTree = "<group>"; };
 		65FC7C3125F5FD9800A3BC12 /* LWBlockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWBlockViewController.m; sourceTree = "<group>"; };
 		65FC7C3625F6003F00A3BC12 /* LWBlockViewController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LWBlockViewController.cpp; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 		651CF90725ECCC0E0004467C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				65D08D4426461D8F0037F6F5 /* block_本质.png */,
 				6500280525F724E10060097E /* block_type.png */,
 				650027F225F71EC20060097E /* block.png */,
 				65C251AE25EDEA8600BD1649 /* kvc.png */,
@@ -470,6 +473,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				651CF91B25ECCD340004467C /* kvo.png in Resources */,
+				65D08D4526461D8F0037F6F5 /* block_本质.png in Resources */,
 				659015CF2584EE8700BDF3AF /* Assets.xcassets in Resources */,
 				6500280625F724E10060097E /* block_type.png in Resources */,
 				65C251AF25EDEA8600BD1649 /* kvc.png in Resources */,
