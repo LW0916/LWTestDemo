@@ -20,7 +20,14 @@ LWBlock myblock(void){
 
 - (void)testType{
     /*
-        __NSGlobalBlock__ :  没有访问auto变量
+    应用程序的内存分配 由低到高   （代码区，静态数据区和动态数据区  全局变量和静态变量分配在静态数据区（全局区） 动态数据区一般就是“堆栈”）
+        1、程序区域 text区（存放代码）
+        2、数据区域 data区（存放全局变量）
+        3、堆 （动态分配内存的 alloc malloc 特点：需要程序员申请 释放内存）
+        4、栈 （局部变量 特点：系统自己申请 释放内存）
+     */
+    /*
+        __NSGlobalBlock__ :  没有访问auto变量  __NSGlobalBlock__调用了copy 还是__NSGlobalBlock__
         __NSStackBlock__  ： 访问了auto变量
         __NSMallocBlock__ ：__NSStackBlock__调用了copy
      ARC环境下，编辑器会根据情况自动将栈上的block复制到堆上，比如以下情况：
