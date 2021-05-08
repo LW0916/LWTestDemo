@@ -9,7 +9,7 @@
 
 typedef void(^LWBlock)(void);
 
-LWBlock myblock(){
+LWBlock myblock(void){
     int age = 10;
     return ^{
         NSLog(@"=====>%d",age);
@@ -29,40 +29,40 @@ LWBlock myblock(){
      */
     LWBlock block = myblock();
     NSLog(@"%@",[block class]);//__NSMallocBlock__
-    NSLog(@"%@",[[block class] superclass]);//__NSMallocBlock
+    NSLog(@"%@",[[block class] superclass]);//NSBlock
     NSLog(@"%@",[[[block class] superclass] superclass]);//NSBlock
-    NSLog(@"%@",[[[[block class] superclass] superclass] superclass]);//NSObject
+    NSLog(@"%@",[[[[block class] superclass] superclass] superclass]);//(null)
     
     block();
     void (^block1)(void) = ^(){
         NSLog(@"this is block ");
     };
     NSLog(@"%@",[block1 class]);//__NSGlobalBlock__
-    NSLog(@"%@",[[block1 class] superclass]);//__NSGlobalBlock
-    NSLog(@"%@",[[[block1 class] superclass] superclass]);//NSBlock
-    NSLog(@"%@",[[[[block1 class] superclass] superclass] superclass]);//NSObject
+    NSLog(@"%@",[[block1 class] superclass]);//NSBlock
+    NSLog(@"%@",[[[block1 class] superclass] superclass]);//NSObject
+    NSLog(@"%@",[[[[block1 class] superclass] superclass] superclass]);//(null)
     
     int age = 10;
     void (^block2)(void) = ^(){
         NSLog(@"this is block==>%d ",age);
     };
     NSLog(@"%@",[block2 class]);//__NSMallocBlock__
-    NSLog(@"%@",[[block2 class] superclass]);//__NSMallocBlock
-    NSLog(@"%@",[[[block2 class] superclass] superclass]);//NSBlock
-    NSLog(@"%@",[[[[block2 class] superclass] superclass] superclass]);//NSObject
+    NSLog(@"%@",[[block2 class] superclass]);//NSBlock
+    NSLog(@"%@",[[[block2 class] superclass] superclass]);//NSObject
+    NSLog(@"%@",[[[[block2 class] superclass] superclass] superclass]);//(null)
     
     NSLog(@"%@",[ ^(){
         NSLog(@"this is block==>%d ",age);
     } class]);//__NSStackBlock__
     NSLog(@"%@",[[ ^(){
         NSLog(@"this is block==>%d ",age);
-    } class] superclass]);//__NSStackBlock
+    } class] superclass]);//NSBlock
     NSLog(@"%@",[[[ ^(){
         NSLog(@"this is block==>%d ",age);
-    } class] superclass] superclass]);//NSBlock
+    } class] superclass] superclass]);//NSObject
     NSLog(@"%@",[[[[ ^(){
         NSLog(@"this is block==>%d ",age);
-    } class] superclass] superclass] superclass]);//NSObject
+    } class] superclass] superclass] superclass]);//(null)
 
 }
 

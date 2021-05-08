@@ -138,6 +138,12 @@
          Desc = desc;
        }
      }
+     
+     static void __LWBlockViewController__test3_block_func_0(struct __LWBlockViewController__test3_block_impl_0 *__cself, int a, int b) {
+       int age = __cself->age; // bound by copy
+
+             NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_2fc0ab_mi_3,age);
+         }
      */
     int age = 10;
     void (^block)(int,int) = ^(int a,int b){
