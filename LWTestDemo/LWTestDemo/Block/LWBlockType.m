@@ -6,6 +6,8 @@
 //
 
 #import "LWBlockType.h"
+#import <UIKit/UIKit.h>
+
 int gAge;
 
 typedef void(^LWBlock)(void);
@@ -32,6 +34,8 @@ LWBlock myblock(void){
     NSLog(@"栈 name %p",&name);
     NSLog(@"堆 obj %p",[[NSObject alloc]init]);
     NSLog(@"数据段 class %p",[LWBlockType class]);
+    NSLog(@"栈 class %p",[NSObject class]);
+
     /*
         __NSGlobalBlock__ :  没有访问auto变量  __NSGlobalBlock__调用了copy 还是__NSGlobalBlock__
         __NSStackBlock__  ： 访问了auto变量

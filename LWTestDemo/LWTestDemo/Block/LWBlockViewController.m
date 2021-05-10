@@ -267,7 +267,14 @@ typedef void(^LWBlock)(void);
     
 }
 
-
+#pragma mark ------ block内部访问对象的auto变量   栈空间不会持有外部对象person 堆空间会持有外部对象person ------
+//__LWBlockViewController__testBlockPerson_block_desc_0  __LWBlockViewController__testBlockPerson_block_impl_0 _Block_object_assign
+/*
+ 访问对象类型
+ void (*copy)(struct __LWBlockViewController__testBlockPerson_block_impl_0*, struct __LWBlockViewController__testBlockPerson_block_impl_0*);
+ void (*dispose)(struct __LWBlockViewController__testBlockPerson_block_impl_0*);
+ 
+ */
 - (void)testBlockPerson1{
     /*
      struct __LWBlockViewController__testBlockPerson_block_impl_0 {
@@ -341,9 +348,9 @@ typedef void(^LWBlock)(void);
 
                NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_1f0a8c_mi_8,((int (*)(id, SEL))(void *)objc_msgSend)((id)weakPerson, sel_registerName("age")));
            }
-   static void __LWBlockViewController__testBlockPerson2_block_copy_0(struct __LWBlockViewController__testBlockPerson2_block_impl_0*dst, struct __LWBlockViewController__testBlockPerson2_block_impl_0*src) {_Block_object_assign((void*)&dst->weakPerson, (void*)src->weakPerson, 3/*BLOCK_FIELD_IS_OBJECT/);}
+   static void __LWBlockViewController__testBlockPerson2_block_copy_0(struct __LWBlockViewController__testBlockPerson2_block_impl_0*dst, struct __LWBlockViewController__testBlockPerson2_block_impl_0*src) {_Block_object_assign((void*)&dst->weakPerson, (void*)src->weakPerson, 3/BLOCK_FIELD_IS_OBJECT/);}
 
-   static void __LWBlockViewController__testBlockPerson2_block_dispose_0(struct __LWBlockViewController__testBlockPerson2_block_impl_0*src) {_Block_object_dispose((void*)src->weakPerson, 3/*BLOCK_FIELD_IS_OBJECT/);}
+   static void __LWBlockViewController__testBlockPerson2_block_dispose_0(struct __LWBlockViewController__testBlockPerson2_block_impl_0*src) {_Block_object_dispose((void*)src->weakPerson, 3/BLOCK_FIELD_IS_OBJECT/);}
 
    static struct __LWBlockViewController__testBlockPerson2_block_desc_0 {
      size_t reserved;
@@ -378,6 +385,18 @@ typedef void(^LWBlock)(void);
     NSLog(@"-----------2");
     block();
     NSLog(@"LWBlockPerson====%@",[block class]);//LWBlockPerson====__NSMallocBlock__
+}
+
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    LWBlockPerson *p = [[LWBlockPerson alloc]init];
+//    __weak LWBlockPerson *weakP = p;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)) , dispatch_get_main_queue(), ^{
+        NSLog(@"--------%@",p);
+//        NSLog(@"--------%@",weakP);
+    });
+    
 }
 
 @end
