@@ -64,6 +64,8 @@ typedef void(^LWBlock)(void);
     
     [self testBlockPerson1];
     [self testBlockPerson2];
+    
+    [self test__block1];
 }
 
 - (void)test{
@@ -386,7 +388,67 @@ typedef void(^LWBlock)(void);
     block();
     NSLog(@"LWBlockPerson====%@",[block class]);//LWBlockPerson====__NSMallocBlock__
 }
+#pragma mark --__block--
+- (void)test__block1{
+    /*      __block 修饰符
+        __block可以用于解决block内部无法修改auto变量值的问题。
+        __block不能修饰全局变量，静态变量
+        编辑器会将__block包装成一个对象(__Block_byref_age_0)
+     */
+    /*
+     struct __Block_byref_age_0 {
+       void *__isa;
+     __Block_byref_age_0 *__forwarding;
+      int __flags;
+      int __size;
+      int age;
+     };
 
+     struct __LWBlockViewController__test__block1_block_impl_0 {
+       struct __block_impl impl;
+       struct __LWBlockViewController__test__block1_block_desc_0* Desc;
+       __Block_byref_age_0 *age; // by ref
+       __LWBlockViewController__test__block1_block_impl_0(void *fp, struct __LWBlockViewController__test__block1_block_desc_0 *desc, __Block_byref_age_0 *_age, int flags=0) : age(_age->__forwarding) {
+         impl.isa = &_NSConcreteStackBlock;
+         impl.Flags = flags;
+         impl.FuncPtr = fp;
+         Desc = desc;
+       }
+     };
+     
+     
+     static void __LWBlockViewController__test__block1_block_func_0(struct __LWBlockViewController__test__block1_block_impl_0 *__cself) {
+       __Block_byref_age_0 *age = __cself->age; // bound by ref
+
+             (age->__forwarding->age) = 20;
+             NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_6981ce_mi_11,(age->__forwarding->age));
+         }
+     
+     static void __LWBlockViewController__test__block1_block_copy_0(struct __LWBlockViewController__test__block1_block_impl_0*dst, struct __LWBlockViewController__test__block1_block_impl_0*src) {_Block_object_assign((void*)&dst->age, (void*)src->age, 8/BLOCK_FIELD_IS_BYREF/);}
+
+     static void __LWBlockViewController__test__block1_block_dispose_0(struct __LWBlockViewController__test__block1_block_impl_0*src) {_Block_object_dispose((void*)src->age, 8/BLOCK_FIELD_IS_BYREF/);}
+
+     static struct __LWBlockViewController__test__block1_block_desc_0 {
+       size_t reserved;
+       size_t Block_size;
+       void (*copy)(struct __LWBlockViewController__test__block1_block_impl_0*, struct __LWBlockViewController__test__block1_block_impl_0*);
+       void (*dispose)(struct __LWBlockViewController__test__block1_block_impl_0*);
+     } __LWBlockViewController__test__block1_block_desc_0_DATA = { 0, sizeof(struct __LWBlockViewController__test__block1_block_impl_0), __LWBlockViewController__test__block1_block_copy_0, __LWBlockViewController__test__block1_block_dispose_0};
+
+     static void _I_LWBlockViewController_test__block1(LWBlockViewController * self, SEL _cmd) {
+         __attribute__((__blocks__(byref))) __Block_byref_age_0 age = {(void*)0,(__Block_byref_age_0 *)&age, 0, sizeof(__Block_byref_age_0), 10};
+         LWBlock block = ((void (*)())&__LWBlockViewController__test__block1_block_impl_0((void *)__LWBlockViewController__test__block1_block_func_0, &__LWBlockViewController__test__block1_block_desc_0_DATA, (__Block_byref_age_0 *)&age, 570425344));
+         ((void (*)(__block_impl *))((__block_impl *)block)->FuncPtr)((__block_impl *)block);
+     }
+
+     */
+    __block int age = 10;
+    LWBlock block = ^(){
+        age  = 20;
+        NSLog(@"age is %d",age);
+    };
+    block();
+}
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
