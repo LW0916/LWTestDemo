@@ -106,19 +106,27 @@ struct __AtAutoreleasePool {
 };
 
 #define __OFFSETOFIVAR__(TYPE, MEMBER) ((long long) &((TYPE *)0)->MEMBER)
-static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_6981ce_mi_0 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"this is block --%d",18};
-static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_6981ce_mi_1 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"this is block ",14};
-static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_6981ce_mi_2 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"this is block --%d ==%d",23};
-static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_6981ce_mi_3 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"this is block --%d",18};
-static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_6981ce_mi_4 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"this is block --age=%d  height=%d  weight=%d gTest=%d",53};
-static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_6981ce_mi_5 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"-------------%d",15};
-static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_6981ce_mi_6 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"-----------",11};
-static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_6981ce_mi_7 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"LWBlockPerson====%@",19};
-static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_6981ce_mi_8 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"-------------2%d",16};
-static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_6981ce_mi_9 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"-----------2",12};
-static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_6981ce_mi_10 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"LWBlockPerson====%@",19};
-static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_6981ce_mi_11 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"age is %d",9};
-static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_6981ce_mi_12 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"--------%@",10};
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_b941d3_mi_0 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"this is block --%d",18};
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_b941d3_mi_1 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"this is block ",14};
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_b941d3_mi_2 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"this is block --%d ==%d",23};
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_b941d3_mi_3 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"this is block --%d",18};
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_b941d3_mi_4 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"this is block --age=%d  height=%d  weight=%d gTest=%d",53};
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_b941d3_mi_5 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"-------------%d",15};
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_b941d3_mi_6 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"-----------",11};
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_b941d3_mi_7 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"LWBlockPerson====%@",19};
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_b941d3_mi_8 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"-------------2%d",16};
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_b941d3_mi_9 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"-----------2",12};
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_b941d3_mi_10 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"LWBlockPerson====%@",19};
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_b941d3_mi_11 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"age is %d",9};
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_b941d3_mi_12 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"age -- %p",9};
+static void __Block_byref_id_object_copy_131(void *dst, void *src) {
+ _Block_object_assign((char*)dst + 40, *(void * *) ((char*)src + 40), 131);
+}
+static void __Block_byref_id_object_dispose_131(void *src) {
+ _Block_object_dispose(*(void * *) ((char*)src + 40), 131);
+}
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_b941d3_mi_13 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"LWBlockPerson is %@",19};
+static __NSConstantStringImpl __NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_b941d3_mi_14 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"--------%@",10};
 
 
 
@@ -75812,7 +75820,7 @@ struct __LWBlockViewController__viewDidLoad_block_impl_0 {
 static void __LWBlockViewController__viewDidLoad_block_func_0(struct __LWBlockViewController__viewDidLoad_block_impl_0 *__cself, int a, int b) {
   int age = __cself->age; // bound by copy
 
-        NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_6981ce_mi_0,age);
+        NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_b941d3_mi_0,age);
     }
 
 static struct __LWBlockViewController__viewDidLoad_block_desc_0 {
@@ -75852,7 +75860,7 @@ struct __LWBlockViewController__test_block_impl_0 {
 };
 static void __LWBlockViewController__test_block_func_0(struct __LWBlockViewController__test_block_impl_0 *__cself) {
 
-        NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_6981ce_mi_1);
+        NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_b941d3_mi_1);
     }
 
 static struct __LWBlockViewController__test_block_desc_0 {
@@ -75878,7 +75886,7 @@ struct __LWBlockViewController__test2_block_impl_0 {
 };
 static void __LWBlockViewController__test2_block_func_0(struct __LWBlockViewController__test2_block_impl_0 *__cself, int a, int b) {
 
-        NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_6981ce_mi_2,a,b);
+        NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_b941d3_mi_2,a,b);
     }
 
 static struct __LWBlockViewController__test2_block_desc_0 {
@@ -75913,7 +75921,7 @@ static void __LWBlockViewController__test3_block_func_0(struct __LWBlockViewCont
   int age = __cself->age; // bound by copy
 
 
-        NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_6981ce_mi_3,age);
+        NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_b941d3_mi_3,age);
     }
 
 static struct __LWBlockViewController__test3_block_desc_0 {
@@ -75948,7 +75956,7 @@ static void __LWBlockViewController__test4_block_func_0(struct __LWBlockViewCont
   LWBlockViewController *const __strong self = __cself->self; // bound by copy
 
 
-        NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_6981ce_mi_4,age,(*height),(*(int *)((char *)self + OBJC_IVAR_$_LWBlockViewController$_weight)),gTest);
+        NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_b941d3_mi_4,age,(*height),(*(int *)((char *)self + OBJC_IVAR_$_LWBlockViewController$_weight)),gTest);
     }
 static void __LWBlockViewController__test4_block_copy_0(struct __LWBlockViewController__test4_block_impl_0*dst, struct __LWBlockViewController__test4_block_impl_0*src) {_Block_object_assign((void*)&dst->self, (void*)src->self, 3/*BLOCK_FIELD_IS_OBJECT*/);}
 
@@ -75989,7 +75997,7 @@ struct __LWBlockViewController__testBlockPerson1_block_impl_0 {
 static void __LWBlockViewController__testBlockPerson1_block_func_0(struct __LWBlockViewController__testBlockPerson1_block_impl_0 *__cself) {
   LWBlockPerson *__strong person = __cself->person; // bound by copy
 
-            NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_6981ce_mi_5,((int (*)(id, SEL))(void *)objc_msgSend)((id)person, sel_registerName("age")));
+            NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_b941d3_mi_5,((int (*)(id, SEL))(void *)objc_msgSend)((id)person, sel_registerName("age")));
         }
 static void __LWBlockViewController__testBlockPerson1_block_copy_0(struct __LWBlockViewController__testBlockPerson1_block_impl_0*dst, struct __LWBlockViewController__testBlockPerson1_block_impl_0*src) {_Block_object_assign((void*)&dst->person, (void*)src->person, 3/*BLOCK_FIELD_IS_OBJECT*/);}
 
@@ -76010,9 +76018,9 @@ static void _I_LWBlockViewController_testBlockPerson1(LWBlockViewController * se
 
         block = ((void (*)())&__LWBlockViewController__testBlockPerson1_block_impl_0((void *)__LWBlockViewController__testBlockPerson1_block_func_0, &__LWBlockViewController__testBlockPerson1_block_desc_0_DATA, person, 570425344));
     }
-    NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_6981ce_mi_6);
+    NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_b941d3_mi_6);
     ((void (*)(__block_impl *))((__block_impl *)block)->FuncPtr)((__block_impl *)block);
-    NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_6981ce_mi_7,((Class (*)(id, SEL))(void *)objc_msgSend)((id)block, sel_registerName("class")));
+    NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_b941d3_mi_7,((Class (*)(id, SEL))(void *)objc_msgSend)((id)block, sel_registerName("class")));
 }
 
 
@@ -76030,7 +76038,7 @@ struct __LWBlockViewController__testBlockPerson2_block_impl_0 {
 static void __LWBlockViewController__testBlockPerson2_block_func_0(struct __LWBlockViewController__testBlockPerson2_block_impl_0 *__cself) {
   LWBlockPerson *__weak weakPerson = __cself->weakPerson; // bound by copy
 
-            NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_6981ce_mi_8,((int (*)(id, SEL))(void *)objc_msgSend)((id)weakPerson, sel_registerName("age")));
+            NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_b941d3_mi_8,((int (*)(id, SEL))(void *)objc_msgSend)((id)weakPerson, sel_registerName("age")));
         }
 static void __LWBlockViewController__testBlockPerson2_block_copy_0(struct __LWBlockViewController__testBlockPerson2_block_impl_0*dst, struct __LWBlockViewController__testBlockPerson2_block_impl_0*src) {_Block_object_assign((void*)&dst->weakPerson, (void*)src->weakPerson, 3/*BLOCK_FIELD_IS_OBJECT*/);}
 
@@ -76051,9 +76059,9 @@ static void _I_LWBlockViewController_testBlockPerson2(LWBlockViewController * se
         __attribute__((objc_ownership(weak))) LWBlockPerson *weakPerson = person;
         block = ((void (*)())&__LWBlockViewController__testBlockPerson2_block_impl_0((void *)__LWBlockViewController__testBlockPerson2_block_func_0, &__LWBlockViewController__testBlockPerson2_block_desc_0_DATA, weakPerson, 570425344));
     }
-    NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_6981ce_mi_9);
+    NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_b941d3_mi_9);
     ((void (*)(__block_impl *))((__block_impl *)block)->FuncPtr)((__block_impl *)block);
-    NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_6981ce_mi_10,((Class (*)(id, SEL))(void *)objc_msgSend)((id)block, sel_registerName("class")));
+    NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_b941d3_mi_10,((Class (*)(id, SEL))(void *)objc_msgSend)((id)block, sel_registerName("class")));
 }
 
 struct __Block_byref_age_0 {
@@ -76079,7 +76087,7 @@ static void __LWBlockViewController__test__block1_block_func_0(struct __LWBlockV
   __Block_byref_age_0 *age = __cself->age; // bound by ref
 
         (age->__forwarding->age) = 20;
-        NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_6981ce_mi_11,(age->__forwarding->age));
+        NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_b941d3_mi_11,(age->__forwarding->age));
     }
 static void __LWBlockViewController__test__block1_block_copy_0(struct __LWBlockViewController__test__block1_block_impl_0*dst, struct __LWBlockViewController__test__block1_block_impl_0*src) {_Block_object_assign((void*)&dst->age, (void*)src->age, 8/*BLOCK_FIELD_IS_BYREF*/);}
 
@@ -76093,16 +76101,55 @@ static struct __LWBlockViewController__test__block1_block_desc_0 {
 } __LWBlockViewController__test__block1_block_desc_0_DATA = { 0, sizeof(struct __LWBlockViewController__test__block1_block_impl_0), __LWBlockViewController__test__block1_block_copy_0, __LWBlockViewController__test__block1_block_dispose_0};
 
 static void _I_LWBlockViewController_test__block1(LWBlockViewController * self, SEL _cmd) {
-
-
-
-
-
     __attribute__((__blocks__(byref))) __Block_byref_age_0 age = {(void*)0,(__Block_byref_age_0 *)&age, 0, sizeof(__Block_byref_age_0), 10};
     LWBlock block = ((void (*)())&__LWBlockViewController__test__block1_block_impl_0((void *)__LWBlockViewController__test__block1_block_func_0, &__LWBlockViewController__test__block1_block_desc_0_DATA, (__Block_byref_age_0 *)&age, 570425344));
     ((void (*)(__block_impl *))((__block_impl *)block)->FuncPtr)((__block_impl *)block);
-}
+    NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_b941d3_mi_12,&(age.__forwarding->age));
 
+}
+struct __Block_byref_weakPerson_1 {
+  void *__isa;
+__Block_byref_weakPerson_1 *__forwarding;
+ int __flags;
+ int __size;
+ void (*__Block_byref_id_object_copy)(void*, void*);
+ void (*__Block_byref_id_object_dispose)(void*);
+ LWBlockPerson *__weak weakPerson;
+};
+
+struct __LWBlockViewController__test__block2_block_impl_0 {
+  struct __block_impl impl;
+  struct __LWBlockViewController__test__block2_block_desc_0* Desc;
+  __Block_byref_weakPerson_1 *weakPerson; // by ref
+  __LWBlockViewController__test__block2_block_impl_0(void *fp, struct __LWBlockViewController__test__block2_block_desc_0 *desc, __Block_byref_weakPerson_1 *_weakPerson, int flags=0) : weakPerson(_weakPerson->__forwarding) {
+    impl.isa = &_NSConcreteStackBlock;
+    impl.Flags = flags;
+    impl.FuncPtr = fp;
+    Desc = desc;
+  }
+};
+static void __LWBlockViewController__test__block2_block_func_0(struct __LWBlockViewController__test__block2_block_impl_0 *__cself) {
+  __Block_byref_weakPerson_1 *weakPerson = __cself->weakPerson; // bound by ref
+
+        NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_b941d3_mi_13,(weakPerson->__forwarding->weakPerson));
+    }
+static void __LWBlockViewController__test__block2_block_copy_0(struct __LWBlockViewController__test__block2_block_impl_0*dst, struct __LWBlockViewController__test__block2_block_impl_0*src) {_Block_object_assign((void*)&dst->weakPerson, (void*)src->weakPerson, 8/*BLOCK_FIELD_IS_BYREF*/);}
+
+static void __LWBlockViewController__test__block2_block_dispose_0(struct __LWBlockViewController__test__block2_block_impl_0*src) {_Block_object_dispose((void*)src->weakPerson, 8/*BLOCK_FIELD_IS_BYREF*/);}
+
+static struct __LWBlockViewController__test__block2_block_desc_0 {
+  size_t reserved;
+  size_t Block_size;
+  void (*copy)(struct __LWBlockViewController__test__block2_block_impl_0*, struct __LWBlockViewController__test__block2_block_impl_0*);
+  void (*dispose)(struct __LWBlockViewController__test__block2_block_impl_0*);
+} __LWBlockViewController__test__block2_block_desc_0_DATA = { 0, sizeof(struct __LWBlockViewController__test__block2_block_impl_0), __LWBlockViewController__test__block2_block_copy_0, __LWBlockViewController__test__block2_block_dispose_0};
+
+static void _I_LWBlockViewController_test__block2(LWBlockViewController * self, SEL _cmd) {
+    __attribute__((__blocks__(byref))) __attribute__((objc_ownership(weak))) __Block_byref_weakPerson_1 weakPerson = {(void*)0,(__Block_byref_weakPerson_1 *)&weakPerson, 33554432, sizeof(__Block_byref_weakPerson_1), __Block_byref_id_object_copy_131, __Block_byref_id_object_dispose_131, ((LWBlockPerson *(*)(id, SEL))(void *)objc_msgSend)((id)((LWBlockPerson *(*)(id, SEL))(void *)objc_msgSend)((id)objc_getClass("LWBlockPerson"), sel_registerName("alloc")), sel_registerName("init"))};
+    LWBlock block = ((void (*)())&__LWBlockViewController__test__block2_block_impl_0((void *)__LWBlockViewController__test__block2_block_func_0, &__LWBlockViewController__test__block2_block_desc_0_DATA, (__Block_byref_weakPerson_1 *)&weakPerson, 570425344));
+    ((void (*)(__block_impl *))((__block_impl *)block)->FuncPtr)((__block_impl *)block);
+
+}
 
 struct __LWBlockViewController__touchesBegan_withEvent__block_impl_0 {
   struct __block_impl impl;
@@ -76118,7 +76165,7 @@ struct __LWBlockViewController__touchesBegan_withEvent__block_impl_0 {
 static void __LWBlockViewController__touchesBegan_withEvent__block_func_0(struct __LWBlockViewController__touchesBegan_withEvent__block_impl_0 *__cself) {
   LWBlockPerson *__strong p = __cself->p; // bound by copy
 
-        NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_6981ce_mi_12,p);
+        NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_b941d3_mi_14,p);
 
     }
 static void __LWBlockViewController__touchesBegan_withEvent__block_copy_0(struct __LWBlockViewController__touchesBegan_withEvent__block_impl_0*dst, struct __LWBlockViewController__touchesBegan_withEvent__block_impl_0*src) {_Block_object_assign((void*)&dst->p, (void*)src->p, 3/*BLOCK_FIELD_IS_OBJECT*/);}
@@ -76224,10 +76271,10 @@ static struct /*_ivar_list_t*/ {
 static struct /*_method_list_t*/ {
 	unsigned int entsize;  // sizeof(struct _objc_method)
 	unsigned int method_count;
-	struct _objc_method method_list[9];
+	struct _objc_method method_list[10];
 } _OBJC_$_INSTANCE_METHODS_LWBlockViewController __attribute__ ((used, section ("__DATA,__objc_const"))) = {
 	sizeof(_objc_method),
-	9,
+	10,
 	{{(struct objc_selector *)"viewDidLoad", "v16@0:8", (void *)_I_LWBlockViewController_viewDidLoad},
 	{(struct objc_selector *)"test", "v16@0:8", (void *)_I_LWBlockViewController_test},
 	{(struct objc_selector *)"test2", "v16@0:8", (void *)_I_LWBlockViewController_test2},
@@ -76236,6 +76283,7 @@ static struct /*_method_list_t*/ {
 	{(struct objc_selector *)"testBlockPerson1", "v16@0:8", (void *)_I_LWBlockViewController_testBlockPerson1},
 	{(struct objc_selector *)"testBlockPerson2", "v16@0:8", (void *)_I_LWBlockViewController_testBlockPerson2},
 	{(struct objc_selector *)"test__block1", "v16@0:8", (void *)_I_LWBlockViewController_test__block1},
+	{(struct objc_selector *)"test__block2", "v16@0:8", (void *)_I_LWBlockViewController_test__block2},
 	{(struct objc_selector *)"touchesBegan:withEvent:", "v32@0:8@16@24", (void *)_I_LWBlockViewController_touchesBegan_withEvent_}}
 };
 

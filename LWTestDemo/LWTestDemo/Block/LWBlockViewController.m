@@ -66,6 +66,7 @@ typedef void(^LWBlock)(void);
     [self testBlockPerson2];
     
     [self test__block1];
+    [self circularReferenceTest];
 }
 
 - (void)test{
@@ -396,6 +397,18 @@ typedef void(^LWBlock)(void);
         编辑器会将__block包装成一个对象(__Block_byref_age_0)
      */
     /*
+                __block的内存管理
+        当block在栈上时，并不会对__block变量产生强引用。
+        当block拷贝到堆上时
+            1.会调用block内部的copy函数
+            2.copy函数内部会调用_Block_object_assign函数
+            3._Block_object_assign函数会对__block变量形成强引用。类似于retain
+        当block从堆上移除。
+         1.会调用block内部的dispose函数
+         2.dispose函数会调用内部的_Block_object_dispose函数
+         3._Block_object_dispose函数会自动调用释放引用的__block变量，类似于release
+     */
+    /*
      struct __Block_byref_age_0 {
        void *__isa;
      __Block_byref_age_0 *__forwarding;
@@ -448,6 +461,71 @@ typedef void(^LWBlock)(void);
         NSLog(@"age is %d",age);
     };
     block();
+    NSLog(@"age -- %p",&age);//外面的age地址是 block结构体里面的__Block_byref_age_0 *age的里面的age 。不是__Block_byref_age_0 *age地址
+
+}
+- (void)test__block2{
+    /*
+     struct __Block_byref_person_1 {
+       void *__isa;
+     __Block_byref_person_1 *__forwarding;
+      int __flags;
+      int __size;
+      void (*__Block_byref_id_object_copy)(void*, void*);
+      void (*__Block_byref_id_object_dispose)(void*);
+      LWBlockPerson *__strong person;
+     };
+
+     struct __LWBlockViewController__test__block2_block_impl_0 {
+       struct __block_impl impl;
+       struct __LWBlockViewController__test__block2_block_desc_0* Desc;
+       __Block_byref_person_1 *person; // by ref
+       __LWBlockViewController__test__block2_block_impl_0(void *fp, struct __LWBlockViewController__test__block2_block_desc_0 *desc, __Block_byref_person_1 *_person, int flags=0) : person(_person->__forwarding) {
+         impl.isa = &_NSConcreteStackBlock;
+         impl.Flags = flags;
+         impl.FuncPtr = fp;
+         Desc = desc;
+       }
+     };
+     static void __LWBlockViewController__test__block2_block_func_0(struct __LWBlockViewController__test__block2_block_impl_0 *__cself) {
+       __Block_byref_person_1 *person = __cself->person; // bound by ref
+
+             NSLog((NSString *)&__NSConstantStringImpl__var_folders_8g_b0y7jr490q303x4hgr33q6_40000gn_T_LWBlockViewController_a2e437_mi_13,(person->__forwarding->person));
+         }
+     static void __LWBlockViewController__test__block2_block_copy_0(struct __LWBlockViewController__test__block2_block_impl_0*dst, struct __LWBlockViewController__test__block2_block_impl_0*src) {_Block_object_assign((void*)&dst->person, (void*)src->person, 8/BLOCK_FIELD_IS_BYREF/);}
+
+     static void __LWBlockViewController__test__block2_block_dispose_0(struct __LWBlockViewController__test__block2_block_impl_0*src) {_Block_object_dispose((void*)src->person, 8/BLOCK_FIELD_IS_BYREF/);}
+
+     static struct __LWBlockViewController__test__block2_block_desc_0 {
+       size_t reserved;
+       size_t Block_size;
+       void (*copy)(struct __LWBlockViewController__test__block2_block_impl_0*, struct __LWBlockViewController__test__block2_block_impl_0*);
+       void (*dispose)(struct __LWBlockViewController__test__block2_block_impl_0*);
+     } __LWBlockViewController__test__block2_block_desc_0_DATA = { 0, sizeof(struct __LWBlockViewController__test__block2_block_impl_0), __LWBlockViewController__test__block2_block_copy_0, __LWBlockViewController__test__block2_block_dispose_0};
+
+     static void _I_LWBlockViewController_test__block2(LWBlockViewController * self, SEL _cmd) {
+         __attribute__((__blocks__(byref))) __Block_byref_person_1 person = {(void*)0,(__Block_byref_person_1 *)&person, 33554432, sizeof(__Block_byref_person_1), __Block_byref_id_object_copy_131, __Block_byref_id_object_dispose_131, ((LWBlockPerson *(*)(id, SEL))(void *)objc_msgSend)((id)((LWBlockPerson *(*)(id, SEL))(void *)objc_msgSend)((id)objc_getClass("LWBlockPerson"), sel_registerName("alloc")), sel_registerName("init"))};
+         LWBlock block = ((void (*)())&__LWBlockViewController__test__block2_block_impl_0((void *)__LWBlockViewController__test__block2_block_func_0, &__LWBlockViewController__test__block2_block_desc_0_DATA, (__Block_byref_person_1 *)&person, 570425344));
+         ((void (*)(__block_impl *))((__block_impl *)block)->FuncPtr)((__block_impl *)block);
+
+     }
+     */
+    __block  LWBlockPerson *person = [[LWBlockPerson alloc]init];
+    LWBlock block = ^(){
+        NSLog(@"LWBlockPerson is %@",person);
+    };
+    block();
+    
+}
+
+- (void)circularReferenceTest{
+    LWBlockPerson *person = [[LWBlockPerson alloc]init];
+    person.age = 10;
+    person.block = ^(){
+        NSLog(@"LWBlockPerson is %d",person.age);
+    };
+    
+    NSLog(@"=============end");
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{

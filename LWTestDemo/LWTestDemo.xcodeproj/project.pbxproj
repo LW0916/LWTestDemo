@@ -48,6 +48,10 @@
 		659016502584FFC100BDF3AF /* LWLifeCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6590164D2584FFC100BDF3AF /* LWLifeCycleViewController.m */; };
 		65ABFA8F258846F400A15BEB /* LWGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ABFA8E258846F400A15BEB /* LWGCDViewController.m */; };
 		65B281402648DE1600158E04 /* block__block.png in Resources */ = {isa = PBXBuildFile; fileRef = 65B2813F2648DE1600158E04 /* block__block.png */; };
+		65B2814226490B3100158E04 /* block__bkock2.png in Resources */ = {isa = PBXBuildFile; fileRef = 65B2814126490B3100158E04 /* block__bkock2.png */; };
+		65B2814426490BD400158E04 /* block__bkock3.png in Resources */ = {isa = PBXBuildFile; fileRef = 65B2814326490BD400158E04 /* block__bkock3.png */; };
+		65B2814626490EB200158E04 /* block__bkock4.png in Resources */ = {isa = PBXBuildFile; fileRef = 65B2814526490EB200158E04 /* block__bkock4.png */; };
+		65B28148264911AA00158E04 /* block__forwaridng.png in Resources */ = {isa = PBXBuildFile; fileRef = 65B28147264911AA00158E04 /* block__forwaridng.png */; };
 		65C2519125EDCB5700BD1649 /* LWKVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C2519025EDCB5700BD1649 /* LWKVCViewController.m */; };
 		65C2519725EDCB7100BD1649 /* LWKVCPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C2519625EDCB7100BD1649 /* LWKVCPerson.m */; };
 		65C2519D25EDCB8900BD1649 /* LWKVCDog.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C2519C25EDCB8900BD1649 /* LWKVCDog.m */; };
@@ -144,6 +148,10 @@
 		65ABFA8D258846F400A15BEB /* LWGCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWGCDViewController.h; sourceTree = "<group>"; };
 		65ABFA8E258846F400A15BEB /* LWGCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWGCDViewController.m; sourceTree = "<group>"; };
 		65B2813F2648DE1600158E04 /* block__block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block__block.png; sourceTree = "<group>"; };
+		65B2814126490B3100158E04 /* block__bkock2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block__bkock2.png; sourceTree = "<group>"; };
+		65B2814326490BD400158E04 /* block__bkock3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block__bkock3.png; sourceTree = "<group>"; };
+		65B2814526490EB200158E04 /* block__bkock4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block__bkock4.png; sourceTree = "<group>"; };
+		65B28147264911AA00158E04 /* block__forwaridng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block__forwaridng.png; sourceTree = "<group>"; };
 		65C2518F25EDCB5700BD1649 /* LWKVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWKVCViewController.h; sourceTree = "<group>"; };
 		65C2519025EDCB5700BD1649 /* LWKVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWKVCViewController.m; sourceTree = "<group>"; };
 		65C2519525EDCB7100BD1649 /* LWKVCPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWKVCPerson.h; sourceTree = "<group>"; };
@@ -205,6 +213,10 @@
 				6500280525F724E10060097E /* block_type.png */,
 				650027F225F71EC20060097E /* block.png */,
 				65B2813F2648DE1600158E04 /* block__block.png */,
+				65B2814126490B3100158E04 /* block__bkock2.png */,
+				65B2814326490BD400158E04 /* block__bkock3.png */,
+				65B2814526490EB200158E04 /* block__bkock4.png */,
+				65B28147264911AA00158E04 /* block__forwaridng.png */,
 				65C251AE25EDEA8600BD1649 /* kvc.png */,
 				651CF91A25ECCD340004467C /* kvo.png */,
 				651CF90D25ECCC7F0004467C /* isa指向.png */,
@@ -483,12 +495,16 @@
 				651CF91B25ECCD340004467C /* kvo.png in Resources */,
 				65D08D4526461D8F0037F6F5 /* block_本质.png in Resources */,
 				659015CF2584EE8700BDF3AF /* Assets.xcassets in Resources */,
+				65B28148264911AA00158E04 /* block__forwaridng.png in Resources */,
 				6500280625F724E10060097E /* block_type.png in Resources */,
 				65C251AF25EDEA8600BD1649 /* kvc.png in Resources */,
 				651CF90925ECCC490004467C /* objc_class结构体实现.png in Resources */,
 				659016382584F46100BDF3AF /* LaunchScreen.storyboard in Resources */,
+				65B2814626490EB200158E04 /* block__bkock4.png in Resources */,
+				65B2814426490BD400158E04 /* block__bkock3.png in Resources */,
 				650488B125E8F293006BD70A /* 常见考题.md in Resources */,
 				65B281402648DE1600158E04 /* block__block.png in Resources */,
+				65B2814226490B3100158E04 /* block__bkock2.png in Resources */,
 				651CF90E25ECCC7F0004467C /* isa指向.png in Resources */,
 				650027F325F71EC20060097E /* block.png in Resources */,
 			);
