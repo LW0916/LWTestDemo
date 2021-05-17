@@ -31,6 +31,7 @@
 		658E62EF2586272600E1771D /* NSArray+LW.m in Sources */ = {isa = PBXBuildFile; fileRef = 658E62EE2586272600E1771D /* NSArray+LW.m */; };
 		658E62F525862A1E00E1771D /* LWCrashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 658E62F425862A1E00E1771D /* LWCrashViewController.m */; };
 		658E62FE2586322B00E1771D /* LWUncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 658E62FD2586322A00E1771D /* LWUncaughtExceptionHandler.m */; };
+		658F518E264D242700494ECD /* block_reference.png in Resources */ = {isa = PBXBuildFile; fileRef = 658F518D264D242700494ECD /* block_reference.png */; };
 		659015C42584EE8600BDF3AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 659015C32584EE8600BDF3AF /* AppDelegate.m */; };
 		659015CA2584EE8600BDF3AF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 659015C92584EE8600BDF3AF /* ViewController.m */; };
 		659015CF2584EE8700BDF3AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 659015CE2584EE8700BDF3AF /* Assets.xcassets */; };
@@ -125,6 +126,7 @@
 		658E62F425862A1E00E1771D /* LWCrashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWCrashViewController.m; sourceTree = "<group>"; };
 		658E62FC2586322A00E1771D /* LWUncaughtExceptionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWUncaughtExceptionHandler.h; sourceTree = "<group>"; };
 		658E62FD2586322A00E1771D /* LWUncaughtExceptionHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWUncaughtExceptionHandler.m; sourceTree = "<group>"; };
+		658F518D264D242700494ECD /* block_reference.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block_reference.png; sourceTree = "<group>"; };
 		659015BF2584EE8600BDF3AF /* LWTestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LWTestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		659015C22584EE8600BDF3AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		659015C32584EE8600BDF3AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 				65D08D4426461D8F0037F6F5 /* block_本质.png */,
 				6500280525F724E10060097E /* block_type.png */,
 				650027F225F71EC20060097E /* block.png */,
+				658F518D264D242700494ECD /* block_reference.png */,
 				65B2813F2648DE1600158E04 /* block__block.png */,
 				65B2814126490B3100158E04 /* block__bkock2.png */,
 				65B2814326490BD400158E04 /* block__bkock3.png */,
@@ -507,6 +510,7 @@
 				65B2814226490B3100158E04 /* block__bkock2.png in Resources */,
 				651CF90E25ECCC7F0004467C /* isa指向.png in Resources */,
 				650027F325F71EC20060097E /* block.png in Resources */,
+				658F518E264D242700494ECD /* block_reference.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

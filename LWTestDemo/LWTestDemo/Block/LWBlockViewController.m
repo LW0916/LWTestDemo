@@ -67,6 +67,7 @@ typedef void(^LWBlock)(void);
     
     [self test__block1];
     [self circularReferenceTest];
+    [self circularReferenceTest2];
 }
 
 - (void)test{
@@ -521,12 +522,26 @@ typedef void(^LWBlock)(void);
 - (void)circularReferenceTest{
     LWBlockPerson *person = [[LWBlockPerson alloc]init];
     person.age = 10;
+    __weak LWBlockPerson *wPerson =person; // mrc中用: __unsafe_unretained:不会产生强引用，不安全。指针指向对象销毁时，指针存储的指针不变，产生野指针。  arc中用: __weak:不会产生强引用，安全。指向对象销毁时，会让指针置为nil。
+
     person.block = ^(){
-        NSLog(@"LWBlockPerson is %d",person.age);
+        NSLog(@"LWBlockPerson is %d",wPerson.age);
     };
     
     NSLog(@"=============end");
 }
+- (void)circularReferenceTest2{
+    LWBlockPerson *person = [[LWBlockPerson alloc]init];
+    person.age = 10;
+    __block LWBlockPerson *wPerson =person;
+    person.block = ^(){
+        NSLog(@"LWBlockPerson2 is %d",wPerson.age);
+        wPerson = nil;
+    };
+    person.block();
+    NSLog(@"=============end2");
+}
+
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
