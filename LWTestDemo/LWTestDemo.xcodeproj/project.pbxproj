@@ -16,6 +16,14 @@
 		651CF90925ECCC490004467C /* objc_class结构体实现.png in Resources */ = {isa = PBXBuildFile; fileRef = 651CF90825ECCC490004467C /* objc_class结构体实现.png */; };
 		651CF90E25ECCC7F0004467C /* isa指向.png in Resources */ = {isa = PBXBuildFile; fileRef = 651CF90D25ECCC7F0004467C /* isa指向.png */; };
 		651CF91B25ECCD340004467C /* kvo.png in Resources */ = {isa = PBXBuildFile; fileRef = 651CF91A25ECCD340004467C /* kvo.png */; };
+		6526EB5C2654DEDC00AAB951 /* LWRuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6526EB5B2654DEDC00AAB951 /* LWRuntimeViewController.m */; };
+		6526EB5F2654E19D00AAB951 /* LWRuntimePerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 6526EB5E2654E19D00AAB951 /* LWRuntimePerson.m */; };
+		6526EB622654E5F700AAB951 /* LWRuntimePersonTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6526EB612654E5F700AAB951 /* LWRuntimePersonTest.m */; };
+		6526EB652654FEB300AAB951 /* LWRuntimePersonTest2.m in Sources */ = {isa = PBXBuildFile; fileRef = 6526EB642654FEB300AAB951 /* LWRuntimePersonTest2.m */; };
+		6526EB68265503C300AAB951 /* LWRuntimePersonTest3.m in Sources */ = {isa = PBXBuildFile; fileRef = 6526EB67265503C300AAB951 /* LWRuntimePersonTest3.m */; };
+		6526EB6A265510FF00AAB951 /* runtime_isa.png in Resources */ = {isa = PBXBuildFile; fileRef = 6526EB69265510FF00AAB951 /* runtime_isa.png */; };
+		6526EB6C2655110600AAB951 /* runtime_isa2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6526EB6B2655110600AAB951 /* runtime_isa2.png */; };
+		6526EB6E2655134000AAB951 /* runtime_isa3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6526EB6D2655134000AAB951 /* runtime_isa3.png */; };
 		652EE26225A40BA70056A917 /* LWNatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 652EE26125A40BA70056A917 /* LWNatureViewController.m */; };
 		652EE28025A447F90056A917 /* LWStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 652EE27F25A447F90056A917 /* LWStudent.m */; };
 		658DE0812590339D00BD71C3 /* LWCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 658DE0802590339D00BD71C3 /* LWCategoryViewController.m */; };
@@ -95,6 +103,19 @@
 		651CF90825ECCC490004467C /* objc_class结构体实现.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "objc_class结构体实现.png"; sourceTree = "<group>"; };
 		651CF90D25ECCC7F0004467C /* isa指向.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "isa指向.png"; sourceTree = "<group>"; };
 		651CF91A25ECCD340004467C /* kvo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kvo.png; sourceTree = "<group>"; };
+		6526EB5A2654DEDC00AAB951 /* LWRuntimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWRuntimeViewController.h; sourceTree = "<group>"; };
+		6526EB5B2654DEDC00AAB951 /* LWRuntimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWRuntimeViewController.m; sourceTree = "<group>"; };
+		6526EB5D2654E19D00AAB951 /* LWRuntimePerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWRuntimePerson.h; sourceTree = "<group>"; };
+		6526EB5E2654E19D00AAB951 /* LWRuntimePerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWRuntimePerson.m; sourceTree = "<group>"; };
+		6526EB602654E5F700AAB951 /* LWRuntimePersonTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWRuntimePersonTest.h; sourceTree = "<group>"; };
+		6526EB612654E5F700AAB951 /* LWRuntimePersonTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWRuntimePersonTest.m; sourceTree = "<group>"; };
+		6526EB632654FEB300AAB951 /* LWRuntimePersonTest2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWRuntimePersonTest2.h; sourceTree = "<group>"; };
+		6526EB642654FEB300AAB951 /* LWRuntimePersonTest2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWRuntimePersonTest2.m; sourceTree = "<group>"; };
+		6526EB66265503C300AAB951 /* LWRuntimePersonTest3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWRuntimePersonTest3.h; sourceTree = "<group>"; };
+		6526EB67265503C300AAB951 /* LWRuntimePersonTest3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWRuntimePersonTest3.m; sourceTree = "<group>"; };
+		6526EB69265510FF00AAB951 /* runtime_isa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runtime_isa.png; sourceTree = "<group>"; };
+		6526EB6B2655110600AAB951 /* runtime_isa2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runtime_isa2.png; sourceTree = "<group>"; };
+		6526EB6D2655134000AAB951 /* runtime_isa3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runtime_isa3.png; sourceTree = "<group>"; };
 		652EE26025A40BA70056A917 /* LWNatureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWNatureViewController.h; sourceTree = "<group>"; };
 		652EE26125A40BA70056A917 /* LWNatureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWNatureViewController.m; sourceTree = "<group>"; };
 		652EE26925A40C470056A917 /* main-arm64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "main-arm64.cpp"; sourceTree = "<group>"; };
@@ -224,8 +245,28 @@
 				651CF91A25ECCD340004467C /* kvo.png */,
 				651CF90D25ECCC7F0004467C /* isa指向.png */,
 				651CF90825ECCC490004467C /* objc_class结构体实现.png */,
+				6526EB69265510FF00AAB951 /* runtime_isa.png */,
+				6526EB6B2655110600AAB951 /* runtime_isa2.png */,
+				6526EB6D2655134000AAB951 /* runtime_isa3.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		651F3DAB26521BA600421855 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				6526EB5A2654DEDC00AAB951 /* LWRuntimeViewController.h */,
+				6526EB5B2654DEDC00AAB951 /* LWRuntimeViewController.m */,
+				6526EB5D2654E19D00AAB951 /* LWRuntimePerson.h */,
+				6526EB5E2654E19D00AAB951 /* LWRuntimePerson.m */,
+				6526EB602654E5F700AAB951 /* LWRuntimePersonTest.h */,
+				6526EB612654E5F700AAB951 /* LWRuntimePersonTest.m */,
+				6526EB632654FEB300AAB951 /* LWRuntimePersonTest2.h */,
+				6526EB642654FEB300AAB951 /* LWRuntimePersonTest2.m */,
+				6526EB66265503C300AAB951 /* LWRuntimePersonTest3.h */,
+				6526EB67265503C300AAB951 /* LWRuntimePersonTest3.m */,
+			);
+			path = Runtime;
 			sourceTree = "<group>";
 		};
 		652EE25F25A40B6F0056A917 /* OC对象本质 */ = {
@@ -321,6 +362,7 @@
 				6590164C2584FFC100BDF3AF /* LWLifeCycleViewController.h */,
 				6590164D2584FFC100BDF3AF /* LWLifeCycleViewController.m */,
 				659016182584F05400BDF3AF /* LWSettingLog.h */,
+				651F3DAB26521BA600421855 /* Runtime */,
 				65FC7C2F25F5FD1400A3BC12 /* Block */,
 				65C2518E25EDCB3E00BD1649 /* KVC */,
 				650488B525E8F381006BD70A /* KVO */,
@@ -507,7 +549,10 @@
 				65B2814426490BD400158E04 /* block__bkock3.png in Resources */,
 				650488B125E8F293006BD70A /* 常见考题.md in Resources */,
 				65B281402648DE1600158E04 /* block__block.png in Resources */,
+				6526EB6E2655134000AAB951 /* runtime_isa3.png in Resources */,
 				65B2814226490B3100158E04 /* block__bkock2.png in Resources */,
+				6526EB6C2655110600AAB951 /* runtime_isa2.png in Resources */,
+				6526EB6A265510FF00AAB951 /* runtime_isa.png in Resources */,
 				651CF90E25ECCC7F0004467C /* isa指向.png in Resources */,
 				650027F325F71EC20060097E /* block.png in Resources */,
 				658F518E264D242700494ECD /* block_reference.png in Resources */,
@@ -539,22 +584,27 @@
 			files = (
 				658E62D02585DC8F00E1771D /* LWLoadInitializeViewController.m in Sources */,
 				65FC7C3225F5FD9800A3BC12 /* LWBlockViewController.m in Sources */,
+				6526EB5F2654E19D00AAB951 /* LWRuntimePerson.m in Sources */,
 				658E62EF2586272600E1771D /* NSArray+LW.m in Sources */,
 				658DE08A2590342A00BD71C3 /* NSString+Test.m in Sources */,
 				658E62FE2586322B00E1771D /* LWUncaughtExceptionHandler.m in Sources */,
 				65C2519725EDCB7100BD1649 /* LWKVCPerson.m in Sources */,
+				6526EB652654FEB300AAB951 /* LWRuntimePersonTest2.m in Sources */,
 				652EE26225A40BA70056A917 /* LWNatureViewController.m in Sources */,
 				658E62D12585DC8F00E1771D /* Student+test.m in Sources */,
+				6526EB68265503C300AAB951 /* LWRuntimePersonTest3.m in Sources */,
 				65C2519125EDCB5700BD1649 /* LWKVCViewController.m in Sources */,
 				652EE28025A447F90056A917 /* LWStudent.m in Sources */,
 				658E62D52585DC8F00E1771D /* Teacher.m in Sources */,
 				658DE0812590339D00BD71C3 /* LWCategoryViewController.m in Sources */,
 				659015CA2584EE8600BDF3AF /* ViewController.m in Sources */,
+				6526EB622654E5F700AAB951 /* LWRuntimePersonTest.m in Sources */,
 				650488B825E8F3A8006BD70A /* LWKVOViewController.m in Sources */,
 				658DE0962590349D00BD71C3 /* LWPerson+Test.m in Sources */,
 				658E62D62585DC8F00E1771D /* Person+test.m in Sources */,
 				650027F925F71F580060097E /* LWBlockType.m in Sources */,
 				659015C42584EE8600BDF3AF /* AppDelegate.m in Sources */,
+				6526EB5C2654DEDC00AAB951 /* LWRuntimeViewController.m in Sources */,
 				65C2519D25EDCB8900BD1649 /* LWKVCDog.m in Sources */,
 				659016462584FF9D00BDF3AF /* LWLifeCycleView.m in Sources */,
 				650488C125E8F4D1006BD70A /* LWKOVPerson.m in Sources */,

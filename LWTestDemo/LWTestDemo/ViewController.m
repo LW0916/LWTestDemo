@@ -54,7 +54,7 @@
 }
 - (NSArray *)dataSource{
     if (_dataSource == nil) {
-        _dataSource = @[@"LWLifeCycleViewController",@"LWLoadInitializeViewController",@"LWCrashViewController",@"LWGCDViewController",@"LWCategoryViewController",@"LWNatureViewController",@"LWKVOViewController",@"LWKVCViewController",@"LWBlockViewController"];
+        _dataSource = @[@"LWLifeCycleViewController",@"LWLoadInitializeViewController",@"LWCrashViewController",@"LWGCDViewController",@"LWCategoryViewController",@"LWNatureViewController",@"LWKVOViewController",@"LWKVCViewController",@"LWBlockViewController",@"LWRuntimeViewController"];
     }
     return _dataSource;
 }
