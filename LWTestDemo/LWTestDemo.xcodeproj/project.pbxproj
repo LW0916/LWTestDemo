@@ -26,6 +26,9 @@
 		6526EB6E2655134000AAB951 /* runtime_isa3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6526EB6D2655134000AAB951 /* runtime_isa3.png */; };
 		652EE26225A40BA70056A917 /* LWNatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 652EE26125A40BA70056A917 /* LWNatureViewController.m */; };
 		652EE28025A447F90056A917 /* LWStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 652EE27F25A447F90056A917 /* LWStudent.m */; };
+		655C6EB126566380002675ED /* class_ro_t.png in Resources */ = {isa = PBXBuildFile; fileRef = 655C6EAF26566380002675ED /* class_ro_t.png */; };
+		655C6EB226566380002675ED /* class_rw_t.png in Resources */ = {isa = PBXBuildFile; fileRef = 655C6EB026566380002675ED /* class_rw_t.png */; };
+		655C6EB42656651B002675ED /* method_t.png in Resources */ = {isa = PBXBuildFile; fileRef = 655C6EB32656651B002675ED /* method_t.png */; };
 		658DE0812590339D00BD71C3 /* LWCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 658DE0802590339D00BD71C3 /* LWCategoryViewController.m */; };
 		658DE08A2590342A00BD71C3 /* NSString+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 658DE0892590342A00BD71C3 /* NSString+Test.m */; };
 		658DE0902590348C00BD71C3 /* LWPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 658DE08F2590348C00BD71C3 /* LWPerson.m */; };
@@ -55,6 +58,9 @@
 		6590164E2584FFC100BDF3AF /* LWLifeCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6590164D2584FFC100BDF3AF /* LWLifeCycleViewController.m */; };
 		6590164F2584FFC100BDF3AF /* LWLifeCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6590164D2584FFC100BDF3AF /* LWLifeCycleViewController.m */; };
 		659016502584FFC100BDF3AF /* LWLifeCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6590164D2584FFC100BDF3AF /* LWLifeCycleViewController.m */; };
+		65A48526265752BC0026D51B /* LWRuntimePersonCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A48525265752BC0026D51B /* LWRuntimePersonCache.m */; };
+		65A4852826575AAB0026D51B /* cache_t.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A4852726575AAB0026D51B /* cache_t.png */; };
+		65A4852A2657B16A0026D51B /* objc_msgSend.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A485292657B16A0026D51B /* objc_msgSend.png */; };
 		65ABFA8F258846F400A15BEB /* LWGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ABFA8E258846F400A15BEB /* LWGCDViewController.m */; };
 		65B281402648DE1600158E04 /* block__block.png in Resources */ = {isa = PBXBuildFile; fileRef = 65B2813F2648DE1600158E04 /* block__block.png */; };
 		65B2814226490B3100158E04 /* block__bkock2.png in Resources */ = {isa = PBXBuildFile; fileRef = 65B2814126490B3100158E04 /* block__bkock2.png */; };
@@ -121,6 +127,9 @@
 		652EE26925A40C470056A917 /* main-arm64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "main-arm64.cpp"; sourceTree = "<group>"; };
 		652EE27E25A447F90056A917 /* LWStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWStudent.h; sourceTree = "<group>"; };
 		652EE27F25A447F90056A917 /* LWStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWStudent.m; sourceTree = "<group>"; };
+		655C6EAF26566380002675ED /* class_ro_t.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = class_ro_t.png; sourceTree = "<group>"; };
+		655C6EB026566380002675ED /* class_rw_t.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = class_rw_t.png; sourceTree = "<group>"; };
+		655C6EB32656651B002675ED /* method_t.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = method_t.png; sourceTree = "<group>"; };
 		658DE07F2590339D00BD71C3 /* LWCategoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWCategoryViewController.h; sourceTree = "<group>"; };
 		658DE0802590339D00BD71C3 /* LWCategoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWCategoryViewController.m; sourceTree = "<group>"; };
 		658DE0882590342A00BD71C3 /* NSString+Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Test.h"; sourceTree = "<group>"; };
@@ -168,6 +177,10 @@
 		659016452584FF9D00BDF3AF /* LWLifeCycleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWLifeCycleView.m; sourceTree = "<group>"; };
 		6590164C2584FFC100BDF3AF /* LWLifeCycleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWLifeCycleViewController.h; sourceTree = "<group>"; };
 		6590164D2584FFC100BDF3AF /* LWLifeCycleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWLifeCycleViewController.m; sourceTree = "<group>"; };
+		65A48524265752BC0026D51B /* LWRuntimePersonCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWRuntimePersonCache.h; sourceTree = "<group>"; };
+		65A48525265752BC0026D51B /* LWRuntimePersonCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWRuntimePersonCache.m; sourceTree = "<group>"; };
+		65A4852726575AAB0026D51B /* cache_t.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cache_t.png; sourceTree = "<group>"; };
+		65A485292657B16A0026D51B /* objc_msgSend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = objc_msgSend.png; sourceTree = "<group>"; };
 		65ABFA8D258846F400A15BEB /* LWGCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWGCDViewController.h; sourceTree = "<group>"; };
 		65ABFA8E258846F400A15BEB /* LWGCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWGCDViewController.m; sourceTree = "<group>"; };
 		65B2813F2648DE1600158E04 /* block__block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block__block.png; sourceTree = "<group>"; };
@@ -245,6 +258,11 @@
 				651CF91A25ECCD340004467C /* kvo.png */,
 				651CF90D25ECCC7F0004467C /* isa指向.png */,
 				651CF90825ECCC490004467C /* objc_class结构体实现.png */,
+				655C6EAF26566380002675ED /* class_ro_t.png */,
+				655C6EB026566380002675ED /* class_rw_t.png */,
+				655C6EB32656651B002675ED /* method_t.png */,
+				65A4852726575AAB0026D51B /* cache_t.png */,
+				65A485292657B16A0026D51B /* objc_msgSend.png */,
 				6526EB69265510FF00AAB951 /* runtime_isa.png */,
 				6526EB6B2655110600AAB951 /* runtime_isa2.png */,
 				6526EB6D2655134000AAB951 /* runtime_isa3.png */,
@@ -265,6 +283,8 @@
 				6526EB642654FEB300AAB951 /* LWRuntimePersonTest2.m */,
 				6526EB66265503C300AAB951 /* LWRuntimePersonTest3.h */,
 				6526EB67265503C300AAB951 /* LWRuntimePersonTest3.m */,
+				65A48524265752BC0026D51B /* LWRuntimePersonCache.h */,
+				65A48525265752BC0026D51B /* LWRuntimePersonCache.m */,
 			);
 			path = Runtime;
 			sourceTree = "<group>";
@@ -538,9 +558,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				651CF91B25ECCD340004467C /* kvo.png in Resources */,
+				65A4852A2657B16A0026D51B /* objc_msgSend.png in Resources */,
 				65D08D4526461D8F0037F6F5 /* block_本质.png in Resources */,
 				659015CF2584EE8700BDF3AF /* Assets.xcassets in Resources */,
 				65B28148264911AA00158E04 /* block__forwaridng.png in Resources */,
+				655C6EB226566380002675ED /* class_rw_t.png in Resources */,
 				6500280625F724E10060097E /* block_type.png in Resources */,
 				65C251AF25EDEA8600BD1649 /* kvc.png in Resources */,
 				651CF90925ECCC490004467C /* objc_class结构体实现.png in Resources */,
@@ -549,8 +571,11 @@
 				65B2814426490BD400158E04 /* block__bkock3.png in Resources */,
 				650488B125E8F293006BD70A /* 常见考题.md in Resources */,
 				65B281402648DE1600158E04 /* block__block.png in Resources */,
+				655C6EB42656651B002675ED /* method_t.png in Resources */,
 				6526EB6E2655134000AAB951 /* runtime_isa3.png in Resources */,
 				65B2814226490B3100158E04 /* block__bkock2.png in Resources */,
+				65A4852826575AAB0026D51B /* cache_t.png in Resources */,
+				655C6EB126566380002675ED /* class_ro_t.png in Resources */,
 				6526EB6C2655110600AAB951 /* runtime_isa2.png in Resources */,
 				6526EB6A265510FF00AAB951 /* runtime_isa.png in Resources */,
 				651CF90E25ECCC7F0004467C /* isa指向.png in Resources */,
@@ -584,6 +609,7 @@
 			files = (
 				658E62D02585DC8F00E1771D /* LWLoadInitializeViewController.m in Sources */,
 				65FC7C3225F5FD9800A3BC12 /* LWBlockViewController.m in Sources */,
+				65A48526265752BC0026D51B /* LWRuntimePersonCache.m in Sources */,
 				6526EB5F2654E19D00AAB951 /* LWRuntimePerson.m in Sources */,
 				658E62EF2586272600E1771D /* NSArray+LW.m in Sources */,
 				658DE08A2590342A00BD71C3 /* NSString+Test.m in Sources */,

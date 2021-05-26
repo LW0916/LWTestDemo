@@ -10,14 +10,38 @@
 #import "LWRuntimePersonTest.h"
 #import "LWRuntimePersonTest2.h"
 #import "LWRuntimePersonTest3.h"
+#import "LWRuntimePersonCache.h"
 
 #import <objc/runtime.h>
+
+typedef enum{
+    LWOptionsOne = 1<<0,
+    LWOptionsTwo = 1<<1,
+    LWOptionsThree = 1<<2,
+    LWOptionsFour = 1<<3
+    
+}LWOptions;
 
 @interface LWRuntimeViewController ()
 
 @end
 
 @implementation LWRuntimeViewController
+
+- (void)setLWOptions:(LWOptions)options{
+    if (options & LWOptionsOne) {
+        NSLog(@"包含==LWOptionsOne");
+    }
+    if (options & LWOptionsTwo) {
+        NSLog(@"包含==LWOptionsTwo");
+    }
+    if (options & LWOptionsThree) {
+        NSLog(@"包含==LWOptionsThree");
+    }
+    if (options & LWOptionsFour) {
+        NSLog(@"包含==LWOptionsFour");
+    }
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -46,6 +70,14 @@
     pTest3.rich = NO;
     pTest3.handsome = YES;
     NSLog(@"%d--%d--%d",pTest3.isTall,pTest3.isRich,pTest3.isHandsome);
+    
+    [self setLWOptions:(LWOptionsOne | LWOptionsFour)];
+    
+    NSLog(@"%s-%s-%s-%s-%s",@encode(int),@encode(id),@encode(NSString),@encode(SEL),@encode(void));
+    
+    LWRuntimePersonCache *personCache = [[LWRuntimePersonCache alloc]init];
+    [personCache test];
+    [personCache test];
     // Do any additional setup after loading the view.
 }
 
