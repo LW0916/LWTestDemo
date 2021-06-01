@@ -16,6 +16,7 @@
 		651CF90925ECCC490004467C /* objc_class结构体实现.png in Resources */ = {isa = PBXBuildFile; fileRef = 651CF90825ECCC490004467C /* objc_class结构体实现.png */; };
 		651CF90E25ECCC7F0004467C /* isa指向.png in Resources */ = {isa = PBXBuildFile; fileRef = 651CF90D25ECCC7F0004467C /* isa指向.png */; };
 		651CF91B25ECCD340004467C /* kvo.png in Resources */ = {isa = PBXBuildFile; fileRef = 651CF91A25ECCD340004467C /* kvo.png */; };
+		65233FC52660DC060079D968 /* objc_msgSend2.png in Resources */ = {isa = PBXBuildFile; fileRef = 65233FC42660DC050079D968 /* objc_msgSend2.png */; };
 		6526EB5C2654DEDC00AAB951 /* LWRuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6526EB5B2654DEDC00AAB951 /* LWRuntimeViewController.m */; };
 		6526EB5F2654E19D00AAB951 /* LWRuntimePerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 6526EB5E2654E19D00AAB951 /* LWRuntimePerson.m */; };
 		6526EB622654E5F700AAB951 /* LWRuntimePersonTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6526EB612654E5F700AAB951 /* LWRuntimePersonTest.m */; };
@@ -26,6 +27,7 @@
 		6526EB6E2655134000AAB951 /* runtime_isa3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6526EB6D2655134000AAB951 /* runtime_isa3.png */; };
 		652EE26225A40BA70056A917 /* LWNatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 652EE26125A40BA70056A917 /* LWNatureViewController.m */; };
 		652EE28025A447F90056A917 /* LWStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 652EE27F25A447F90056A917 /* LWStudent.m */; };
+		65346A99265F407E00AE1552 /* objc_msgSend.png in Resources */ = {isa = PBXBuildFile; fileRef = 65346A98265F407E00AE1552 /* objc_msgSend.png */; };
 		655C6EB126566380002675ED /* class_ro_t.png in Resources */ = {isa = PBXBuildFile; fileRef = 655C6EAF26566380002675ED /* class_ro_t.png */; };
 		655C6EB226566380002675ED /* class_rw_t.png in Resources */ = {isa = PBXBuildFile; fileRef = 655C6EB026566380002675ED /* class_rw_t.png */; };
 		655C6EB42656651B002675ED /* method_t.png in Resources */ = {isa = PBXBuildFile; fileRef = 655C6EB32656651B002675ED /* method_t.png */; };
@@ -60,7 +62,7 @@
 		659016502584FFC100BDF3AF /* LWLifeCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6590164D2584FFC100BDF3AF /* LWLifeCycleViewController.m */; };
 		65A48526265752BC0026D51B /* LWRuntimePersonCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A48525265752BC0026D51B /* LWRuntimePersonCache.m */; };
 		65A4852826575AAB0026D51B /* cache_t.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A4852726575AAB0026D51B /* cache_t.png */; };
-		65A4852A2657B16A0026D51B /* objc_msgSend.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A485292657B16A0026D51B /* objc_msgSend.png */; };
+		65A4852A2657B16A0026D51B /* objc_msgSend1.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A485292657B16A0026D51B /* objc_msgSend1.png */; };
 		65ABFA8F258846F400A15BEB /* LWGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ABFA8E258846F400A15BEB /* LWGCDViewController.m */; };
 		65B281402648DE1600158E04 /* block__block.png in Resources */ = {isa = PBXBuildFile; fileRef = 65B2813F2648DE1600158E04 /* block__block.png */; };
 		65B2814226490B3100158E04 /* block__bkock2.png in Resources */ = {isa = PBXBuildFile; fileRef = 65B2814126490B3100158E04 /* block__bkock2.png */; };
@@ -109,6 +111,7 @@
 		651CF90825ECCC490004467C /* objc_class结构体实现.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "objc_class结构体实现.png"; sourceTree = "<group>"; };
 		651CF90D25ECCC7F0004467C /* isa指向.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "isa指向.png"; sourceTree = "<group>"; };
 		651CF91A25ECCD340004467C /* kvo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kvo.png; sourceTree = "<group>"; };
+		65233FC42660DC050079D968 /* objc_msgSend2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = objc_msgSend2.png; sourceTree = "<group>"; };
 		6526EB5A2654DEDC00AAB951 /* LWRuntimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWRuntimeViewController.h; sourceTree = "<group>"; };
 		6526EB5B2654DEDC00AAB951 /* LWRuntimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWRuntimeViewController.m; sourceTree = "<group>"; };
 		6526EB5D2654E19D00AAB951 /* LWRuntimePerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWRuntimePerson.h; sourceTree = "<group>"; };
@@ -127,6 +130,7 @@
 		652EE26925A40C470056A917 /* main-arm64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "main-arm64.cpp"; sourceTree = "<group>"; };
 		652EE27E25A447F90056A917 /* LWStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWStudent.h; sourceTree = "<group>"; };
 		652EE27F25A447F90056A917 /* LWStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWStudent.m; sourceTree = "<group>"; };
+		65346A98265F407E00AE1552 /* objc_msgSend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = objc_msgSend.png; sourceTree = "<group>"; };
 		655C6EAF26566380002675ED /* class_ro_t.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = class_ro_t.png; sourceTree = "<group>"; };
 		655C6EB026566380002675ED /* class_rw_t.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = class_rw_t.png; sourceTree = "<group>"; };
 		655C6EB32656651B002675ED /* method_t.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = method_t.png; sourceTree = "<group>"; };
@@ -180,7 +184,7 @@
 		65A48524265752BC0026D51B /* LWRuntimePersonCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWRuntimePersonCache.h; sourceTree = "<group>"; };
 		65A48525265752BC0026D51B /* LWRuntimePersonCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWRuntimePersonCache.m; sourceTree = "<group>"; };
 		65A4852726575AAB0026D51B /* cache_t.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cache_t.png; sourceTree = "<group>"; };
-		65A485292657B16A0026D51B /* objc_msgSend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = objc_msgSend.png; sourceTree = "<group>"; };
+		65A485292657B16A0026D51B /* objc_msgSend1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = objc_msgSend1.png; sourceTree = "<group>"; };
 		65ABFA8D258846F400A15BEB /* LWGCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWGCDViewController.h; sourceTree = "<group>"; };
 		65ABFA8E258846F400A15BEB /* LWGCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWGCDViewController.m; sourceTree = "<group>"; };
 		65B2813F2648DE1600158E04 /* block__block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block__block.png; sourceTree = "<group>"; };
@@ -262,7 +266,9 @@
 				655C6EB026566380002675ED /* class_rw_t.png */,
 				655C6EB32656651B002675ED /* method_t.png */,
 				65A4852726575AAB0026D51B /* cache_t.png */,
-				65A485292657B16A0026D51B /* objc_msgSend.png */,
+				65346A98265F407E00AE1552 /* objc_msgSend.png */,
+				65A485292657B16A0026D51B /* objc_msgSend1.png */,
+				65233FC42660DC050079D968 /* objc_msgSend2.png */,
 				6526EB69265510FF00AAB951 /* runtime_isa.png */,
 				6526EB6B2655110600AAB951 /* runtime_isa2.png */,
 				6526EB6D2655134000AAB951 /* runtime_isa3.png */,
@@ -557,8 +563,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65233FC52660DC060079D968 /* objc_msgSend2.png in Resources */,
 				651CF91B25ECCD340004467C /* kvo.png in Resources */,
-				65A4852A2657B16A0026D51B /* objc_msgSend.png in Resources */,
+				65A4852A2657B16A0026D51B /* objc_msgSend1.png in Resources */,
 				65D08D4526461D8F0037F6F5 /* block_本质.png in Resources */,
 				659015CF2584EE8700BDF3AF /* Assets.xcassets in Resources */,
 				65B28148264911AA00158E04 /* block__forwaridng.png in Resources */,
@@ -570,6 +577,7 @@
 				65B2814626490EB200158E04 /* block__bkock4.png in Resources */,
 				65B2814426490BD400158E04 /* block__bkock3.png in Resources */,
 				650488B125E8F293006BD70A /* 常见考题.md in Resources */,
+				65346A99265F407E00AE1552 /* objc_msgSend.png in Resources */,
 				65B281402648DE1600158E04 /* block__block.png in Resources */,
 				655C6EB42656651B002675ED /* method_t.png in Resources */,
 				6526EB6E2655134000AAB951 /* runtime_isa3.png in Resources */,
@@ -716,7 +724,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -776,7 +784,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

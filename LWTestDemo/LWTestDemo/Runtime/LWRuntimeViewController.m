@@ -13,6 +13,7 @@
 #import "LWRuntimePersonCache.h"
 
 #import <objc/runtime.h>
+#import <objc/message.h>
 
 typedef enum{
     LWOptionsOne = 1<<0,
@@ -78,7 +79,19 @@ typedef enum{
     LWRuntimePersonCache *personCache = [[LWRuntimePersonCache alloc]init];
     [personCache test];
     [personCache test];
-    // Do any additional setup after loading the view.
+    
+    LWRuntimePerson *objP = [[LWRuntimePerson alloc]init];
+    [objP personTest];
+    objc_msgSend(objP,sel_registerName("personTest"));
+    //消息接受者(receiver):objP
+    //消息名称：personTest
+    // OC的方法调用：消息机制，给方法调用者发送消息
+    
+    //动态添加方法。
+    [objP test];
+    [LWRuntimePerson testC];
+    
+    
 }
 
 /*

@@ -15,6 +15,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,assign,getter=isTall)BOOL tall;
 @property(nonatomic,assign,getter=isHandsome)BOOL handsome;
 
+- (void)personTest;
+- (void)test;
++ (void)testC;
 @end
 
 NS_ASSUME_NONNULL_END
