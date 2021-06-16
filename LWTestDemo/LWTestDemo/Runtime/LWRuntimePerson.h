@@ -17,7 +17,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)personTest;
 - (void)test;
+- (void)testMessage;
+- (void)testForward;
 + (void)testC;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

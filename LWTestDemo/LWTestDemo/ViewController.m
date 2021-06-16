@@ -115,8 +115,21 @@
 
     NSLog(@"loadView 方法在 UIViewController 对象的 view 被访问且为空的时候调用。这是它与 awakeFromNib 方法的一个区别。在重写 loadView 方法的时候，不要调用父类的方法。self.view 是在 loadView 方法中创建并建立联系的，不要调用 [super loadView]，要将自定义的 view 赋值给 self.view。如果该控制器没有 xib 文件，重写了 loadView 但没有做任何事情(也就是 self.view为空)，在 viewDidLoad 中还使用了 self.view(self.view 为空时会调用 loadView)，这样会造成死循环。");
 }
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    UIImage *image = [UIImage imageNamed:@"block"];
+//    [self.navigationController.navigationBar setBackgroundImage:image forBarMetrics:UIBarMetricsDefault];
+//    self.navigationController.navigationBar.tintColor = [UIColor yellowColor];
+//    self.navigationController.navigationBar.backgroundColor = [UIColor redColor];
+    
+    if (@available(iOS 15.0, *)){
+            UIView *barBackgroundView = self.navigationController.navigationBar.subviews.firstObject;
+            UIColor *naviBarTintColor = [UIColor redColor];
+            UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, barBackgroundView.frame.size.width, barBackgroundView.frame.size.height+[UIApplication sharedApplication].statusBarFrame.size.height)];
+            [view setBackgroundColor:naviBarTintColor];
+            [barBackgroundView addSubview:view];
+        }
     NSLog(@"super class ==>%@ super superclass ==>%@   ",[super class],[super superclass]);
     NSLog(@"视图加载 --- 加载子视图之前");
     [self.view addSubview:self.myTableView];
@@ -184,7 +197,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSString *classStr = _dataSource[indexPath.row];
     Class className = NSClassFromString(classStr);
-    LWLifeCycleViewController *vc = [[className alloc]init];
+    UIViewController *vc = [[className alloc]init];
     NSLog(@"pushViewController 之前");
     [self.navigationController pushViewController:vc animated:YES];
     NSLog(@"pushViewController 之后");

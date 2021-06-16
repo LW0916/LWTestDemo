@@ -71,4 +71,9 @@
     return !!(_tallRichHandsome & LWHandsomeMask);
 }
 
+
+- (void)testMessage{
+    NSLog(@"消息转发%s",__func__);
+}
+
 @end

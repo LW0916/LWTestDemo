@@ -13,6 +13,7 @@
 		650488B125E8F293006BD70A /* 常见考题.md in Resources */ = {isa = PBXBuildFile; fileRef = 650488B025E8F293006BD70A /* 常见考题.md */; };
 		650488B825E8F3A8006BD70A /* LWKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650488B725E8F3A8006BD70A /* LWKVOViewController.m */; };
 		650488C125E8F4D1006BD70A /* LWKOVPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 650488C025E8F4D1006BD70A /* LWKOVPerson.m */; };
+		6507F17626676351008D7CE4 /* objc_msgSend3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6507F17526676351008D7CE4 /* objc_msgSend3.png */; };
 		651CF90925ECCC490004467C /* objc_class结构体实现.png in Resources */ = {isa = PBXBuildFile; fileRef = 651CF90825ECCC490004467C /* objc_class结构体实现.png */; };
 		651CF90E25ECCC7F0004467C /* isa指向.png in Resources */ = {isa = PBXBuildFile; fileRef = 651CF90D25ECCC7F0004467C /* isa指向.png */; };
 		651CF91B25ECCD340004467C /* kvo.png in Resources */ = {isa = PBXBuildFile; fileRef = 651CF91A25ECCD340004467C /* kvo.png */; };
@@ -106,6 +107,7 @@
 		650488B725E8F3A8006BD70A /* LWKVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWKVOViewController.m; sourceTree = "<group>"; };
 		650488BF25E8F4D1006BD70A /* LWKOVPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWKOVPerson.h; sourceTree = "<group>"; };
 		650488C025E8F4D1006BD70A /* LWKOVPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWKOVPerson.m; sourceTree = "<group>"; };
+		6507F17526676351008D7CE4 /* objc_msgSend3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = objc_msgSend3.png; sourceTree = "<group>"; };
 		651CF8FE25ECC0610004467C /* NSKVONotifying_LWKOVPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSKVONotifying_LWKOVPerson.h; sourceTree = "<group>"; };
 		651CF8FF25ECC0610004467C /* NSKVONotifying_LWKOVPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSKVONotifying_LWKOVPerson.m; sourceTree = "<group>"; };
 		651CF90825ECCC490004467C /* objc_class结构体实现.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "objc_class结构体实现.png"; sourceTree = "<group>"; };
@@ -269,6 +271,7 @@
 				65346A98265F407E00AE1552 /* objc_msgSend.png */,
 				65A485292657B16A0026D51B /* objc_msgSend1.png */,
 				65233FC42660DC050079D968 /* objc_msgSend2.png */,
+				6507F17526676351008D7CE4 /* objc_msgSend3.png */,
 				6526EB69265510FF00AAB951 /* runtime_isa.png */,
 				6526EB6B2655110600AAB951 /* runtime_isa2.png */,
 				6526EB6D2655134000AAB951 /* runtime_isa3.png */,
@@ -588,6 +591,7 @@
 				6526EB6A265510FF00AAB951 /* runtime_isa.png in Resources */,
 				651CF90E25ECCC7F0004467C /* isa指向.png in Resources */,
 				650027F325F71EC20060097E /* block.png in Resources */,
+				6507F17626676351008D7CE4 /* objc_msgSend3.png in Resources */,
 				658F518E264D242700494ECD /* block_reference.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

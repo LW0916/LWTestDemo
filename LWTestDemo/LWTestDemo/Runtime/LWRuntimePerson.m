@@ -7,6 +7,7 @@
 
 #import "LWRuntimePerson.h"
 #import <objc/runtime.h>
+#import "LWRuntimePersonTest.h"
 
 
 struct method_t {
@@ -27,8 +28,14 @@ struct method_t {
 + (void)otherC{
     NSLog(@"%s",__func__);
 }
+
+- (void)otherForward{
+    NSLog(@"%s",__func__);
+}
+
+#pragma mark - 动态方法解析 -
 +(BOOL)resolveClassMethod:(SEL)sel{
-    NSLog(@"resolveInstanceMethod===%@",NSStringFromSelector(sel));
+    NSLog(@"resolveClassMethod===%@",NSStringFromSelector(sel));
     if (sel == @selector(testC)) {
         //获取其他方法
         Method otherMethod = class_getClassMethod(self, @selector(otherC));
@@ -49,6 +56,7 @@ struct method_t {
     }
     return  [super resolveInstanceMethod:sel];
 }
+
 /*
 +(BOOL)resolveInstanceMethod:(SEL)sel{
     NSLog(@"resolveInstanceMethod===%@",NSStringFromSelector(sel));
@@ -64,4 +72,33 @@ struct method_t {
     return  [super resolveInstanceMethod:sel];
 }
 */
+
+#pragma mark - 消息转发 -
+/*
+    类方法调用
+ +(id)forwardingTargetForSelector:(SEL)aSelector
+ +(NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector
+ +(void)forwardInvocation:(NSInvocation *)anInvocation
+*/
+-(id)forwardingTargetForSelector:(SEL)aSelector{
+    if (aSelector == @selector(testMessage)) {
+        return [[LWRuntimePersonTest alloc]init];
+    }
+    return [super forwardingTargetForSelector:aSelector];
+}
+//方法签名：返回值类型，参数类型
+-(NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector{
+    if (aSelector == @selector(testForward)) {
+        return  [NSMethodSignature signatureWithObjCTypes:"v16@0:8"];;
+    }
+    return [super methodSignatureForSelector:aSelector];
+}
+//NSInvocation封装了方法调用，包括：方法调用者，方法，方法参数
+//    anInvocation.target;//方法调用者
+//    anInvocation.selector;//方法名
+//    [anInvocation getArgument:NULL atIndex:0]//方法参数
+-(void)forwardInvocation:(NSInvocation *)anInvocation{
+//    [anInvocation invokeWithTarget:[[LWRuntimePersonTest alloc]init] ];
+}
+
 @end

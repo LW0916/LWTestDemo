@@ -89,7 +89,14 @@ typedef enum{
     
     //动态添加方法。
     [objP test];
+    [objP test];
     [LWRuntimePerson testC];
+    //消息转发
+    [objP testMessage];
+    [objP testMessage];
+    
+    [objP testForward];
+    [objP testForward];
     
     
 }
