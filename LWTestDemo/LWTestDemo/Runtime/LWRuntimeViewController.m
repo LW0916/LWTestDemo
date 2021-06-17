@@ -28,6 +28,7 @@ typedef enum{
 @end
 
 @implementation LWRuntimeViewController
+@dynamic age;//提醒编译器不要自动生成setter 和 getter 的实现，不要自动生成成员变量。
 
 - (void)setLWOptions:(LWOptions)options{
     if (options & LWOptionsOne) {
@@ -46,7 +47,6 @@ typedef enum{
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     LWRuntimePerson *person = [[LWRuntimePerson alloc]init];
     person.rich = NO;//1
     person.tall = YES;//1

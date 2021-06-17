@@ -10,6 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LWRuntimeViewController : UIViewController
+@property(nonatomic,assign)int age;
 
 @end
 
