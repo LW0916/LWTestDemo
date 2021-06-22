@@ -14,6 +14,8 @@
 		650488B825E8F3A8006BD70A /* LWKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650488B725E8F3A8006BD70A /* LWKVOViewController.m */; };
 		650488C125E8F4D1006BD70A /* LWKOVPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 650488C025E8F4D1006BD70A /* LWKOVPerson.m */; };
 		6507F17626676351008D7CE4 /* objc_msgSend3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6507F17526676351008D7CE4 /* objc_msgSend3.png */; };
+		65122BE526817E1B00249C6C /* LWSuperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65122BE426817E1B00249C6C /* LWSuperViewController.m */; };
+		65122BE826817E3A00249C6C /* LWSuperPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 65122BE726817E3A00249C6C /* LWSuperPerson.m */; };
 		651CF90925ECCC490004467C /* objc_class结构体实现.png in Resources */ = {isa = PBXBuildFile; fileRef = 651CF90825ECCC490004467C /* objc_class结构体实现.png */; };
 		651CF90E25ECCC7F0004467C /* isa指向.png in Resources */ = {isa = PBXBuildFile; fileRef = 651CF90D25ECCC7F0004467C /* isa指向.png */; };
 		651CF91B25ECCD340004467C /* kvo.png in Resources */ = {isa = PBXBuildFile; fileRef = 651CF91A25ECCD340004467C /* kvo.png */; };
@@ -108,6 +110,10 @@
 		650488BF25E8F4D1006BD70A /* LWKOVPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWKOVPerson.h; sourceTree = "<group>"; };
 		650488C025E8F4D1006BD70A /* LWKOVPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWKOVPerson.m; sourceTree = "<group>"; };
 		6507F17526676351008D7CE4 /* objc_msgSend3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = objc_msgSend3.png; sourceTree = "<group>"; };
+		65122BE326817E1B00249C6C /* LWSuperViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWSuperViewController.h; sourceTree = "<group>"; };
+		65122BE426817E1B00249C6C /* LWSuperViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWSuperViewController.m; sourceTree = "<group>"; };
+		65122BE626817E3A00249C6C /* LWSuperPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWSuperPerson.h; sourceTree = "<group>"; };
+		65122BE726817E3A00249C6C /* LWSuperPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWSuperPerson.m; sourceTree = "<group>"; };
 		651CF8FE25ECC0610004467C /* NSKVONotifying_LWKOVPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSKVONotifying_LWKOVPerson.h; sourceTree = "<group>"; };
 		651CF8FF25ECC0610004467C /* NSKVONotifying_LWKOVPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSKVONotifying_LWKOVPerson.m; sourceTree = "<group>"; };
 		651CF90825ECCC490004467C /* objc_class结构体实现.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "objc_class结构体实现.png"; sourceTree = "<group>"; };
@@ -246,6 +252,17 @@
 				651CF8FF25ECC0610004467C /* NSKVONotifying_LWKOVPerson.m */,
 			);
 			path = KVO;
+			sourceTree = "<group>";
+		};
+		65122BE226817DF900249C6C /* Super */ = {
+			isa = PBXGroup;
+			children = (
+				65122BE326817E1B00249C6C /* LWSuperViewController.h */,
+				65122BE426817E1B00249C6C /* LWSuperViewController.m */,
+				65122BE626817E3A00249C6C /* LWSuperPerson.h */,
+				65122BE726817E3A00249C6C /* LWSuperPerson.m */,
+			);
+			path = Super;
 			sourceTree = "<group>";
 		};
 		651CF90725ECCC0E0004467C /* Images */ = {
@@ -391,6 +408,7 @@
 				6590164C2584FFC100BDF3AF /* LWLifeCycleViewController.h */,
 				6590164D2584FFC100BDF3AF /* LWLifeCycleViewController.m */,
 				659016182584F05400BDF3AF /* LWSettingLog.h */,
+				65122BE226817DF900249C6C /* Super */,
 				651F3DAB26521BA600421855 /* Runtime */,
 				65FC7C2F25F5FD1400A3BC12 /* Block */,
 				65C2518E25EDCB3E00BD1649 /* KVC */,
@@ -620,12 +638,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				658E62D02585DC8F00E1771D /* LWLoadInitializeViewController.m in Sources */,
+				65122BE826817E3A00249C6C /* LWSuperPerson.m in Sources */,
 				65FC7C3225F5FD9800A3BC12 /* LWBlockViewController.m in Sources */,
 				65A48526265752BC0026D51B /* LWRuntimePersonCache.m in Sources */,
 				6526EB5F2654E19D00AAB951 /* LWRuntimePerson.m in Sources */,
 				658E62EF2586272600E1771D /* NSArray+LW.m in Sources */,
 				658DE08A2590342A00BD71C3 /* NSString+Test.m in Sources */,
 				658E62FE2586322B00E1771D /* LWUncaughtExceptionHandler.m in Sources */,
+				65122BE526817E1B00249C6C /* LWSuperViewController.m in Sources */,
 				65C2519725EDCB7100BD1649 /* LWKVCPerson.m in Sources */,
 				6526EB652654FEB300AAB951 /* LWRuntimePersonTest2.m in Sources */,
 				652EE26225A40BA70056A917 /* LWNatureViewController.m in Sources */,
