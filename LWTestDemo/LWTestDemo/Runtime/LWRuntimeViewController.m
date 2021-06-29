@@ -11,6 +11,7 @@
 #import "LWRuntimePersonTest2.h"
 #import "LWRuntimePersonTest3.h"
 #import "LWRuntimePersonCache.h"
+#import "LWRuntimeAPI.h"
 
 #import <objc/runtime.h>
 #import <objc/message.h>
@@ -43,6 +44,7 @@ typedef enum{
     if (options & LWOptionsFour) {
         NSLog(@"包含==LWOptionsFour");
     }
+    
 }
 
 - (void)viewDidLoad {
@@ -98,7 +100,7 @@ typedef enum{
     [objP testForward];
     [objP testForward];
     
-    
+    [[[LWRuntimeAPI alloc]init] test];
 }
 
 /*
