@@ -16,6 +16,9 @@
 		6507F17626676351008D7CE4 /* objc_msgSend3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6507F17526676351008D7CE4 /* objc_msgSend3.png */; };
 		65122BE526817E1B00249C6C /* LWSuperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65122BE426817E1B00249C6C /* LWSuperViewController.m */; };
 		65122BE826817E3A00249C6C /* LWSuperPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 65122BE726817E3A00249C6C /* LWSuperPerson.m */; };
+		651294EA269299610006D7CE /* runloop10.png in Resources */ = {isa = PBXBuildFile; fileRef = 651294E9269299610006D7CE /* runloop10.png */; };
+		651294ED26929A7B0006D7CE /* LWThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 651294EC26929A7B0006D7CE /* LWThread.m */; };
+		651294F52692FF8E0006D7CE /* LWPermenantThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 651294F42692FF8E0006D7CE /* LWPermenantThread.m */; };
 		651CF90925ECCC490004467C /* objc_class结构体实现.png in Resources */ = {isa = PBXBuildFile; fileRef = 651CF90825ECCC490004467C /* objc_class结构体实现.png */; };
 		651CF90E25ECCC7F0004467C /* isa指向.png in Resources */ = {isa = PBXBuildFile; fileRef = 651CF90D25ECCC7F0004467C /* isa指向.png */; };
 		651CF91B25ECCD340004467C /* kvo.png in Resources */ = {isa = PBXBuildFile; fileRef = 651CF91A25ECCD340004467C /* kvo.png */; };
@@ -38,7 +41,6 @@
 		655C6EB126566380002675ED /* class_ro_t.png in Resources */ = {isa = PBXBuildFile; fileRef = 655C6EAF26566380002675ED /* class_ro_t.png */; };
 		655C6EB226566380002675ED /* class_rw_t.png in Resources */ = {isa = PBXBuildFile; fileRef = 655C6EB026566380002675ED /* class_rw_t.png */; };
 		655C6EB42656651B002675ED /* method_t.png in Resources */ = {isa = PBXBuildFile; fileRef = 655C6EB32656651B002675ED /* method_t.png */; };
-		6564251F268DC41C0005C686 /* runloop10.png in Resources */ = {isa = PBXBuildFile; fileRef = 6564251E268DC41C0005C686 /* runloop10.png */; };
 		658AA2EC2689B2890085732F /* runtime_api04.png in Resources */ = {isa = PBXBuildFile; fileRef = 658AA2EB2689B2890085732F /* runtime_api04.png */; };
 		658AA2EE2689B4930085732F /* runtime_api04_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 658AA2ED2689B4930085732F /* runtime_api04_1.png */; };
 		658DE0812590339D00BD71C3 /* LWCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 658DE0802590339D00BD71C3 /* LWCategoryViewController.m */; };
@@ -130,6 +132,11 @@
 		65122BE426817E1B00249C6C /* LWSuperViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWSuperViewController.m; sourceTree = "<group>"; };
 		65122BE626817E3A00249C6C /* LWSuperPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWSuperPerson.h; sourceTree = "<group>"; };
 		65122BE726817E3A00249C6C /* LWSuperPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWSuperPerson.m; sourceTree = "<group>"; };
+		651294E9269299610006D7CE /* runloop10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runloop10.png; sourceTree = "<group>"; };
+		651294EB26929A7B0006D7CE /* LWThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWThread.h; sourceTree = "<group>"; };
+		651294EC26929A7B0006D7CE /* LWThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWThread.m; sourceTree = "<group>"; };
+		651294F32692FF8E0006D7CE /* LWPermenantThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWPermenantThread.h; sourceTree = "<group>"; };
+		651294F42692FF8E0006D7CE /* LWPermenantThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWPermenantThread.m; sourceTree = "<group>"; };
 		651CF8FE25ECC0610004467C /* NSKVONotifying_LWKOVPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSKVONotifying_LWKOVPerson.h; sourceTree = "<group>"; };
 		651CF8FF25ECC0610004467C /* NSKVONotifying_LWKOVPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSKVONotifying_LWKOVPerson.m; sourceTree = "<group>"; };
 		651CF90825ECCC490004467C /* objc_class结构体实现.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "objc_class结构体实现.png"; sourceTree = "<group>"; };
@@ -164,7 +171,6 @@
 		655C6EAF26566380002675ED /* class_ro_t.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = class_ro_t.png; sourceTree = "<group>"; };
 		655C6EB026566380002675ED /* class_rw_t.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = class_rw_t.png; sourceTree = "<group>"; };
 		655C6EB32656651B002675ED /* method_t.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = method_t.png; sourceTree = "<group>"; };
-		6564251E268DC41C0005C686 /* runloop10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runloop10.png; sourceTree = "<group>"; };
 		658AA2EB2689B2890085732F /* runtime_api04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runtime_api04.png; sourceTree = "<group>"; };
 		658AA2ED2689B4930085732F /* runtime_api04_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runtime_api04_1.png; sourceTree = "<group>"; };
 		658DE07F2590339D00BD71C3 /* LWCategoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWCategoryViewController.h; sourceTree = "<group>"; };
@@ -339,7 +345,7 @@
 				65EB5185268C437B00DC2DF3 /* runloop07.png */,
 				65EB5187268C5A6200DC2DF3 /* runloop08.png */,
 				65EB5189268C5ECE00DC2DF3 /* runloop09.png */,
-				6564251E268DC41C0005C686 /* runloop10.png */,
+				651294E9269299610006D7CE /* runloop10.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -349,6 +355,10 @@
 			children = (
 				651D559B268B032200158A8F /* LWRunLoopViewController.h */,
 				651D559C268B032200158A8F /* LWRunLoopViewController.m */,
+				651294F32692FF8E0006D7CE /* LWPermenantThread.h */,
+				651294F42692FF8E0006D7CE /* LWPermenantThread.m */,
+				651294EB26929A7B0006D7CE /* LWThread.h */,
+				651294EC26929A7B0006D7CE /* LWThread.m */,
 			);
 			path = RunLoop;
 			sourceTree = "<group>";
@@ -647,7 +657,7 @@
 				65EB5184268C42C400DC2DF3 /* runloop06.png in Resources */,
 				65233FC52660DC060079D968 /* objc_msgSend2.png in Resources */,
 				651CF91B25ECCD340004467C /* kvo.png in Resources */,
-				6564251F268DC41C0005C686 /* runloop10.png in Resources */,
+				651294EA269299610006D7CE /* runloop10.png in Resources */,
 				65EB517A268C0DEA00DC2DF3 /* runloop03.png in Resources */,
 				65A4852A2657B16A0026D51B /* objc_msgSend1.png in Resources */,
 				65D08D4526461D8F0037F6F5 /* block_本质.png in Resources */,
@@ -711,6 +721,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				651294ED26929A7B0006D7CE /* LWThread.m in Sources */,
 				658E62D02585DC8F00E1771D /* LWLoadInitializeViewController.m in Sources */,
 				65122BE826817E3A00249C6C /* LWSuperPerson.m in Sources */,
 				65FC7C3225F5FD9800A3BC12 /* LWBlockViewController.m in Sources */,
@@ -738,6 +749,7 @@
 				650027F925F71F580060097E /* LWBlockType.m in Sources */,
 				659015C42584EE8600BDF3AF /* AppDelegate.m in Sources */,
 				6526EB5C2654DEDC00AAB951 /* LWRuntimeViewController.m in Sources */,
+				651294F52692FF8E0006D7CE /* LWPermenantThread.m in Sources */,
 				65449700268422F400FFF2C6 /* LWRuntimeAPI.m in Sources */,
 				65C2519D25EDCB8900BD1649 /* LWKVCDog.m in Sources */,
 				659016462584FF9D00BDF3AF /* LWLifeCycleView.m in Sources */,
@@ -840,7 +852,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -893,7 +905,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -909,7 +921,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5ZAJ7C6M9A;
 				INFOPLIST_FILE = LWTestDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -928,7 +940,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5ZAJ7C6M9A;
 				INFOPLIST_FILE = LWTestDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

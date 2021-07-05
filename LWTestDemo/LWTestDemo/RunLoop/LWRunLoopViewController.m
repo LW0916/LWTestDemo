@@ -6,19 +6,23 @@
 //
 
 #import "LWRunLoopViewController.h"
-
+#import "LWPermenantThread.h"
 @interface LWRunLoopViewController ()
+
 {
     CFRunLoopObserverRef observer ;
 }
+@property(nonatomic,strong)LWPermenantThread *thread;
 @end
 
 @implementation LWRunLoopViewController
 
 -(void)dealloc{
-    CFRunLoopRemoveObserver(CFRunLoopGetMain(), observer, kCFRunLoopCommonModes);
-    CFRelease(observer);
-    observer = NULL;
+//    CFRunLoopRemoveObserver(CFRunLoopGetMain(), observer, kCFRunLoopCommonModes);
+//    CFRelease(observer);
+//    observer = NULL;
+    
+    NSLog(@"====>%s",__func__);
 }
  
 - (void)viewDidLoad{
@@ -34,7 +38,25 @@
     NSLog(@"currentRunLoop=>%p mainRunLoop=>%p",CFRunLoopGetCurrent(),CFRunLoopGetMain());
     NSLog(@"currentRunLoop=>%p mainRunLoop=>%p mainRunLoop=%@",[NSRunLoop currentRunLoop],[NSRunLoop mainRunLoop],[NSRunLoop mainRunLoop]);
     NSLog(@"mainRunLoop=>%@",[NSRunLoop mainRunLoop]);
-    [self startObserver];
+    
+    
+    UIButton *btn = [UIButton buttonWithType:(UIButtonTypeCustom)];
+    [btn setTitle:@"stop" forState:(UIControlStateNormal)];
+    [btn addTarget:self action:@selector(clickBtn1) forControlEvents:(UIControlEventTouchUpInside)];
+    [btn setBackgroundColor:[UIColor redColor]];
+    [btn setFrame:CGRectMake(100, 100, 100, 100)];
+    [self.view addSubview:btn];
+    
+    UIButton *btn2 = [UIButton buttonWithType:(UIButtonTypeCustom)];
+    [btn2 setTitle:@"执行任务" forState:(UIControlStateNormal)];
+    [btn2 addTarget:self action:@selector(clickBtn2) forControlEvents:(UIControlEventTouchUpInside)];
+    [btn2 setBackgroundColor:[UIColor redColor]];
+    [btn2 setFrame:CGRectMake(100, 250, 100, 100)];
+    [self.view addSubview:btn2];
+    //    [self startObserver];
+
+    self.thread = [[LWPermenantThread alloc]init];
+    [self.thread run];
 
 }
 
@@ -50,7 +72,7 @@
     CFRunLoopAddObserver(CFRunLoopGetMain(), observer, kCFRunLoopCommonModes);
 }
 
- void runLoopObserverCallBack(CFRunLoopObserverRef observer, CFRunLoopActivity activity, void *info){
+void runLoopObserverCallBack(CFRunLoopObserverRef observer, CFRunLoopActivity activity, void *info){
 
     /* Run Loop Observer Activities */
 //    typedef CF_OPTIONS(CFOptionFlags, CFRunLoopActivity) {
@@ -79,6 +101,30 @@
         NSLog(@"runLoopObserverCallBack -->%@-->%@",@"RunLoop kCFRunLoopAllActivities",CFRunLoopCopyCurrentMode(CFRunLoopGetCurrent()));
     }
    
+}
+#pragma mark --解决timer滚动事件失效问题
+- (void)startTimer{
+    static int count = 0;
+//        [NSTimer scheduledTimerWithTimeInterval:1.0 repeats:YES block:^(NSTimer * _Nonnull timer) {
+//            NSLog(@"count=>%d",++count);
+//        }];//默认添加到默认模式下工作
+
+    NSTimer *timer = [NSTimer timerWithTimeInterval:1.0 repeats:YES block:^(NSTimer * _Nonnull timer) {
+        NSLog(@"count=>%d",++count);
+    }];
+//    NSDefaultRunLoopMode  UITrackingRunLoopMode
+    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+    
+}
+#pragma mark -- 线程保活
+- (void)clickBtn1{
+    [self.thread stop];
+}
+
+- (void)clickBtn2{
+    [self.thread executeTask:^{
+        NSLog(@"执行任务- %@",[NSThread currentThread]);
+    }];
 }
 
 @end
