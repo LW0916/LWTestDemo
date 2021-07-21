@@ -73,6 +73,7 @@
  设置 view 的 Frame 会触发 layoutSubviews。
  滚动一个 UIScrollView 会触发 layoutSubviews。
  旋转 Screen 会触发父 UIView 上的 layoutSubviews。
+ 改变一个UIView大小的时候也会触发父UIView上的layoutSubviews事件。
  setNeedsLayout，标记为需要重新布局，不立即刷新，在下一轮 runloop 结束前刷新，layoutSubviews 一定会被调用。
  layoutIfNeeded，如果有需要刷新的标记，立即调用 layoutSubviews；如果没有标记，不会调用 layoutSubviews。
 

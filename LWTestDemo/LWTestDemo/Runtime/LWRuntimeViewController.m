@@ -84,7 +84,8 @@ typedef enum{
     
     LWRuntimePerson *objP = [[LWRuntimePerson alloc]init];
     [objP personTest];
-    objc_msgSend(objP,sel_registerName("personTest"));
+     ((void (*)(id, SEL))objc_msgSend)(objP,sel_registerName("personTest"));
+    
     //消息接受者(receiver):objP
     //消息名称：personTest
     // OC的方法调用：消息机制，给方法调用者发送消息

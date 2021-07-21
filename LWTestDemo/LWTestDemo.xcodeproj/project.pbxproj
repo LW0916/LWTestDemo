@@ -41,6 +41,11 @@
 		655C6EB126566380002675ED /* class_ro_t.png in Resources */ = {isa = PBXBuildFile; fileRef = 655C6EAF26566380002675ED /* class_ro_t.png */; };
 		655C6EB226566380002675ED /* class_rw_t.png in Resources */ = {isa = PBXBuildFile; fileRef = 655C6EB026566380002675ED /* class_rw_t.png */; };
 		655C6EB42656651B002675ED /* method_t.png in Resources */ = {isa = PBXBuildFile; fileRef = 655C6EB32656651B002675ED /* method_t.png */; };
+		6580753426943D3E0016485B /* LWGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6580753226943D3E0016485B /* LWGCDViewController.m */; };
+		6580753626943E2D0016485B /* 多线程01.png in Resources */ = {isa = PBXBuildFile; fileRef = 6580753526943E2D0016485B /* 多线程01.png */; };
+		658075382694501C0016485B /* 多线程02.png in Resources */ = {isa = PBXBuildFile; fileRef = 658075372694501C0016485B /* 多线程02.png */; };
+		6580753A269457450016485B /* 多线程03.png in Resources */ = {isa = PBXBuildFile; fileRef = 65807539269457450016485B /* 多线程03.png */; };
+		6580753C26945A0D0016485B /* 多线程04.png in Resources */ = {isa = PBXBuildFile; fileRef = 6580753B26945A0D0016485B /* 多线程04.png */; };
 		658AA2EC2689B2890085732F /* runtime_api04.png in Resources */ = {isa = PBXBuildFile; fileRef = 658AA2EB2689B2890085732F /* runtime_api04.png */; };
 		658AA2EE2689B4930085732F /* runtime_api04_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 658AA2ED2689B4930085732F /* runtime_api04_1.png */; };
 		658DE0812590339D00BD71C3 /* LWCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 658DE0802590339D00BD71C3 /* LWCategoryViewController.m */; };
@@ -75,18 +80,21 @@
 		65A48526265752BC0026D51B /* LWRuntimePersonCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A48525265752BC0026D51B /* LWRuntimePersonCache.m */; };
 		65A4852826575AAB0026D51B /* cache_t.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A4852726575AAB0026D51B /* cache_t.png */; };
 		65A4852A2657B16A0026D51B /* objc_msgSend1.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A485292657B16A0026D51B /* objc_msgSend1.png */; };
-		65ABFA8F258846F400A15BEB /* LWGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65ABFA8E258846F400A15BEB /* LWGCDViewController.m */; };
 		65B281402648DE1600158E04 /* block__block.png in Resources */ = {isa = PBXBuildFile; fileRef = 65B2813F2648DE1600158E04 /* block__block.png */; };
 		65B2814226490B3100158E04 /* block__bkock2.png in Resources */ = {isa = PBXBuildFile; fileRef = 65B2814126490B3100158E04 /* block__bkock2.png */; };
 		65B2814426490BD400158E04 /* block__bkock3.png in Resources */ = {isa = PBXBuildFile; fileRef = 65B2814326490BD400158E04 /* block__bkock3.png */; };
 		65B2814626490EB200158E04 /* block__bkock4.png in Resources */ = {isa = PBXBuildFile; fileRef = 65B2814526490EB200158E04 /* block__bkock4.png */; };
 		65B28148264911AA00158E04 /* block__forwaridng.png in Resources */ = {isa = PBXBuildFile; fileRef = 65B28147264911AA00158E04 /* block__forwaridng.png */; };
+		65BABCBC26A515BB003044CE /* 多线程05.png in Resources */ = {isa = PBXBuildFile; fileRef = 65BABCBB26A515BB003044CE /* 多线程05.png */; };
+		65BABCC126A679DE003044CE /* LWLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BABCC026A679DE003044CE /* LWLock.m */; };
 		65C2519125EDCB5700BD1649 /* LWKVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C2519025EDCB5700BD1649 /* LWKVCViewController.m */; };
 		65C2519725EDCB7100BD1649 /* LWKVCPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C2519625EDCB7100BD1649 /* LWKVCPerson.m */; };
 		65C2519D25EDCB8900BD1649 /* LWKVCDog.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C2519C25EDCB8900BD1649 /* LWKVCDog.m */; };
 		65C251AF25EDEA8600BD1649 /* kvc.png in Resources */ = {isa = PBXBuildFile; fileRef = 65C251AE25EDEA8600BD1649 /* kvc.png */; };
 		65D08D4526461D8F0037F6F5 /* block_本质.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D08D4426461D8F0037F6F5 /* block_本质.png */; };
 		65D08D48264691DB0037F6F5 /* LWBlockPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D08D47264691DB0037F6F5 /* LWBlockPerson.m */; };
+		65DB3ADC26954C3400A06E3B /* LWBluetoothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DB3ADB26954C3400A06E3B /* LWBluetoothViewController.m */; };
+		65DB3ADF26957E6C00A06E3B /* LWBluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DB3ADE26957E6C00A06E3B /* LWBluetooth.m */; };
 		65EB5178268C025C00DC2DF3 /* runloop02.png in Resources */ = {isa = PBXBuildFile; fileRef = 65EB5177268C025C00DC2DF3 /* runloop02.png */; };
 		65EB517A268C0DEA00DC2DF3 /* runloop03.png in Resources */ = {isa = PBXBuildFile; fileRef = 65EB5179268C0DEA00DC2DF3 /* runloop03.png */; };
 		65EB517C268C104C00DC2DF3 /* runloop04.png in Resources */ = {isa = PBXBuildFile; fileRef = 65EB517B268C104C00DC2DF3 /* runloop04.png */; };
@@ -168,9 +176,16 @@
 		654496FF268422F400FFF2C6 /* LWRuntimeAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWRuntimeAPI.m; sourceTree = "<group>"; };
 		654497012684250C00FFF2C6 /* runtime_api01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runtime_api01.png; sourceTree = "<group>"; };
 		65449703268435E900FFF2C6 /* runtime_api02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runtime_api02.png; sourceTree = "<group>"; };
+		654591C9269D42060061AFE4 /* LWTestDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LWTestDemo.entitlements; sourceTree = "<group>"; };
 		655C6EAF26566380002675ED /* class_ro_t.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = class_ro_t.png; sourceTree = "<group>"; };
 		655C6EB026566380002675ED /* class_rw_t.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = class_rw_t.png; sourceTree = "<group>"; };
 		655C6EB32656651B002675ED /* method_t.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = method_t.png; sourceTree = "<group>"; };
+		6580753226943D3E0016485B /* LWGCDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWGCDViewController.m; sourceTree = "<group>"; };
+		6580753326943D3E0016485B /* LWGCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWGCDViewController.h; sourceTree = "<group>"; };
+		6580753526943E2D0016485B /* 多线程01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "多线程01.png"; sourceTree = "<group>"; };
+		658075372694501C0016485B /* 多线程02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "多线程02.png"; sourceTree = "<group>"; };
+		65807539269457450016485B /* 多线程03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "多线程03.png"; sourceTree = "<group>"; };
+		6580753B26945A0D0016485B /* 多线程04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "多线程04.png"; sourceTree = "<group>"; };
 		658AA2EB2689B2890085732F /* runtime_api04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runtime_api04.png; sourceTree = "<group>"; };
 		658AA2ED2689B4930085732F /* runtime_api04_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runtime_api04_1.png; sourceTree = "<group>"; };
 		658DE07F2590339D00BD71C3 /* LWCategoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWCategoryViewController.h; sourceTree = "<group>"; };
@@ -224,13 +239,14 @@
 		65A48525265752BC0026D51B /* LWRuntimePersonCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWRuntimePersonCache.m; sourceTree = "<group>"; };
 		65A4852726575AAB0026D51B /* cache_t.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cache_t.png; sourceTree = "<group>"; };
 		65A485292657B16A0026D51B /* objc_msgSend1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = objc_msgSend1.png; sourceTree = "<group>"; };
-		65ABFA8D258846F400A15BEB /* LWGCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWGCDViewController.h; sourceTree = "<group>"; };
-		65ABFA8E258846F400A15BEB /* LWGCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWGCDViewController.m; sourceTree = "<group>"; };
 		65B2813F2648DE1600158E04 /* block__block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block__block.png; sourceTree = "<group>"; };
 		65B2814126490B3100158E04 /* block__bkock2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block__bkock2.png; sourceTree = "<group>"; };
 		65B2814326490BD400158E04 /* block__bkock3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block__bkock3.png; sourceTree = "<group>"; };
 		65B2814526490EB200158E04 /* block__bkock4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block__bkock4.png; sourceTree = "<group>"; };
 		65B28147264911AA00158E04 /* block__forwaridng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block__forwaridng.png; sourceTree = "<group>"; };
+		65BABCBB26A515BB003044CE /* 多线程05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "多线程05.png"; sourceTree = "<group>"; };
+		65BABCBF26A679DE003044CE /* LWLock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWLock.h; sourceTree = "<group>"; };
+		65BABCC026A679DE003044CE /* LWLock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWLock.m; sourceTree = "<group>"; };
 		65C2518F25EDCB5700BD1649 /* LWKVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWKVCViewController.h; sourceTree = "<group>"; };
 		65C2519025EDCB5700BD1649 /* LWKVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWKVCViewController.m; sourceTree = "<group>"; };
 		65C2519525EDCB7100BD1649 /* LWKVCPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWKVCPerson.h; sourceTree = "<group>"; };
@@ -242,6 +258,10 @@
 		65D08D4426461D8F0037F6F5 /* block_本质.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "block_本质.png"; sourceTree = "<group>"; };
 		65D08D46264691DB0037F6F5 /* LWBlockPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWBlockPerson.h; sourceTree = "<group>"; };
 		65D08D47264691DB0037F6F5 /* LWBlockPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWBlockPerson.m; sourceTree = "<group>"; };
+		65DB3ADA26954C3400A06E3B /* LWBluetoothViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWBluetoothViewController.h; sourceTree = "<group>"; };
+		65DB3ADB26954C3400A06E3B /* LWBluetoothViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWBluetoothViewController.m; sourceTree = "<group>"; };
+		65DB3ADD26957E6C00A06E3B /* LWBluetooth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWBluetooth.h; sourceTree = "<group>"; };
+		65DB3ADE26957E6C00A06E3B /* LWBluetooth.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWBluetooth.m; sourceTree = "<group>"; };
 		65EB5177268C025C00DC2DF3 /* runloop02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runloop02.png; sourceTree = "<group>"; };
 		65EB5179268C0DEA00DC2DF3 /* runloop03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runloop03.png; sourceTree = "<group>"; };
 		65EB517B268C104C00DC2DF3 /* runloop04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runloop04.png; sourceTree = "<group>"; };
@@ -346,6 +366,11 @@
 				65EB5187268C5A6200DC2DF3 /* runloop08.png */,
 				65EB5189268C5ECE00DC2DF3 /* runloop09.png */,
 				651294E9269299610006D7CE /* runloop10.png */,
+				6580753526943E2D0016485B /* 多线程01.png */,
+				658075372694501C0016485B /* 多线程02.png */,
+				65807539269457450016485B /* 多线程03.png */,
+				6580753B26945A0D0016485B /* 多线程04.png */,
+				65BABCBB26A515BB003044CE /* 多线程05.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -393,6 +418,25 @@
 				652EE27F25A447F90056A917 /* LWStudent.m */,
 			);
 			path = "OC对象本质";
+			sourceTree = "<group>";
+		};
+		6580753026943D3E0016485B /* 多线程 */ = {
+			isa = PBXGroup;
+			children = (
+				6580753126943D3E0016485B /* GCD */,
+			);
+			path = "多线程";
+			sourceTree = "<group>";
+		};
+		6580753126943D3E0016485B /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				6580753326943D3E0016485B /* LWGCDViewController.h */,
+				6580753226943D3E0016485B /* LWGCDViewController.m */,
+				65BABCBF26A679DE003044CE /* LWLock.h */,
+				65BABCC026A679DE003044CE /* LWLock.m */,
+			);
+			path = GCD;
 			sourceTree = "<group>";
 		};
 		658DE07E2590336700BD71C3 /* Category */ = {
@@ -466,6 +510,7 @@
 		659015C12584EE8600BDF3AF /* LWTestDemo */ = {
 			isa = PBXGroup;
 			children = (
+				654591C9269D42060061AFE4 /* LWTestDemo.entitlements */,
 				651CF90725ECCC0E0004467C /* Images */,
 				650488B025E8F293006BD70A /* 常见考题.md */,
 				659015C22584EE8600BDF3AF /* AppDelegate.h */,
@@ -477,6 +522,8 @@
 				6590164C2584FFC100BDF3AF /* LWLifeCycleViewController.h */,
 				6590164D2584FFC100BDF3AF /* LWLifeCycleViewController.m */,
 				659016182584F05400BDF3AF /* LWSettingLog.h */,
+				65DB3AD926954C1A00A06E3B /* Bluetooth */,
+				6580753026943D3E0016485B /* 多线程 */,
 				651D559A268B030400158A8F /* RunLoop */,
 				65122BE226817DF900249C6C /* Super */,
 				651F3DAB26521BA600421855 /* Runtime */,
@@ -485,7 +532,6 @@
 				650488B525E8F381006BD70A /* KVO */,
 				652EE25F25A40B6F0056A917 /* OC对象本质 */,
 				658DE07E2590336700BD71C3 /* Category */,
-				65ABFA8C258846D600A15BEB /* GCD */,
 				658E62EC2586270200E1771D /* Crash */,
 				658E62C12585DC8F00E1771D /* load_initialize */,
 				659015CE2584EE8700BDF3AF /* Assets.xcassets */,
@@ -515,15 +561,6 @@
 			path = LWTestDemoUITests;
 			sourceTree = "<group>";
 		};
-		65ABFA8C258846D600A15BEB /* GCD */ = {
-			isa = PBXGroup;
-			children = (
-				65ABFA8D258846F400A15BEB /* LWGCDViewController.h */,
-				65ABFA8E258846F400A15BEB /* LWGCDViewController.m */,
-			);
-			path = GCD;
-			sourceTree = "<group>";
-		};
 		65C2518E25EDCB3E00BD1649 /* KVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -535,6 +572,17 @@
 				65C2519C25EDCB8900BD1649 /* LWKVCDog.m */,
 			);
 			path = KVC;
+			sourceTree = "<group>";
+		};
+		65DB3AD926954C1A00A06E3B /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				65DB3ADA26954C3400A06E3B /* LWBluetoothViewController.h */,
+				65DB3ADB26954C3400A06E3B /* LWBluetoothViewController.m */,
+				65DB3ADD26957E6C00A06E3B /* LWBluetooth.h */,
+				65DB3ADE26957E6C00A06E3B /* LWBluetooth.m */,
+			);
+			path = Bluetooth;
 			sourceTree = "<group>";
 		};
 		65FC7C2F25F5FD1400A3BC12 /* Block */ = {
@@ -657,6 +705,7 @@
 				65EB5184268C42C400DC2DF3 /* runloop06.png in Resources */,
 				65233FC52660DC060079D968 /* objc_msgSend2.png in Resources */,
 				651CF91B25ECCD340004467C /* kvo.png in Resources */,
+				6580753626943E2D0016485B /* 多线程01.png in Resources */,
 				651294EA269299610006D7CE /* runloop10.png in Resources */,
 				65EB517A268C0DEA00DC2DF3 /* runloop03.png in Resources */,
 				65A4852A2657B16A0026D51B /* objc_msgSend1.png in Resources */,
@@ -682,17 +731,21 @@
 				65B281402648DE1600158E04 /* block__block.png in Resources */,
 				655C6EB42656651B002675ED /* method_t.png in Resources */,
 				65EB5180268C12D600DC2DF3 /* runloop01.png in Resources */,
+				65BABCBC26A515BB003044CE /* 多线程05.png in Resources */,
+				658075382694501C0016485B /* 多线程02.png in Resources */,
 				65EB5186268C437B00DC2DF3 /* runloop07.png in Resources */,
 				6526EB6E2655134000AAB951 /* runtime_isa3.png in Resources */,
 				65B2814226490B3100158E04 /* block__bkock2.png in Resources */,
 				65A4852826575AAB0026D51B /* cache_t.png in Resources */,
 				65EB517C268C104C00DC2DF3 /* runloop04.png in Resources */,
+				6580753A269457450016485B /* 多线程03.png in Resources */,
 				65EB518A268C5ECE00DC2DF3 /* runloop09.png in Resources */,
 				655C6EB126566380002675ED /* class_ro_t.png in Resources */,
 				6526EB6C2655110600AAB951 /* runtime_isa2.png in Resources */,
 				6526EB6A265510FF00AAB951 /* runtime_isa.png in Resources */,
 				651CF90E25ECCC7F0004467C /* isa指向.png in Resources */,
 				650027F325F71EC20060097E /* block.png in Resources */,
+				6580753C26945A0D0016485B /* 多线程04.png in Resources */,
 				6507F17626676351008D7CE4 /* objc_msgSend3.png in Resources */,
 				658F518E264D242700494ECD /* block_reference.png in Resources */,
 			);
@@ -733,11 +786,14 @@
 				65122BE526817E1B00249C6C /* LWSuperViewController.m in Sources */,
 				65C2519725EDCB7100BD1649 /* LWKVCPerson.m in Sources */,
 				651D559D268B032200158A8F /* LWRunLoopViewController.m in Sources */,
+				65DB3ADC26954C3400A06E3B /* LWBluetoothViewController.m in Sources */,
+				6580753426943D3E0016485B /* LWGCDViewController.m in Sources */,
 				6526EB652654FEB300AAB951 /* LWRuntimePersonTest2.m in Sources */,
 				652EE26225A40BA70056A917 /* LWNatureViewController.m in Sources */,
 				658E62D12585DC8F00E1771D /* Student+test.m in Sources */,
 				6526EB68265503C300AAB951 /* LWRuntimePersonTest3.m in Sources */,
 				65C2519125EDCB5700BD1649 /* LWKVCViewController.m in Sources */,
+				65BABCC126A679DE003044CE /* LWLock.m in Sources */,
 				652EE28025A447F90056A917 /* LWStudent.m in Sources */,
 				658E62D52585DC8F00E1771D /* Teacher.m in Sources */,
 				658DE0812590339D00BD71C3 /* LWCategoryViewController.m in Sources */,
@@ -747,6 +803,7 @@
 				658DE0962590349D00BD71C3 /* LWPerson+Test.m in Sources */,
 				658E62D62585DC8F00E1771D /* Person+test.m in Sources */,
 				650027F925F71F580060097E /* LWBlockType.m in Sources */,
+				65DB3ADF26957E6C00A06E3B /* LWBluetooth.m in Sources */,
 				659015C42584EE8600BDF3AF /* AppDelegate.m in Sources */,
 				6526EB5C2654DEDC00AAB951 /* LWRuntimeViewController.m in Sources */,
 				651294F52692FF8E0006D7CE /* LWPermenantThread.m in Sources */,
@@ -754,7 +811,6 @@
 				65C2519D25EDCB8900BD1649 /* LWKVCDog.m in Sources */,
 				659016462584FF9D00BDF3AF /* LWLifeCycleView.m in Sources */,
 				650488C125E8F4D1006BD70A /* LWKOVPerson.m in Sources */,
-				65ABFA8F258846F400A15BEB /* LWGCDViewController.m in Sources */,
 				658E62F525862A1E00E1771D /* LWCrashViewController.m in Sources */,
 				6590164E2584FFC100BDF3AF /* LWLifeCycleViewController.m in Sources */,
 				65D08D48264691DB0037F6F5 /* LWBlockPerson.m in Sources */,
@@ -918,10 +974,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LWTestDemo/LWTestDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5ZAJ7C6M9A;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ExtDevice/Huaxin/BankiMate_frame",
+				);
 				INFOPLIST_FILE = LWTestDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -937,10 +999,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LWTestDemo/LWTestDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5ZAJ7C6M9A;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ExtDevice/Huaxin/BankiMate_frame",
+				);
 				INFOPLIST_FILE = LWTestDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
