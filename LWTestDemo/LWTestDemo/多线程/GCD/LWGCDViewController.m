@@ -6,12 +6,26 @@
 //
 
 #import "LWGCDViewController.h"
+#import "LWOSSpinLock.h"
+#import "LWOSUnfairLock.h"
+#import "LWMutexLock.h"
+#import "LWNSLock.h"
+#import "LWSemaphore.h"
+#import "LWSynchronized.h"
+#import <pthread.h>
 
 @interface LWGCDViewController ()
+
+//@property(nonatomic,strong) LWOSSpinLock *OSSpinLock;
+@property(nonatomic,assign)pthread_rwlock_t rwlock;
 
 @end
 
 @implementation LWGCDViewController
+
+-(void)dealloc{
+    pthread_rwlock_destroy(&_rwlock);
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,10 +36,108 @@
 //    [self test3];
 //    [self test4];
 //    [self test5];
-    [self test7];
+//    [self test7];
+//    [self testOSSpinLock];
+//    [self testOSUnfairLock];
+//    [self testMutexLock];
+//    [self testNSLock];
+//    [self testSemaphore];
+//    [self testSynchronized];
+//    [self testReadWrite];
+    [self testReadWrite2];
     NSLog(@"viewDidLoad结束");
     
 }
+
+/*
+    iOS中读写的安全方案
+    1.同一时间，只能有1个线程进行写的操作
+    2.同一时间，允许有多个线程进行读的操作。
+    3.同一时间，不允许既有写的操作，又有读的操作。
+ */
+- (void)testReadWrite2{
+    dispatch_queue_t queue = dispatch_queue_create("rwqueue", DISPATCH_QUEUE_CONCURRENT);
+    for (int i=0; i<5; i++) {
+        dispatch_async(queue, ^{
+            [self read2];
+        });
+//        dispatch_barrier_async(queue, ^{
+//            [self write2];
+//        });
+    }
+    for (int i=0; i<5; i++) {
+        //dispatch_barrier_async 传入的并发队列 必须是自己创建的队列 如果是其他的和dispatch_async效果一样
+        dispatch_barrier_async(queue, ^{
+            [self write2];
+        });
+    }
+}
+
+- (void)write2{
+    NSLog(@"start=write>%s",__func__);
+    sleep(2);
+    NSLog(@"end=write>%s",__func__);
+    
+}
+- (void)read2{
+    NSLog(@"start=read>%s",__func__);
+    sleep(5);
+    NSLog(@"end=read>%s",__func__);
+}
+
+- (void)testReadWrite{
+    pthread_rwlock_init(&_rwlock,NULL);
+    for (int i=0; i<5; i++) {
+        [[[NSThread alloc]initWithTarget:self selector:@selector(read) object:nil]start];
+        [[[NSThread alloc]initWithTarget:self selector:@selector(write) object:nil]start];
+    }
+}
+- (void)write{
+    pthread_rwlock_wrlock(&_rwlock);
+    NSLog(@"start=write>%s",__func__);
+    sleep(2);
+    NSLog(@"end=write>%s",__func__);
+    pthread_rwlock_unlock(&_rwlock);
+    
+}
+- (void)read{
+    pthread_rwlock_rdlock(&_rwlock);
+    NSLog(@"start=read>%s",__func__);
+    sleep(2);
+    NSLog(@"end=read>%s",__func__);
+    pthread_rwlock_unlock(&_rwlock);
+}
+
+- (void)testSynchronized{
+    LWSynchronized *synchronized = [[LWSynchronized alloc]init];
+    [synchronized testLock];
+}
+- (void)testSemaphore{
+    LWSemaphore *semaphore = [[LWSemaphore alloc]init];
+    [semaphore  otherTest];
+    [semaphore testLock];
+}
+- (void)testNSLock{
+    LWNSLock *lock = [[LWNSLock alloc]init];
+    [lock testLock];
+}
+
+- (void)testOSSpinLock{
+    LWOSSpinLock *OSSpinLock = [[LWOSSpinLock alloc]init];
+    [OSSpinLock testLock];
+}
+
+- (void)testOSUnfairLock{
+    LWOSUnfairLock *OSUnfairLock = [[LWOSUnfairLock alloc]init];
+    [OSUnfairLock testLock];
+}
+- (void)testMutexLock{
+    
+    LWMutexLock *mutexLock = [[LWMutexLock alloc]init];
+    [mutexLock testLock];
+
+}
+
 - (void)test0{
     /*
      viewDidLoad开始

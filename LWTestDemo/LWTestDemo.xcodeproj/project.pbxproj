@@ -10,6 +10,9 @@
 		650027F325F71EC20060097E /* block.png in Resources */ = {isa = PBXBuildFile; fileRef = 650027F225F71EC20060097E /* block.png */; };
 		650027F925F71F580060097E /* LWBlockType.m in Sources */ = {isa = PBXBuildFile; fileRef = 650027F825F71F580060097E /* LWBlockType.m */; };
 		6500280625F724E10060097E /* block_type.png in Resources */ = {isa = PBXBuildFile; fileRef = 6500280525F724E10060097E /* block_type.png */; };
+		6501EDA026B3982A0040565B /* 多线程16.png in Resources */ = {isa = PBXBuildFile; fileRef = 6501ED9F26B3982A0040565B /* 多线程16.png */; };
+		6501EDA226B3E5620040565B /* 多线程17.png in Resources */ = {isa = PBXBuildFile; fileRef = 6501EDA126B3E5620040565B /* 多线程17.png */; };
+		6501EDA426B3E5A70040565B /* 多线程18.png in Resources */ = {isa = PBXBuildFile; fileRef = 6501EDA326B3E5A70040565B /* 多线程18.png */; };
 		650488B125E8F293006BD70A /* 常见考题.md in Resources */ = {isa = PBXBuildFile; fileRef = 650488B025E8F293006BD70A /* 常见考题.md */; };
 		650488B825E8F3A8006BD70A /* LWKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650488B725E8F3A8006BD70A /* LWKVOViewController.m */; };
 		650488C125E8F4D1006BD70A /* LWKOVPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 650488C025E8F4D1006BD70A /* LWKOVPerson.m */; };
@@ -35,9 +38,15 @@
 		652EE26225A40BA70056A917 /* LWNatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 652EE26125A40BA70056A917 /* LWNatureViewController.m */; };
 		652EE28025A447F90056A917 /* LWStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 652EE27F25A447F90056A917 /* LWStudent.m */; };
 		65346A99265F407E00AE1552 /* objc_msgSend.png in Resources */ = {isa = PBXBuildFile; fileRef = 65346A98265F407E00AE1552 /* objc_msgSend.png */; };
+		653A8EC226AA59EC005CDE9D /* 多线程06.png in Resources */ = {isa = PBXBuildFile; fileRef = 653A8EC126AA59EC005CDE9D /* 多线程06.png */; };
+		653A8EC526AA5D83005CDE9D /* LWBaseLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 653A8EC426AA5D83005CDE9D /* LWBaseLock.m */; };
 		65449700268422F400FFF2C6 /* LWRuntimeAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 654496FF268422F400FFF2C6 /* LWRuntimeAPI.m */; };
 		654497022684250C00FFF2C6 /* runtime_api01.png in Resources */ = {isa = PBXBuildFile; fileRef = 654497012684250C00FFF2C6 /* runtime_api01.png */; };
 		65449704268435E900FFF2C6 /* runtime_api02.png in Resources */ = {isa = PBXBuildFile; fileRef = 65449703268435E900FFF2C6 /* runtime_api02.png */; };
+		65454E2226B8E02C00FE9A44 /* 多线程19.png in Resources */ = {isa = PBXBuildFile; fileRef = 65454E2126B8E02C00FE9A44 /* 多线程19.png */; };
+		654D628126AFB17A0060B12C /* LWNSLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 654D628026AFB17A0060B12C /* LWNSLock.m */; };
+		654D628326AFB4DC0060B12C /* 多线程11.png in Resources */ = {isa = PBXBuildFile; fileRef = 654D628226AFB4DC0060B12C /* 多线程11.png */; };
+		654D628526AFE66E0060B12C /* 多线程12.png in Resources */ = {isa = PBXBuildFile; fileRef = 654D628426AFE66E0060B12C /* 多线程12.png */; };
 		655C6EB126566380002675ED /* class_ro_t.png in Resources */ = {isa = PBXBuildFile; fileRef = 655C6EAF26566380002675ED /* class_ro_t.png */; };
 		655C6EB226566380002675ED /* class_rw_t.png in Resources */ = {isa = PBXBuildFile; fileRef = 655C6EB026566380002675ED /* class_rw_t.png */; };
 		655C6EB42656651B002675ED /* method_t.png in Resources */ = {isa = PBXBuildFile; fileRef = 655C6EB32656651B002675ED /* method_t.png */; };
@@ -48,6 +57,11 @@
 		6580753C26945A0D0016485B /* 多线程04.png in Resources */ = {isa = PBXBuildFile; fileRef = 6580753B26945A0D0016485B /* 多线程04.png */; };
 		658AA2EC2689B2890085732F /* runtime_api04.png in Resources */ = {isa = PBXBuildFile; fileRef = 658AA2EB2689B2890085732F /* runtime_api04.png */; };
 		658AA2EE2689B4930085732F /* runtime_api04_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 658AA2ED2689B4930085732F /* runtime_api04_1.png */; };
+		658D3E8D26B0F49100BA33BE /* 多线程13.png in Resources */ = {isa = PBXBuildFile; fileRef = 658D3E8C26B0F49100BA33BE /* 多线程13.png */; };
+		658D3E9026B1042A00BA33BE /* LWSemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = 658D3E8F26B1042A00BA33BE /* LWSemaphore.m */; };
+		658D3E9226B12F2D00BA33BE /* 多线程14.png in Resources */ = {isa = PBXBuildFile; fileRef = 658D3E9126B12F2D00BA33BE /* 多线程14.png */; };
+		658D3E9526B1335100BA33BE /* LWSynchronized.m in Sources */ = {isa = PBXBuildFile; fileRef = 658D3E9426B1335100BA33BE /* LWSynchronized.m */; };
+		658D3E9726B13DB400BA33BE /* 多线程15.png in Resources */ = {isa = PBXBuildFile; fileRef = 658D3E9626B13DB400BA33BE /* 多线程15.png */; };
 		658DE0812590339D00BD71C3 /* LWCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 658DE0802590339D00BD71C3 /* LWCategoryViewController.m */; };
 		658DE08A2590342A00BD71C3 /* NSString+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 658DE0892590342A00BD71C3 /* NSString+Test.m */; };
 		658DE0902590348C00BD71C3 /* LWPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 658DE08F2590348C00BD71C3 /* LWPerson.m */; };
@@ -80,13 +94,19 @@
 		65A48526265752BC0026D51B /* LWRuntimePersonCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A48525265752BC0026D51B /* LWRuntimePersonCache.m */; };
 		65A4852826575AAB0026D51B /* cache_t.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A4852726575AAB0026D51B /* cache_t.png */; };
 		65A4852A2657B16A0026D51B /* objc_msgSend1.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A485292657B16A0026D51B /* objc_msgSend1.png */; };
+		65A8A70626AE8CDE0012D95C /* LWOSUnfairLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A8A70526AE8CDE0012D95C /* LWOSUnfairLock.m */; };
+		65A8A70826AE8F280012D95C /* 多线程07.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A8A70726AE8F280012D95C /* 多线程07.png */; };
+		65A8A70A26AE90E90012D95C /* 多线程08.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A8A70926AE90E90012D95C /* 多线程08.png */; };
+		65A8A70D26AE91640012D95C /* LWMutexLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A8A70C26AE91640012D95C /* LWMutexLock.m */; };
+		65A8A71626AEB0550012D95C /* 多线程09.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A8A71526AEB0540012D95C /* 多线程09.png */; };
+		65A8A71826AEB0A50012D95C /* 多线程10.png in Resources */ = {isa = PBXBuildFile; fileRef = 65A8A71726AEB0A50012D95C /* 多线程10.png */; };
 		65B281402648DE1600158E04 /* block__block.png in Resources */ = {isa = PBXBuildFile; fileRef = 65B2813F2648DE1600158E04 /* block__block.png */; };
 		65B2814226490B3100158E04 /* block__bkock2.png in Resources */ = {isa = PBXBuildFile; fileRef = 65B2814126490B3100158E04 /* block__bkock2.png */; };
 		65B2814426490BD400158E04 /* block__bkock3.png in Resources */ = {isa = PBXBuildFile; fileRef = 65B2814326490BD400158E04 /* block__bkock3.png */; };
 		65B2814626490EB200158E04 /* block__bkock4.png in Resources */ = {isa = PBXBuildFile; fileRef = 65B2814526490EB200158E04 /* block__bkock4.png */; };
 		65B28148264911AA00158E04 /* block__forwaridng.png in Resources */ = {isa = PBXBuildFile; fileRef = 65B28147264911AA00158E04 /* block__forwaridng.png */; };
 		65BABCBC26A515BB003044CE /* 多线程05.png in Resources */ = {isa = PBXBuildFile; fileRef = 65BABCBB26A515BB003044CE /* 多线程05.png */; };
-		65BABCC126A679DE003044CE /* LWLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BABCC026A679DE003044CE /* LWLock.m */; };
+		65BABCC126A679DE003044CE /* LWOSSpinLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BABCC026A679DE003044CE /* LWOSSpinLock.m */; };
 		65C2519125EDCB5700BD1649 /* LWKVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C2519025EDCB5700BD1649 /* LWKVCViewController.m */; };
 		65C2519725EDCB7100BD1649 /* LWKVCPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C2519625EDCB7100BD1649 /* LWKVCPerson.m */; };
 		65C2519D25EDCB8900BD1649 /* LWKVCDog.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C2519C25EDCB8900BD1649 /* LWKVCDog.m */; };
@@ -130,6 +150,9 @@
 		650027F825F71F580060097E /* LWBlockType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWBlockType.m; sourceTree = "<group>"; };
 		650027FD25F723490060097E /* LWBlockType.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LWBlockType.cpp; sourceTree = "<group>"; };
 		6500280525F724E10060097E /* block_type.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block_type.png; sourceTree = "<group>"; };
+		6501ED9F26B3982A0040565B /* 多线程16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "多线程16.png"; sourceTree = "<group>"; };
+		6501EDA126B3E5620040565B /* 多线程17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "多线程17.png"; sourceTree = "<group>"; };
+		6501EDA326B3E5A70040565B /* 多线程18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "多线程18.png"; sourceTree = "<group>"; };
 		650488B025E8F293006BD70A /* 常见考题.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "常见考题.md"; sourceTree = SOURCE_ROOT; };
 		650488B625E8F3A8006BD70A /* LWKVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWKVOViewController.h; sourceTree = "<group>"; };
 		650488B725E8F3A8006BD70A /* LWKVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWKVOViewController.m; sourceTree = "<group>"; };
@@ -172,11 +195,19 @@
 		652EE27E25A447F90056A917 /* LWStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWStudent.h; sourceTree = "<group>"; };
 		652EE27F25A447F90056A917 /* LWStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWStudent.m; sourceTree = "<group>"; };
 		65346A98265F407E00AE1552 /* objc_msgSend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = objc_msgSend.png; sourceTree = "<group>"; };
+		653A8EC126AA59EC005CDE9D /* 多线程06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "多线程06.png"; sourceTree = "<group>"; };
+		653A8EC326AA5D83005CDE9D /* LWBaseLock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWBaseLock.h; sourceTree = "<group>"; };
+		653A8EC426AA5D83005CDE9D /* LWBaseLock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWBaseLock.m; sourceTree = "<group>"; };
 		654496FE268422F400FFF2C6 /* LWRuntimeAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWRuntimeAPI.h; sourceTree = "<group>"; };
 		654496FF268422F400FFF2C6 /* LWRuntimeAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWRuntimeAPI.m; sourceTree = "<group>"; };
 		654497012684250C00FFF2C6 /* runtime_api01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runtime_api01.png; sourceTree = "<group>"; };
 		65449703268435E900FFF2C6 /* runtime_api02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runtime_api02.png; sourceTree = "<group>"; };
+		65454E2126B8E02C00FE9A44 /* 多线程19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "多线程19.png"; path = "../../../../多线程19.png"; sourceTree = "<group>"; };
 		654591C9269D42060061AFE4 /* LWTestDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LWTestDemo.entitlements; sourceTree = "<group>"; };
+		654D627F26AFB17A0060B12C /* LWNSLock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWNSLock.h; sourceTree = "<group>"; };
+		654D628026AFB17A0060B12C /* LWNSLock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWNSLock.m; sourceTree = "<group>"; };
+		654D628226AFB4DC0060B12C /* 多线程11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "多线程11.png"; sourceTree = "<group>"; };
+		654D628426AFE66E0060B12C /* 多线程12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "多线程12.png"; sourceTree = "<group>"; };
 		655C6EAF26566380002675ED /* class_ro_t.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = class_ro_t.png; sourceTree = "<group>"; };
 		655C6EB026566380002675ED /* class_rw_t.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = class_rw_t.png; sourceTree = "<group>"; };
 		655C6EB32656651B002675ED /* method_t.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = method_t.png; sourceTree = "<group>"; };
@@ -188,6 +219,13 @@
 		6580753B26945A0D0016485B /* 多线程04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "多线程04.png"; sourceTree = "<group>"; };
 		658AA2EB2689B2890085732F /* runtime_api04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runtime_api04.png; sourceTree = "<group>"; };
 		658AA2ED2689B4930085732F /* runtime_api04_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runtime_api04_1.png; sourceTree = "<group>"; };
+		658D3E8C26B0F49100BA33BE /* 多线程13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "多线程13.png"; sourceTree = "<group>"; };
+		658D3E8E26B1042A00BA33BE /* LWSemaphore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWSemaphore.h; sourceTree = "<group>"; };
+		658D3E8F26B1042A00BA33BE /* LWSemaphore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWSemaphore.m; sourceTree = "<group>"; };
+		658D3E9126B12F2D00BA33BE /* 多线程14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "多线程14.png"; sourceTree = "<group>"; };
+		658D3E9326B1335100BA33BE /* LWSynchronized.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWSynchronized.h; sourceTree = "<group>"; };
+		658D3E9426B1335100BA33BE /* LWSynchronized.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWSynchronized.m; sourceTree = "<group>"; };
+		658D3E9626B13DB400BA33BE /* 多线程15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "多线程15.png"; sourceTree = "<group>"; };
 		658DE07F2590339D00BD71C3 /* LWCategoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWCategoryViewController.h; sourceTree = "<group>"; };
 		658DE0802590339D00BD71C3 /* LWCategoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWCategoryViewController.m; sourceTree = "<group>"; };
 		658DE0882590342A00BD71C3 /* NSString+Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Test.h"; sourceTree = "<group>"; };
@@ -239,14 +277,22 @@
 		65A48525265752BC0026D51B /* LWRuntimePersonCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWRuntimePersonCache.m; sourceTree = "<group>"; };
 		65A4852726575AAB0026D51B /* cache_t.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cache_t.png; sourceTree = "<group>"; };
 		65A485292657B16A0026D51B /* objc_msgSend1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = objc_msgSend1.png; sourceTree = "<group>"; };
+		65A8A70426AE8CDE0012D95C /* LWOSUnfairLock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWOSUnfairLock.h; sourceTree = "<group>"; };
+		65A8A70526AE8CDE0012D95C /* LWOSUnfairLock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWOSUnfairLock.m; sourceTree = "<group>"; };
+		65A8A70726AE8F280012D95C /* 多线程07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "多线程07.png"; sourceTree = "<group>"; };
+		65A8A70926AE90E90012D95C /* 多线程08.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "多线程08.png"; sourceTree = "<group>"; };
+		65A8A70B26AE91640012D95C /* LWMutexLock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWMutexLock.h; sourceTree = "<group>"; };
+		65A8A70C26AE91640012D95C /* LWMutexLock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWMutexLock.m; sourceTree = "<group>"; };
+		65A8A71526AEB0540012D95C /* 多线程09.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "多线程09.png"; sourceTree = "<group>"; };
+		65A8A71726AEB0A50012D95C /* 多线程10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "多线程10.png"; sourceTree = "<group>"; };
 		65B2813F2648DE1600158E04 /* block__block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block__block.png; sourceTree = "<group>"; };
 		65B2814126490B3100158E04 /* block__bkock2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block__bkock2.png; sourceTree = "<group>"; };
 		65B2814326490BD400158E04 /* block__bkock3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block__bkock3.png; sourceTree = "<group>"; };
 		65B2814526490EB200158E04 /* block__bkock4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block__bkock4.png; sourceTree = "<group>"; };
 		65B28147264911AA00158E04 /* block__forwaridng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block__forwaridng.png; sourceTree = "<group>"; };
 		65BABCBB26A515BB003044CE /* 多线程05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "多线程05.png"; sourceTree = "<group>"; };
-		65BABCBF26A679DE003044CE /* LWLock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWLock.h; sourceTree = "<group>"; };
-		65BABCC026A679DE003044CE /* LWLock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWLock.m; sourceTree = "<group>"; };
+		65BABCBF26A679DE003044CE /* LWOSSpinLock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWOSSpinLock.h; sourceTree = "<group>"; };
+		65BABCC026A679DE003044CE /* LWOSSpinLock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWOSSpinLock.m; sourceTree = "<group>"; };
 		65C2518F25EDCB5700BD1649 /* LWKVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWKVCViewController.h; sourceTree = "<group>"; };
 		65C2519025EDCB5700BD1649 /* LWKVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWKVCViewController.m; sourceTree = "<group>"; };
 		65C2519525EDCB7100BD1649 /* LWKVCPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWKVCPerson.h; sourceTree = "<group>"; };
@@ -371,6 +417,20 @@
 				65807539269457450016485B /* 多线程03.png */,
 				6580753B26945A0D0016485B /* 多线程04.png */,
 				65BABCBB26A515BB003044CE /* 多线程05.png */,
+				653A8EC126AA59EC005CDE9D /* 多线程06.png */,
+				65A8A70726AE8F280012D95C /* 多线程07.png */,
+				65A8A70926AE90E90012D95C /* 多线程08.png */,
+				65A8A71526AEB0540012D95C /* 多线程09.png */,
+				65A8A71726AEB0A50012D95C /* 多线程10.png */,
+				654D628226AFB4DC0060B12C /* 多线程11.png */,
+				654D628426AFE66E0060B12C /* 多线程12.png */,
+				658D3E8C26B0F49100BA33BE /* 多线程13.png */,
+				658D3E9126B12F2D00BA33BE /* 多线程14.png */,
+				658D3E9626B13DB400BA33BE /* 多线程15.png */,
+				6501ED9F26B3982A0040565B /* 多线程16.png */,
+				6501EDA126B3E5620040565B /* 多线程17.png */,
+				6501EDA326B3E5A70040565B /* 多线程18.png */,
+				65454E2126B8E02C00FE9A44 /* 多线程19.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -433,8 +493,20 @@
 			children = (
 				6580753326943D3E0016485B /* LWGCDViewController.h */,
 				6580753226943D3E0016485B /* LWGCDViewController.m */,
-				65BABCBF26A679DE003044CE /* LWLock.h */,
-				65BABCC026A679DE003044CE /* LWLock.m */,
+				658D3E8E26B1042A00BA33BE /* LWSemaphore.h */,
+				658D3E8F26B1042A00BA33BE /* LWSemaphore.m */,
+				658D3E9326B1335100BA33BE /* LWSynchronized.h */,
+				658D3E9426B1335100BA33BE /* LWSynchronized.m */,
+				654D627F26AFB17A0060B12C /* LWNSLock.h */,
+				654D628026AFB17A0060B12C /* LWNSLock.m */,
+				65A8A70B26AE91640012D95C /* LWMutexLock.h */,
+				65A8A70C26AE91640012D95C /* LWMutexLock.m */,
+				65A8A70426AE8CDE0012D95C /* LWOSUnfairLock.h */,
+				65A8A70526AE8CDE0012D95C /* LWOSUnfairLock.m */,
+				65BABCBF26A679DE003044CE /* LWOSSpinLock.h */,
+				65BABCC026A679DE003044CE /* LWOSSpinLock.m */,
+				653A8EC326AA5D83005CDE9D /* LWBaseLock.h */,
+				653A8EC426AA5D83005CDE9D /* LWBaseLock.m */,
 			);
 			path = GCD;
 			sourceTree = "<group>";
@@ -706,8 +778,12 @@
 				65233FC52660DC060079D968 /* objc_msgSend2.png in Resources */,
 				651CF91B25ECCD340004467C /* kvo.png in Resources */,
 				6580753626943E2D0016485B /* 多线程01.png in Resources */,
+				6501EDA226B3E5620040565B /* 多线程17.png in Resources */,
 				651294EA269299610006D7CE /* runloop10.png in Resources */,
 				65EB517A268C0DEA00DC2DF3 /* runloop03.png in Resources */,
+				658D3E9726B13DB400BA33BE /* 多线程15.png in Resources */,
+				653A8EC226AA59EC005CDE9D /* 多线程06.png in Resources */,
+				65454E2226B8E02C00FE9A44 /* 多线程19.png in Resources */,
 				65A4852A2657B16A0026D51B /* objc_msgSend1.png in Resources */,
 				65D08D4526461D8F0037F6F5 /* block_本质.png in Resources */,
 				659015CF2584EE8700BDF3AF /* Assets.xcassets in Resources */,
@@ -717,17 +793,22 @@
 				6500280625F724E10060097E /* block_type.png in Resources */,
 				65EB5188268C5A6200DC2DF3 /* runloop08.png in Resources */,
 				65C251AF25EDEA8600BD1649 /* kvc.png in Resources */,
+				6501EDA026B3982A0040565B /* 多线程16.png in Resources */,
 				651CF90925ECCC490004467C /* objc_class结构体实现.png in Resources */,
+				658D3E9226B12F2D00BA33BE /* 多线程14.png in Resources */,
 				659016382584F46100BDF3AF /* LaunchScreen.storyboard in Resources */,
 				65B2814626490EB200158E04 /* block__bkock4.png in Resources */,
 				658AA2EC2689B2890085732F /* runtime_api04.png in Resources */,
 				65EB5178268C025C00DC2DF3 /* runloop02.png in Resources */,
 				65B2814426490BD400158E04 /* block__bkock3.png in Resources */,
+				654D628326AFB4DC0060B12C /* 多线程11.png in Resources */,
 				658AA2EE2689B4930085732F /* runtime_api04_1.png in Resources */,
 				650488B125E8F293006BD70A /* 常见考题.md in Resources */,
+				65A8A71826AEB0A50012D95C /* 多线程10.png in Resources */,
 				65449704268435E900FFF2C6 /* runtime_api02.png in Resources */,
 				65EB5182268C131500DC2DF3 /* runloop05.png in Resources */,
 				65346A99265F407E00AE1552 /* objc_msgSend.png in Resources */,
+				65A8A71626AEB0550012D95C /* 多线程09.png in Resources */,
 				65B281402648DE1600158E04 /* block__block.png in Resources */,
 				655C6EB42656651B002675ED /* method_t.png in Resources */,
 				65EB5180268C12D600DC2DF3 /* runloop01.png in Resources */,
@@ -736,15 +817,20 @@
 				65EB5186268C437B00DC2DF3 /* runloop07.png in Resources */,
 				6526EB6E2655134000AAB951 /* runtime_isa3.png in Resources */,
 				65B2814226490B3100158E04 /* block__bkock2.png in Resources */,
+				6501EDA426B3E5A70040565B /* 多线程18.png in Resources */,
 				65A4852826575AAB0026D51B /* cache_t.png in Resources */,
 				65EB517C268C104C00DC2DF3 /* runloop04.png in Resources */,
 				6580753A269457450016485B /* 多线程03.png in Resources */,
+				65A8A70A26AE90E90012D95C /* 多线程08.png in Resources */,
+				658D3E8D26B0F49100BA33BE /* 多线程13.png in Resources */,
 				65EB518A268C5ECE00DC2DF3 /* runloop09.png in Resources */,
+				65A8A70826AE8F280012D95C /* 多线程07.png in Resources */,
 				655C6EB126566380002675ED /* class_ro_t.png in Resources */,
 				6526EB6C2655110600AAB951 /* runtime_isa2.png in Resources */,
 				6526EB6A265510FF00AAB951 /* runtime_isa.png in Resources */,
 				651CF90E25ECCC7F0004467C /* isa指向.png in Resources */,
 				650027F325F71EC20060097E /* block.png in Resources */,
+				654D628526AFE66E0060B12C /* 多线程12.png in Resources */,
 				6580753C26945A0D0016485B /* 多线程04.png in Resources */,
 				6507F17626676351008D7CE4 /* objc_msgSend3.png in Resources */,
 				658F518E264D242700494ECD /* block_reference.png in Resources */,
@@ -778,6 +864,7 @@
 				658E62D02585DC8F00E1771D /* LWLoadInitializeViewController.m in Sources */,
 				65122BE826817E3A00249C6C /* LWSuperPerson.m in Sources */,
 				65FC7C3225F5FD9800A3BC12 /* LWBlockViewController.m in Sources */,
+				658D3E9026B1042A00BA33BE /* LWSemaphore.m in Sources */,
 				65A48526265752BC0026D51B /* LWRuntimePersonCache.m in Sources */,
 				6526EB5F2654E19D00AAB951 /* LWRuntimePerson.m in Sources */,
 				658E62EF2586272600E1771D /* NSArray+LW.m in Sources */,
@@ -786,14 +873,16 @@
 				65122BE526817E1B00249C6C /* LWSuperViewController.m in Sources */,
 				65C2519725EDCB7100BD1649 /* LWKVCPerson.m in Sources */,
 				651D559D268B032200158A8F /* LWRunLoopViewController.m in Sources */,
+				65A8A70626AE8CDE0012D95C /* LWOSUnfairLock.m in Sources */,
 				65DB3ADC26954C3400A06E3B /* LWBluetoothViewController.m in Sources */,
 				6580753426943D3E0016485B /* LWGCDViewController.m in Sources */,
 				6526EB652654FEB300AAB951 /* LWRuntimePersonTest2.m in Sources */,
 				652EE26225A40BA70056A917 /* LWNatureViewController.m in Sources */,
+				653A8EC526AA5D83005CDE9D /* LWBaseLock.m in Sources */,
 				658E62D12585DC8F00E1771D /* Student+test.m in Sources */,
 				6526EB68265503C300AAB951 /* LWRuntimePersonTest3.m in Sources */,
 				65C2519125EDCB5700BD1649 /* LWKVCViewController.m in Sources */,
-				65BABCC126A679DE003044CE /* LWLock.m in Sources */,
+				65BABCC126A679DE003044CE /* LWOSSpinLock.m in Sources */,
 				652EE28025A447F90056A917 /* LWStudent.m in Sources */,
 				658E62D52585DC8F00E1771D /* Teacher.m in Sources */,
 				658DE0812590339D00BD71C3 /* LWCategoryViewController.m in Sources */,
@@ -801,10 +890,13 @@
 				6526EB622654E5F700AAB951 /* LWRuntimePersonTest.m in Sources */,
 				650488B825E8F3A8006BD70A /* LWKVOViewController.m in Sources */,
 				658DE0962590349D00BD71C3 /* LWPerson+Test.m in Sources */,
+				65A8A70D26AE91640012D95C /* LWMutexLock.m in Sources */,
 				658E62D62585DC8F00E1771D /* Person+test.m in Sources */,
 				650027F925F71F580060097E /* LWBlockType.m in Sources */,
 				65DB3ADF26957E6C00A06E3B /* LWBluetooth.m in Sources */,
 				659015C42584EE8600BDF3AF /* AppDelegate.m in Sources */,
+				654D628126AFB17A0060B12C /* LWNSLock.m in Sources */,
+				658D3E9526B1335100BA33BE /* LWSynchronized.m in Sources */,
 				6526EB5C2654DEDC00AAB951 /* LWRuntimeViewController.m in Sources */,
 				651294F52692FF8E0006D7CE /* LWPermenantThread.m in Sources */,
 				65449700268422F400FFF2C6 /* LWRuntimeAPI.m in Sources */,
