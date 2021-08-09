@@ -28,7 +28,7 @@
 
 - (NSArray *)dataSource{
     if (_dataSource == nil) {
-        _dataSource = @[@"LWTimerViewController"];
+        _dataSource = @[@"LWTimerViewController",@"LWMemoryDistributeViewController"];
     }
     return _dataSource;
 }

@@ -54,6 +54,11 @@
 		654D628126AFB17A0060B12C /* LWNSLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 654D628026AFB17A0060B12C /* LWNSLock.m */; };
 		654D628326AFB4DC0060B12C /* 多线程11.png in Resources */ = {isa = PBXBuildFile; fileRef = 654D628226AFB4DC0060B12C /* 多线程11.png */; };
 		654D628526AFE66E0060B12C /* 多线程12.png in Resources */ = {isa = PBXBuildFile; fileRef = 654D628426AFE66E0060B12C /* 多线程12.png */; };
+		654DE95426BCCDE700C35BC9 /* 面试题03.png in Resources */ = {isa = PBXBuildFile; fileRef = 654DE95226BCCDE700C35BC9 /* 面试题03.png */; };
+		654DE95526BCCDE700C35BC9 /* 内存管理01.png in Resources */ = {isa = PBXBuildFile; fileRef = 654DE95326BCCDE700C35BC9 /* 内存管理01.png */; };
+		654DE95826BCCF2700C35BC9 /* LWMemoryDistributeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 654DE95726BCCF2700C35BC9 /* LWMemoryDistributeViewController.m */; };
+		654DE95A26BCD4C500C35BC9 /* 内存管理02.png in Resources */ = {isa = PBXBuildFile; fileRef = 654DE95926BCD4C500C35BC9 /* 内存管理02.png */; };
+		654DE96026BD353F00C35BC9 /* LWTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 654DE95F26BD353F00C35BC9 /* LWTestObject.m */; };
 		655C6EB126566380002675ED /* class_ro_t.png in Resources */ = {isa = PBXBuildFile; fileRef = 655C6EAF26566380002675ED /* class_ro_t.png */; };
 		655C6EB226566380002675ED /* class_rw_t.png in Resources */ = {isa = PBXBuildFile; fileRef = 655C6EB026566380002675ED /* class_rw_t.png */; };
 		655C6EB42656651B002675ED /* method_t.png in Resources */ = {isa = PBXBuildFile; fileRef = 655C6EB32656651B002675ED /* method_t.png */; };
@@ -227,6 +232,13 @@
 		654D628026AFB17A0060B12C /* LWNSLock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWNSLock.m; sourceTree = "<group>"; };
 		654D628226AFB4DC0060B12C /* 多线程11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "多线程11.png"; sourceTree = "<group>"; };
 		654D628426AFE66E0060B12C /* 多线程12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "多线程12.png"; sourceTree = "<group>"; };
+		654DE95226BCCDE700C35BC9 /* 面试题03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "面试题03.png"; sourceTree = "<group>"; };
+		654DE95326BCCDE700C35BC9 /* 内存管理01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "内存管理01.png"; sourceTree = "<group>"; };
+		654DE95626BCCF2700C35BC9 /* LWMemoryDistributeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWMemoryDistributeViewController.h; sourceTree = "<group>"; };
+		654DE95726BCCF2700C35BC9 /* LWMemoryDistributeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWMemoryDistributeViewController.m; sourceTree = "<group>"; };
+		654DE95926BCD4C500C35BC9 /* 内存管理02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "内存管理02.png"; sourceTree = "<group>"; };
+		654DE95E26BD353F00C35BC9 /* LWTestObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWTestObject.h; sourceTree = "<group>"; };
+		654DE95F26BD353F00C35BC9 /* LWTestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWTestObject.m; sourceTree = "<group>"; };
 		655C6EAF26566380002675ED /* class_ro_t.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = class_ro_t.png; sourceTree = "<group>"; };
 		655C6EB026566380002675ED /* class_rw_t.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = class_rw_t.png; sourceTree = "<group>"; };
 		655C6EB32656651B002675ED /* method_t.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = method_t.png; sourceTree = "<group>"; };
@@ -452,6 +464,9 @@
 				65454E2726B8E61300FE9A44 /* 多线程19.png */,
 				65454E2526B8E5D600FE9A44 /* 面试题01.png */,
 				65454E3826B931AA00FE9A44 /* 面试题02.png */,
+				654DE95226BCCDE700C35BC9 /* 面试题03.png */,
+				654DE95326BCCDE700C35BC9 /* 内存管理01.png */,
+				654DE95926BCD4C500C35BC9 /* 内存管理02.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -506,6 +521,10 @@
 			children = (
 				65454E2E26B8E74800FE9A44 /* LWMemoryManagerViewController.h */,
 				65454E2F26B8E74800FE9A44 /* LWMemoryManagerViewController.m */,
+				654DE95626BCCF2700C35BC9 /* LWMemoryDistributeViewController.h */,
+				654DE95726BCCF2700C35BC9 /* LWMemoryDistributeViewController.m */,
+				654DE95E26BD353F00C35BC9 /* LWTestObject.h */,
+				654DE95F26BD353F00C35BC9 /* LWTestObject.m */,
 				65454E2A26B8E67300FE9A44 /* 定时器 */,
 			);
 			path = "内存管理";
@@ -847,13 +866,16 @@
 				659016382584F46100BDF3AF /* LaunchScreen.storyboard in Resources */,
 				65B2814626490EB200158E04 /* block__bkock4.png in Resources */,
 				658AA2EC2689B2890085732F /* runtime_api04.png in Resources */,
+				654DE95426BCCDE700C35BC9 /* 面试题03.png in Resources */,
 				65EB5178268C025C00DC2DF3 /* runloop02.png in Resources */,
+				654DE95A26BCD4C500C35BC9 /* 内存管理02.png in Resources */,
 				65B2814426490BD400158E04 /* block__bkock3.png in Resources */,
 				654D628326AFB4DC0060B12C /* 多线程11.png in Resources */,
 				658AA2EE2689B4930085732F /* runtime_api04_1.png in Resources */,
 				650488B125E8F293006BD70A /* 常见考题.md in Resources */,
 				65A8A71826AEB0A50012D95C /* 多线程10.png in Resources */,
 				65449704268435E900FFF2C6 /* runtime_api02.png in Resources */,
+				654DE95526BCCDE700C35BC9 /* 内存管理01.png in Resources */,
 				65EB5182268C131500DC2DF3 /* runloop05.png in Resources */,
 				65346A99265F407E00AE1552 /* objc_msgSend.png in Resources */,
 				65A8A71626AEB0550012D95C /* 多线程09.png in Resources */,
@@ -928,6 +950,7 @@
 				65A8A70626AE8CDE0012D95C /* LWOSUnfairLock.m in Sources */,
 				65DB3ADC26954C3400A06E3B /* LWBluetoothViewController.m in Sources */,
 				65454E3026B8E74800FE9A44 /* LWMemoryManagerViewController.m in Sources */,
+				654DE96026BD353F00C35BC9 /* LWTestObject.m in Sources */,
 				6580753426943D3E0016485B /* LWGCDViewController.m in Sources */,
 				6526EB652654FEB300AAB951 /* LWRuntimePersonTest2.m in Sources */,
 				652EE26225A40BA70056A917 /* LWNatureViewController.m in Sources */,
@@ -952,6 +975,7 @@
 				658D3E9526B1335100BA33BE /* LWSynchronized.m in Sources */,
 				6526EB5C2654DEDC00AAB951 /* LWRuntimeViewController.m in Sources */,
 				651294F52692FF8E0006D7CE /* LWPermenantThread.m in Sources */,
+				654DE95826BCCF2700C35BC9 /* LWMemoryDistributeViewController.m in Sources */,
 				65449700268422F400FFF2C6 /* LWRuntimeAPI.m in Sources */,
 				65C2519D25EDCB8900BD1649 /* LWKVCDog.m in Sources */,
 				659016462584FF9D00BDF3AF /* LWLifeCycleView.m in Sources */,
